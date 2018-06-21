@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class TestHttp {
+    public static void main(String[] args) throws IOException {
+        getMethod();
+    }
+
+    public static void getMethod() throws IOException {
+        URL url = new URL("http://www.baidu.com");
+        URLConnection connection = url.openConnection();
+        InputStream is = connection.getInputStream();
+        InputStreamReader isr = new InputStreamReader(is,"UTF-8");
+        BufferedReader br = new BufferedReader(isr);
+
+        String line = null;
+        StringBuilder stringBuilder = new StringBuilder();
+        while((line=br.readLine())!=null){
+            stringBuilder.append(line);
+        }
+        br.close();
+        isr.close();
+        is.close();
+        System.out.println(stringBuilder.toString());
+    }
+}
