@@ -1,5 +1,4 @@
 # 第一章 Tomcat
-<br>
 ## 1.1 web 简单介绍
 C/S (Client - Server  客户端-服务器端)    
 &nbsp; &nbsp;&nbsp;&nbsp;	特点:   
@@ -57,26 +56,27 @@ B/S (Broswer -Server 浏览器端- 服务器端)
 
 Servlet手动编写步骤：   
 &emsp;&emsp; 1）编写一个servlet程序，继承HttpServlet    
-&emsp;&emsp; 2）找到HelloServlet类的class字节码，然后把拷贝到tomcat的一个web应用中WEB-INF/classes目录下。   
+&emsp;&emsp; 2）找到HelloServlet类的class字节码，然后把它拷贝到tomcat的一个web应用中WEB-INF/classes目录下。   
 &emsp;&emsp; 3）在当前web应用下的web.xml文件配置Servlet。   
 &emsp;&emsp; 4）启动tomcat服务器，运行访问
 
 ## 1.4 idea开发servlet
 &emsp;&emsp; 1. 创建web项目， 添加Tomcat   
 &emsp;&emsp; 2. 编写servlet文件    
-&emsp;&emsp; 3. 部署servlet文件   
-&emsp;&emsp;&emsp;&emsp; (1) 在web.xml文件的<web-app>标签中添加如下内容：   
-&emsp;&emsp;&emsp;&emsp; <servlet\>  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    <servlet-name>HelloWorld</servlet-name>  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   <servlet-class>HelloWorld</servlet-class>  
-&emsp;&emsp;&emsp;&emsp; </servlet\>  
-  
-&emsp;&emsp;&emsp;&emsp; <servlet-mapping>  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    <servlet-name>HelloWorld</servlet-name>  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    <url-pattern>/HelloWorld</url-pattern>  
-&emsp;&emsp;&emsp;&emsp; </servlet-mapping> 
+&emsp;&emsp; 3. 部署servlet文件（两种方式）
+&emsp;&emsp;	(1) 在web.xml文件的<web-app>标签中添加如下内容：  
+	 
+		 <servlet>  
+		  <servlet-name>HelloWorld</servlet-name>  
+		  <servlet-class>HelloWorld</servlet-class>  
+		 </servlet>  
+	  
+		 <servlet-mapping>  
+		  <servlet-name>HelloWorld</servlet-name>  
+		  <url-pattern>/HelloWorld</url-pattern>  
+		 </servlet-mapping> 
 
-&emsp;&emsp;&emsp;&emsp; (2) 在HelloWorld文件的类前面加上：@WebServlet(value = "/HelloWorld")  
+&emsp;&emsp; (2) 在HelloWorld文件的类前面加上：@WebServlet(value = "/HelloWorld")  
 
 &emsp;&emsp; 4. 运行servlet文件（注意：在编辑Tomcat时，server中的url和Deployment要设置） 
 
@@ -109,45 +109,45 @@ URI： 统一资源标记符。/day09/hello。用于标记任何资源。可以�
 &emsp;&emsp; 3）GET方式不适合提交敏感密码。   
 &emsp;&emsp; 4）注意： 浏览器直接访问的请求，默认提交方式是GET方式 
  
-&emsp;&emsp; GET /day09/testMethod.html?name=eric&password=123456 HTTP/1.1 
-  
-&emsp;&emsp; Host: localhost:8080    
-&emsp;&emsp; User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0    
-&emsp;&emsp; Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8   
-&emsp;&emsp; Accept-Language: zh-cn,en-us;q=0.8,zh;q=0.5,en;q=0.3   
-&emsp;&emsp; Accept-Encoding: gzip, deflate   
-&emsp;&emsp; Referer: http://localhost:8080/day09/testMethod.html   
-&emsp;&emsp; Connection: keep-alive   
+		GET /day09/testMethod.html?name=eric&password=123456 HTTP/1.1 
+		  
+		Host: localhost:8080    
+		User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0    
+		 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8   
+		 Accept-Language: zh-cn,en-us;q=0.8,zh;q=0.5,en;q=0.3   
+		 Accept-Encoding: gzip, deflate   
+		 Referer: http://localhost:8080/day09/testMethod.html   
+		Connection: keep-alive   
 
 &emsp;&emsp;POST：         
 &emsp;&emsp; 1） 参数不会跟着URI后面。参数而是跟在请求的实体内容中。没有？开头，多个参数之间以&分割。    
 &emsp;&emsp; 2） POST提交的参数数据没有限制。   
 &emsp;&emsp; 3） POST方式提交敏感数据。   
 
-&emsp;&emsp; POST /day09/testMethod.html HTTP/1.1 
-  
-&emsp;&emsp; Host: localhost:8080    
-&emsp;&emsp; User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0    
-&emsp;&emsp; Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8    
-&emsp;&emsp; Accept-Language: zh-cn,en-us;q=0.8,zh;q=0.5,en;q=0.3    
-&emsp;&emsp; Accept-Encoding: gzip, deflate    
-&emsp;&emsp; Referer: http://localhost:8080/day09/testMethod.html    
-&emsp;&emsp; Connection: keep-alive     
+		 POST /day09/testMethod.html HTTP/1.1 
+		  
+		Host: localhost:8080    
+		 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0    
+		Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8    
+		 Accept-Language: zh-cn,en-us;q=0.8,zh;q=0.5,en;q=0.3    
+		 Accept-Encoding: gzip, deflate    
+		Referer: http://localhost:8080/day09/testMethod.html    
+		 Connection: keep-alive     
 
-&emsp;&emsp; name=eric&password=123456  
+		name=eric&password=123456  
 
 ## 2.2 请求头 
-&emsp;&emsp; Accept: text/html,image/*      -- 浏览器接受的数据类型   
-&emsp;&emsp; Accept-Charset: ISO-8859-1     -- 浏览器接受的编码格式   
-&emsp;&emsp; Accept-Encoding: gzip,compress  --浏览器接受的数据压缩格式   
-&emsp;&emsp; Accept-Language: en-us,zh-       --浏览器接受的语言   
-&emsp;&emsp; Host: www.it315.org:80          --（必须的）当前请求访问的目标地址（主机:端口）   
-&emsp;&emsp; If-Modified-Since: Tue, 11 Jul 2000 18:23:51 GMT  --浏览器最后的缓存时间   
-&emsp;&emsp; Referer: http://www.it315.org/index.jsp      -- 当前请求来自于哪里   
-&emsp;&emsp; User-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)  --浏览器类型   
-&emsp;&emsp; Cookie:name=eric                     -- 浏览器保存的cookie信息   
-&emsp;&emsp; Connection: close/Keep-Alive            -- 浏览器跟服务器连接状态。close: 连接关闭  keep-alive：保存连接。   
-&emsp;&emsp; Date: Tue, 11 Jul 2000 18:23:51 GMT      -- 请求发出的时间 
+		Accept: text/html,image/*      -- 浏览器接受的数据类型   
+		Accept-Charset: ISO-8859-1     -- 浏览器接受的编码格式   
+		Accept-Encoding: gzip,compress  --浏览器接受的数据压缩格式   
+		 Accept-Language: en-us,zh-       --浏览器接受的语言   
+		Host: www.it315.org:80          --（必须的）当前请求访问的目标地址（主机:端口）   
+		 If-Modified-Since: Tue, 11 Jul 2000 18:23:51 GMT  --浏览器最后的缓存时间   
+		Referer: http://www.it315.org/index.jsp      -- 当前请求来自于哪里   
+		User-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)  --浏览器类型   
+		 Cookie:name=eric                     -- 浏览器保存的cookie信息   
+		Connection: close/Keep-Alive            -- 浏览器跟服务器连接状态。close: 连接关闭  keep-alive：保存连接。   
+		Date: Tue, 11 Jul 2000 18:23:51 GMT      -- 请求发出的时间 
 
 ## 2.3 实体内容
 &emsp;&emsp; 只有POST提交的参数会放到实体内容中
@@ -155,17 +155,24 @@ URI： 统一资源标记符。/day09/hello。用于标记任何资源。可以�
 ## 2.4 HttpServletRequest对象
 HttpServletRequest对象作用是用于获取请求数据。   
 核心的API：   
- &emsp;&emsp; 请求行：          
-&emsp;&emsp;						request.getMethod();   请求方式   
-&emsp;&emsp;						request.getRequetURI()   / request.getRequetURL()   请求资源   
-&emsp;&emsp;   						request.getProtocol()   请求http协议版本
+ &emsp;&emsp; 请求行：
+ 
+		request.getMethod();   请求方式   
+		request.getRequetURI()   / request.getRequetURL()   请求资源   
+		request.getProtocol()   请求http协议版本
 
-&emsp;&emsp;请求头：   
-&emsp;&emsp;						request.getHeader("名称")   根据请求头获取请求值   
-&emsp;&emsp;						request.getHeaderNames()    获取所有的请求头名称
+&emsp;&emsp;请求头： 
+  
+		request.getHeader("名称")   根据请求头获取请求值   
+		request.getHeaderNames()    获取所有的请求头名称
 
 &emsp;&emsp;实体内容:  
-&emsp;&emsp;request.getInputStream()   获取实体内容数据
+
+		request.getInputStream()   获取实体内容数据
+&emsp;&emsp;转发:
+
+		request.getContextPath()		
+		request.getRequestDispacher("路径").forward(request,response);  
 
 ## 2.5 获取请求的参数
 GET方式： 参数放在URI后面
@@ -178,110 +185,121 @@ POST方式： 参数放在实体内容中
 问题：但是以上两种不通用，而且获取到的参数还需要进一步地解析。所以可以使用统一方便的获取参数的方式：
 
 核心的API：
-&emsp;&emsp;request.getParameter("参数名");  根据参数名获取参数值（注意，只能获取一个值的参数）   
-&emsp;&emsp;request.getParameterValue("参数名“)；根据参数名获取参数值（可以获取多个值的参数）    
-&emsp;&emsp;    request.getParameterNames();   获取所有参数名称列表  
+
+		request.getParameter("参数名");  根据参数名获取参数值（注意，只能获取一个值的参数）   
+		request.getParameterValue("参数名“)；根据参数名获取参数值（可以获取多个值的参数）    
+		request.getParameterNames();   获取所有参数名称列表  
 
 ## 2.6 请求参数编码问题 
-修改POST方式参数编码：      
-&emsp;&emsp;						request.setCharacterEncoding("utf-8");   
-				修改GET方式参数编码：    
-&emsp;&emsp;						手动解码：String name = new String(name.getBytes("iso-8859-1"),"utf-8"); 
+修改参数编码：      
+
+		request.setCharacterEncoding("utf-8");   
+ 		手动解码：String name = new String(name.getBytes("iso-8859-1"),"utf-8"); 
 
 <br>
 
 # 第三章 HTTP协议	- Response  
-HTTP/1.1 200 OK                -- 响应行   
+		HTTP/1.1 200 OK                -- 响应行   
 
-Server: Apache-Coyote/1.1         -- 响应头（key-vaule）   
-Content-Length: 24    
-Date: Fri, 30 Jan 2015 01:54:57 GMT   
+		Server: Apache-Coyote/1.1         -- 响应头（key-vaule）   
+		Content-Length: 24    
+		Date: Fri, 30 Jan 2015 01:54:57 GMT   
 
-this is hello servlet!!!                  -- 实体内容   
+		this is hello servlet!!!                  -- 实体内容   
 
 ## 3.1 响应行   
-1.http协议版本
+1. http协议版本
 
-2.状态码: 服务器处理请求的结果（状态）    
-					常见的状态：    
-						（1） 200：  表示请求处理完成并完美返回   
-						（2） 302：   表示请求需要进一步细化。   
-						（3） 404：   表示客户访问的资源找不到。   
-						（4） 500：   表示服务器的资源发送错误。（服务器内部错误）
+2. 状态码: 服务器处理请求的结果（状态）：
+ 
+			常见的状态：    
+				（1） 200：  表示请求处理完成并完美返回   
+				（2） 302：   表示请求需要进一步细化。   
+				（3） 404：   表示客户访问的资源找不到。   
+				（4） 500：   表示服务器的资源发送错误。（服务器内部错误）
 
-3.状态描述
+3. 状态描述
 
 ## 3.2 响应头
-Location: http://www.it315.org/index.jsp      - 表示重定向的地址，该头和302的状态码一起使用。   
-Server:apache tomcat                 --- 表示服务器的类型   
-Content-Encoding: gzip                 -- 表示服务器发送给浏览器的数据压缩类型    
-Content-Length: 80                    -- 表示服务器发送给浏览器的数据长度   
-Content-Language: zh-cn               -- 表示服务器支持的语言     
-Content-Type: text/html; charset=GB2312   -- 表示服务器发送给浏览器的数据类型及内容编码    
-Last-Modified: Tue, 11 Jul 2000 18:23:51 GMT  -- 表示服务器资源的最后修改时间    
-Refresh: 1;url=http://www.it315.org     -- 表示定时刷新    
-Content-Disposition: attachment; filename=aaa.zip -- 表示告诉浏览器以下载方式打开资源（下载文件时用到）    
-Transfer-Encoding: chunked   
-Set-Cookie:SS=Q0=5Lb_nQ; path=/search   -- 表示服务器发送给浏览器的cookie信息（会话管理用到）    
-Expires: -1                           -- 表示通知浏览器不进行缓存    
-Cache-Control: no-cache    
-Pragma: no-cache    
-Connection: close/Keep-Alive           -- 表示服务器和浏览器的连接状态。close：关闭连接 keep-alive:保存连接   
+		Location: http://www.it315.org/index.jsp      - 表示重定向的地址，该头和302的状态码一起使用。   
+		Server:apache tomcat                 --- 表示服务器的类型   
+		Content-Encoding: gzip                 -- 表示服务器发送给浏览器的数据压缩类型    
+		Content-Length: 80                    -- 表示服务器发送给浏览器的数据长度   
+		Content-Language: zh-cn               -- 表示服务器支持的语言     
+		Content-Type: text/html; charset=GB2312   -- 表示服务器发送给浏览器的数据类型及内容编码    
+		Last-Modified: Tue, 11 Jul 2000 18:23:51 GMT  -- 表示服务器资源的最后修改时间    
+		Refresh: 1;url=http://www.it315.org     -- 表示定时刷新    
+		Content-Disposition: attachment; filename=aaa.zip -- 表示告诉浏览器以下载方式打开资源（下载文件时用到）    
+		Transfer-Encoding: chunked   
+		Set-Cookie:SS=Q0=5Lb_nQ; path=/search   -- 表示服务器发送给浏览器的cookie信息（会话管理用到）    
+		Expires: -1                           -- 表示通知浏览器不进行缓存    
+		Cache-Control: no-cache    
+		Pragma: no-cache    
+		Connection: close/Keep-Alive           -- 表示服务器和浏览器的连接状态。close：关闭连接 keep-alive:保存连接   
 
 ## 3.2 HttpServletResponse对象
 HttpServletResponse对象修改响应信息：
 
 响应行： 
-&emsp;&emsp;			response.setStatus(number)  设置状态码
-&emsp;&emsp;			response.sendError(number)  发送状态码以及相应的状态页面
+
+		response.setStatus(number)  设置状态码
+		response.sendError(number)  发送状态码以及相应的状态页面
 
 响应头： 
-&emsp;&emsp;		response.setHeader("name","value")  设置响应头
+
+		response.setHeader("name","value")  设置响应头
 
 实体内容：
-&emsp;&emsp;		response.getWriter().writer();   发送字符实体内容
-&emsp;&emsp;		response.getOutputStream().writer()  发送字节实体内容 
+		response.getWriter().writer();   发送字符实体内容
+		response.getOutputStream().writer()  发送字节实体内容 
 
 ## 3.3 请求重定向（Location）
-当浏览器得到302状态码之后，会再次自动向服务器发出一个请求，请求的地址就是location的value值的地址。请求重定向浏览器一共向服务器发出2次请求。
-请求重定向到url：response.sendRedirect("url")
+当浏览器得到302状态码之后，会再次自动向服务器发出一个请求，请求的地址就是location的value值的地址。请求重定向浏览器一共向服务器发出2次请求。请求重定向到url：
+
+		response.sendRedirect("url")
 
 ## 3.4 定时刷新（refresh）
-response.setHeader("refresh","1");  &emsp;&emsp;	//每隔1秒刷新一次当前网页
-response.setHeader("refresh", "3;url=/adv.html");  &emsp;&emsp;	//隔3秒之后跳转到adv.html
+		response.setHeader("refresh","1");  &emsp;&emsp;	//每隔1秒刷新一次当前网页
+		response.setHeader("refresh", "3;url=/adv.html");  &emsp;&emsp;	//隔3秒之后跳转到adv.html
 
 ## 3.5 设置content-Type
 设置服务器发送给浏览器的数据类型和内容编码：
-response.setContentType("text/html;charset=utf-8");
+
+		response.setContentType("text/html;charset=utf-8");
 编码和解码的解析：![avatar](./项目中的编码问题.png)
+
+<br>
 
 # 第四章 Servlet  
 ## 4.1 如何开发一个Servlet
+1.如何开发一个Servlet：
+
 1. 编写java类，继承HttpServlet类
 2. 重写doGet和doPost方法
 3. Servlet程序交给tomcat服务器运行，servlet程序的class文件拷贝到WEB-INF/classes目录，在web.xml文件中进行配置。配置如下所示：
 
-< !-- 配置一个servlet -->
-  < !-- servlet的配置 -->
-  < servlet>
-  	&emsp;&emsp;	< !-- servlet的内部名称，自定义。尽量有意义 -->
-  	&emsp;&emsp;	< servlet-name>FirstServlet< /servlet-name>
-  	&emsp;&emsp;	< !-- servlet的类全名： 包名+简单类名 -->
-  	&emsp;&emsp;	< servlet-class>gz.itcast.a_servlet.FirstServlet< /servlet-class>
-  < /servlet>
+		<!-- 配置一个servlet -->
+		  <!-- servlet的配置 -->
+		  <servlet>
+		  	&emsp;&emsp;	<!-- servlet的内部名称，自定义。尽量有意义 -->
+		  	&emsp;&emsp;	<servlet-name>FirstServlet</servlet-name>
+		  	&emsp;&emsp;	<!-- servlet的类全名： 包名+简单类名 -->
+		  	&emsp;&emsp;	<servlet-class>gz.itcast.a_servlet.FirstServlet</servlet-class>
+		  </servlet>
+		  
+		  
+		   <!-- servlet的映射配置 -->
+		   <servlet-mapping>
+		  	&emsp;&emsp;	<!-- servlet的内部名称，一定要和上面的内部名称保持一致！！ -->
+		  	&emsp;&emsp;	<servlet-name>FirstServlet</servlet-name>
+		  	&emsp;&emsp;	<!-- servlet的映射路径（访问servlet的名称） -->
+		  	&emsp;&emsp;	<url-pattern>/first</url-pattern>
+		  </servlet-mapping>
   
-  
-   < !-- servlet的映射配置 -->
-   < servlet-mapping>
-  	&emsp;&emsp;	< !-- servlet的内部名称，一定要和上面的内部名称保持一致！！ -->
-  	&emsp;&emsp;	< servlet-name>FirstServlet< /servlet-name>
-  	&emsp;&emsp;	< !-- servlet的映射路径（访问servlet的名称） -->
-  	&emsp;&emsp;	< url-pattern>/first< /url-pattern>
-  < /servlet-mapping>
-  
-  访问URL：  http://localhost:8080/day10/first 的步骤
+  2.访问URL：  http://localhost:8080/day10/first 的步骤
   前提： tomcat服务器启动时，首先加载webapps中的每个web应用的web.xml配置文件。
- 1. http://: http协议
+  
+ 1. http:// : http协议
 2. localhost： 到本地的hosts文件中查找是否存在该域名对应的IP地址127.0.0.1
 3. 8080：    找到tomcat服务器
 4. /day10     在tomcat的webapps目录下找 day10的目录
@@ -292,69 +310,81 @@ response.setContentType("text/html;charset=utf-8");
   
   
 ## 4.2 Servlet的映射路径 
-< servlet-mapping>
-  	&emsp;&emsp;  < !-- servlet的内部名称，一定要和上面的内部名称保持一致！！ -->
-  	&emsp;&emsp;  < servlet-name>FirstServlet< /servlet-name>
-  	&emsp;&emsp;  < !-- servlet的映射路径（访问servlet的名称） -->
-  	&emsp;&emsp;  < url-pattern>/first< /url-pattern>
-  < /servlet-mapping>
+		<servlet-mapping>
+		  	<!-- servlet的内部名称，一定要和上面的内部名称保持一致！！ -->
+		  	 <servlet-name>FirstServlet</servlet-name>
+		  	 <!-- servlet的映射路径（访问servlet的名称） -->
+		  	 <url-pattern>/first</url-pattern>
+		  </servlet-mapping>
   
-  url-pattern                    &emsp; 浏览器输入
-  精确匹配    &emsp;&emsp;   /first    &emsp;&emsp; &emsp;&emsp;   &emsp;&emsp;     http://localhost:8080/day10/first
-   &emsp;&emsp;    &emsp;&emsp;    &emsp;&emsp;   /itcast/demo1         &emsp;&emsp;    http://localhost:8080/day10/itcast/demo1
-   
-   模糊匹配        &emsp;&emsp;        /\*           &emsp;&emsp;   &emsp;&emsp;   &emsp;&emsp;   &emsp;&emsp;           http://localhost:8080/day10/任意路径
-     &emsp;&emsp;    &emsp;&emsp;    &emsp;&emsp;    /itcast/\*         &emsp;&emsp;    &emsp;&emsp;   &emsp;     http://localhost:8080/day10/itcast/任意路径
-    &emsp;&emsp;    &emsp;&emsp;    &emsp;&emsp;      *.do     &emsp;&emsp;    &emsp;&emsp;   &emsp;&emsp;   &emsp;    http://localhost:8080/day10/任意路径.do
+		 					 url-pattern                    			浏览器输入
+		  精确匹配    		 /first         						http://localhost:8080/day10/first
+		     				/itcast/demo1           				http://localhost:8080/day10/itcast/demo1
+		   
+		  模糊匹配           /*                    					http://localhost:8080/day10/任意路径
+							/itcast/*             					http://localhost:8080/day10/itcast/任意路径
+			 				*.do         							http://localhost:8080/day10/任意路径.do
     
    注意：
-   1. url-pattern要么以 / 开头，要么以*开头。  例如， itcast是非法路径。
+   1. url-pattern要么以 / 开头，要么以\*开头。  例如， itcast是非法路径。
    2.  不能同时使用两种模糊匹配，例如 /itcast/*.do是非法路径
    3. 当有输入的URL有多个servlet同时被匹配的情况下：
   &emsp;&emsp;   精确匹配优先。（长的最像优先被匹配）
   &emsp;&emsp;   以后缀名结尾的模糊url-pattern优先级最低！！！
   
 ## 4.3 Servlet缺省路径
-servlet的缺省路径（< url-pattern>/< /url-pattern>）是在tomcat服务器内置的一个路径。该路径对应的是一个DefaultServlet（缺省Servlet）。这个缺省的Servlet的作用是用于解析web应用的静态资源文件。			 
+servlet的缺省路径（< url-pattern>/< /url-pattern>）是在tomcat服务器内置的一个路径。该路径对应的是一个DefaultServlet（缺省Servlet）。这个缺省的Servlet的作用是用于解析web应用的静态资源文件。
 
-问题： URL输入http://localhost:8080/day10/index.html 如何读取文件？？？？
-1. 到当前day10应用下的web.xml文件查找是否有匹配的url-pattern。
-2. 如果没有匹配的url-pattern，则交给tomcat的内置的DefaultServlet处理
-3. DefaultServlet程序到day10应用的根目录下查找是否存在一个名称为index.html的静态文件。
-4. 如果找到该文件，则读取该文件内容，返回给浏览器。
-5. 如果找不到该文件，则返回404错误页面。
-结论： 先找动态资源，再找静态资源。
+问题： URL输入http://localhost:8080/day10/index.html 如何读取文件？
+
+		1. 到当前day10应用下的web.xml文件查找是否有匹配的url-pattern。
+		2. 如果没有匹配的url-pattern，则交给tomcat的内置的DefaultServlet处理
+		3. DefaultServlet程序到day10应用的根目录下查找是否存在一个名称为index.html的静态文件。
+		4. 如果找到该文件，则读取该文件内容，返回给浏览器。
+		5. 如果找不到该文件，则返回404错误页面。
+		结论： 先找动态资源，再找静态资源。
 
 ## 4.4 Sevlet的生命周期
 Servlet程序的生命周期由tomcat服务器控制的！！！！
 ### 4.4.1 Servlet重要的四个生命周期方法
-1. 构造方法： 创建servlet对象的时候调用。默认情况下，第一次访问servlet的时候创建servlet对象。只调用1次。证明servlet对象在tomcat是单实例的。
-2. init方法： 创建完servlet对象的时候调用。只调用1次。
-3. service方法： 每次发出请求时调用。调用n次。
-4. destroy方法： 销毁servlet对象的时候调用。停止服务器或者重新部署web应用时销毁servlet对象。只调用1次。
+		1. 构造方法： 创建servlet对象的时候调用。默认情况下，第一次访问servlet的时候创建servlet对象。只调用1次。证明servlet对象在tomcat是单实例的。
+		2. init方法： 创建完servlet对象的时候调用。只调用1次。
+		3. service方法： 每次发出请求时调用。调用n次。
+		4. destroy方法： 销毁servlet对象的时候调用。停止服务器或者重新部署web应用时销毁servlet对象。只调用1次。
 ### 4.4.2 伪代码演示Servlet的生命周期
 Tomtcat内部代码运行：
-1. 通过映射找到servlet-class的内容，字符串： gz.itcast.a_servlet.FirstServlet
-2. 通过反射构造FirstServlet对象
+1.通过映射找到servlet-class的内容，字符串： gz.itcast.a_servlet.FirstServlet
+2.通过反射构造FirstServlet对象
  &emsp; 2.1 得到字节码对象
- &emsp;&emsp;    Class clazz = class.forName("gz.itcast.a_servlet.FirstServlet");
+ 
+		Class clazz = class.forName("gz.itcast.a_servlet.FirstServlet");
  &emsp; 2.2 调用无参数的构造方法来构造对象
-  &emsp;&emsp;   Object obj = clazz.newInstance();     ---1.servlet的构造方法被调用
-  3. 创建ServletConfig对象，通过反射调用init方法
+ 
+		Object obj = clazz.newInstance();     ---1.servlet的构造方法被调用
+  3.创建ServletConfig对象，通过反射调用init方法
    &emsp;  3.1 得到方法对象
-   &emsp;&emsp;  Method m = clazz.getDeclareMethod("init",ServletConfig.class);
-      &emsp;   3.2 调用方法
-     &emsp;&emsp;    m.invoke(obj,config);             --2.servlet的init方法被调用
-     4. 创建request，response对象，通过反射调用service方法
+   
+   		Method m = clazz.getDeclareMethod("init",ServletConfig.class);
+   		
+ &emsp;   3.2 调用方法
+      
+  		m.invoke(obj,config);             --2.servlet的init方法被调用
+  		
+   4.创建request，response对象，通过反射调用service方法
      &emsp;  4.1 得到方法对象
-     &emsp;&emsp;    Methodm m =clazz.getDeclareMethod("service",HttpServletRequest.class,HttpServletResponse.class);
-    &emsp;  4.2 调用方法
-   &emsp;&emsp;     m.invoke(obj,request,response);  --3.servlet的service方法被调用
-   5. 当tomcat服务器停止或web应用重新部署，通过反射调用destroy方法
+     
+ 			Methodm m =clazz.getDeclareMethod("service",HttpServletRequest.class,HttpServletResponse.class);
+ 			
+ &emsp;  4.2 调用方法
+    
+  			m.invoke(obj,request,response);  --3.servlet的service方法被调用
+5.当tomcat服务器停止或web应用重新部署，通过反射调用destroy方法
        &emsp;  5.1 得到方法对象
-     &emsp;&emsp;    Method m = clazz.getDeclareMethod("destroy",null);
-      &emsp;  5.2 调用方法
-       &emsp;&emsp;   m.invoke(obj,null);            --4.servlet的destroy方法被调用
+       
+    		 Method m = clazz.getDeclareMethod("destroy",null);
+ &emsp;  5.2 调用方法
+ 
+		  m.invoke(obj,null);            --4.servlet的destroy方法被调用
 
 ### 4.4.3 时序图来演示servlet的生命周期
 ![](imgs/20190622-215526.png)
@@ -362,13 +392,14 @@ Tomtcat内部代码运行：
 ## 4.5 Servlet的自动加载
 默认情况下，第一次访问servlet的时候创建servlet对象。如果servlet的构造方法或init方法中执行了比较多的逻辑代码，那么导致用户第一次访问sevrlet的时候比较慢。改变servlet创建对象的时机： 提前到加载web应用的时候！！！
 
-在servlet的配置信息中，加上一个< load-on-startup>即可！！
-< servlet>
-    &emsp;&emsp;  < servlet-name>LifeDemo< /servlet-name>
-    &emsp;&emsp;  < servlet-class>gz.itcast.c_life.LifeDemo< /servlet-class>
-    &emsp;&emsp;  < !-- 让servlet对象自动加载 -->
-   &emsp;&emsp;   < load-on-startup>1< /load-on-startup>  注意： 整数值越大，创建优先级越低！！
-  < /servlet>
+在servlet的配置信息中，加上一个< load-on-startup>即可！
+
+		<servlet>
+		    <servlet-name>LifeDemo</servlet-name>
+		    <servlet-class>gz.itcast.c_life.LifeDemo</servlet-class>
+		     <!-- 让servlet对象自动加载 -->
+		   <load-on-startup>1</load-on-startup>  注意： 整数值越大，创建优先级越低！！
+		  </servlet>
 
 ## 4.6 Servlet的多线程并发问题
 注意： servlet对象在tomcat服务器是单实例多线程的。因为servlet是多线程的，所以当多个servlet的线程同时访问了servlet的共享数据，如成员变量，可能会引发线程安全问题。
@@ -384,23 +415,24 @@ ServletConfig对象: 主要是用于加载servlet的初始化参数。在一个w
 获取对象： 直接从有参数的init方法中得到！！！
 
 ### 4.7.2 Servlet的初始化参数配置
-< servlet>
-      &emsp;&emsp; < servlet-name>ConfigDemo< /servlet-name>
-    &emsp;&emsp;  < servlet-class>gz.itcast.f_config.ConfigDemo< /servlet-class>
-     &emsp;&emsp; < !-- 初始参数： 这些参数会在加载web应用的时候，封装到ServletConfig对象中 -->
-     &emsp;&emsp; < init-param>
-    	 &emsp;&emsp;  &emsp;&emsp; < param-name>path< /param-name>
-    	 &emsp;&emsp;  &emsp;&emsp; < param-value>e:/b.txt< /param-value>
-     &emsp;&emsp; < /init-param>
-  < /servlet>
+	< servlet>
+	     < servlet-name>ConfigDemo< /servlet-name>
+	     < servlet-class>gz.itcast.f_config.ConfigDemo< /servlet-class>
+	     < !-- 初始参数： 这些参数会在加载web应用的时候，封装到ServletConfig对象中 -->
+	     < init-param>
+	    		< param-name>path< /param-name>
+	    		< param-value>e:/b.txt< /param-value>
+	     < /init-param>
+	  < /servlet>
   
   注意： servlet的参数只能由当前的这个sevlet获取！！！！
   
   ServletConfig的API：
-1. 	java.lang.String getInitParameter(java.lang.String name)  根据参数名获取参数值
-2. 	java.util.Enumeration getInitParameterNames()    获取所有参数
-3. 	ServletContext getServletContext()     得到servlet上下文对象
-4. 	java.lang.String getServletName()       得到servlet的名称
+  
+		1. 	java.lang.String getInitParameter(java.lang.String name)  根据参数名获取参数值
+		2. 	java.util.Enumeration getInitParameterNames()    获取所有参数
+		3. 	ServletContext getServletContext()     得到servlet上下文对象
+		4. 	java.lang.String getServletName()       得到servlet的名称
 
 ## 4.8 ServletContext对象
 ServletContext对象 ,叫做Servlet的上下文对象。表示一个当前的web应用环境。一个web应用中只有一个ServletContext对象。
@@ -409,21 +441,23 @@ ServletContext对象 ,叫做Servlet的上下文对象。表示一个当前的web
 创建时机：加载web应用时创建ServletContext对象。
 获取对象： 从ServletConfig对象的getServletContext方法得到
 设计流程：
-1）创建ServletContext对象	  ServletContext  context = new ServletContext()	
-2）创建ServletConfig对象   ServetConfig config = new ServletConfig();
-class  ServletConfig{
-		&emsp;&emsp; ServletContext context;
-		&emsp;&emsp;config.setServletContxt(context);
-		&emsp;&emsp; public ServletContext getServletContxt(){
-		&emsp;&emsp; return contxt;
-		&emsp;&emsp; 					}
-					} 
+
+		1）创建ServletContext对象	  ServletContext  context = new ServletContext()	
+		2）创建ServletConfig对象   ServetConfig config = new ServletConfig();
+
+		class  ServletConfig{
+				ServletContext context;
+				config.setServletContxt(context);
+				public ServletContext getServletContxt(){
+				return contxt;
+				}
+		} 
 					
-public void init( ServletConfig config ){
-		&emsp;&emsp;	//得到ServletConfig对象
-		&emsp;&emsp;	//从ServletConfig对象中得到ServletContext对象
-		&emsp;&emsp;	SerlvetContext context = config.getServletContext();
-					}
+		public void init( ServletConfig config ){
+				//得到ServletConfig对象
+				//从ServletConfig对象中得到ServletContext对象
+				SerlvetContext context = config.getServletContext();
+		}
 ### 4.8.2 ServletContext对象的核心API
 			java.lang.String getContextPath()   --得到当前web应用的路径，用在请求重定向的资源名称中
 			context.getRequestDispatcher("路径").forward(request,response);
@@ -447,43 +481,45 @@ public void init( ServletConfig config ){
 				a）地址栏不会改变
 				b）转发只能转发到当前web应用内的资源
 				c）可以在转发过程中，可以把数据保存到request域对象中
+				request.getRequestDispacher("路径").forward(request,response);  
 			2）重定向
 				a）地址栏会改变，变成重定向到地址。
 				b）重定向可以跳转到当前web应用，或其他web应用，甚至是外部域名网站。
 				c）不能再重定向的过程，把数据保存到request中。
+				response.sendRedirect("url")
 			结论： 如果要使用request域对象进行数据共享，只能用转发技术！！！
-
 
 			java.lang.String getRealPath(java.lang.String path)     --得到web应用的资源文件
 			java.io.InputStream getResourceAsStream(java.lang.String path)  
 ## 4.9 Servlet有参数的init和无参的init方法
 有参数的init方法：该方法是servlet的生命周期方法，一定会被tomcat服务器调用，有参数的方法内部调用无参数的方法
-注意：如果要编写初始代码，不需要覆盖有参数的init方法
 无参数的init方法：该方法是servlet的编写初始化代码的方法。是Sun公司设计出来专门给开发者进行覆盖，然后在里面编写servlet的初始逻辑代码的方法。
+注意：如果要编写初始代码，不需要覆盖有参数的init方法
 <br>
-
 
 # 第五章 Cookie
 ## 5.1 Cookie技术：会话数据保存在浏览器客户端
 Cookie类：用于存储会话数据
 
-				1）构造Cookie对象
-					Cookie(java.lang.String name, java.lang.String value)
-				2）设置cookie
-					void setPath(java.lang.String uri)   ：设置cookie的有效访问路径
-					void setMaxAge(int expiry) ： 设置cookie的有效时间
-					void setValue(java.lang.String newValue) ：设置cookie的值
-				3）发送cookie到浏览器端保存
-					void response.addCookie(Cookie cookie)  : 发送cookie
-				4）服务器接收cookie
-					Cookie[] request.getCookies()  : 接收cookie
+			1）构造Cookie对象
+				Cookie(java.lang.String name, java.lang.String value)
+			2）设置cookie
+				void setPath(java.lang.String uri)   ：设置cookie的有效访问路径
+				void setMaxAge(int expiry) ： 设置cookie的有效时间
+				void setValue(java.lang.String newValue) ：设置cookie的值
+			3）发送cookie到浏览器端保存
+				void response.addCookie(Cookie cookie)  : 发送cookie
+			4）服务器接收cookie
+				Cookie[] request.getCookies()  : 接收cookie
 					
 ## 5.2  Cookie原理
 1. 服务器创建cookie对象，把会话数据存储到cookie对象中。
-new Cookie("name","value");
+
+		new Cookie("name","value");
 
 2. 服务器发送cookie信息到浏览器
-response.addCookie(cookie);
+
+		response.addCookie(cookie);
 举例： set-cookie: name=eric  (隐藏发送了一个set-cookie名称的响应头)
 
 3. 浏览器得到服务器发送的cookie，然后保存在浏览器端。
@@ -492,7 +528,8 @@ response.addCookie(cookie);
 举例： cookie: name=eric  (隐藏带着一个叫cookie名称的请求头)
 
 5. 服务器接收到浏览器带来的cookie信息
-request.getCookies();
+
+		request.getCookies();
 
 ## 5.3 Cookie的细节
 1. void setPath(java.lang.String uri)   ：设置cookie的有效访问路径。有效路径指的是cookie的有效路径保存在哪里，那么浏览器在有效路径下访问服务器时就会带着cookie信息，否则不带cookie信息。
@@ -592,7 +629,7 @@ HttpSession类：用于保存会话数据
 		response.addCookie(c);
 
 # 第七章 JSP
-##6.1 JSP特点
+##7.1 JSP特点
 Servlet的作用： 用java语言开发动态资源的技术！！！
 Jsp的作用：用java语言（+html语言）开发动态资源的技术，Jsp就是servlet！！！（继承自Servlet）
 
@@ -602,7 +639,7 @@ JSP的特点：
 		2）jsp页面既可以写html代码，也可以写java代码。
 				（html页面不能写java代码 。而jsp页面可以写java代码）
 				
-##6.2 JSP的执行过程
+##7.2 JSP的执行过程
 问题： 访问http://localhost:8080/day12/01.hello.jsp  如何显示效果？
 
 			1）访问到01.hello.jsp页面，tomcat扫描到jsp文件，在%tomcat%/work把jsp文件翻译成java源文件
@@ -619,7 +656,7 @@ JSP的特点：
 				
 				注意：jsp文件修改了或jsp的临时文件被删除了，要重新走翻译（1）和编译（2）的过程
 				
-##6.3 Servlet和Jsp的生命周期对比
+##7.3 Servlet和Jsp的生命周期对比
 Servlet的生命周期：
 					1）构造方法（第1次访问）
 					2）init方法（第1次访问）
@@ -634,41 +671,42 @@ Jsp的生命周期
 					5）service方法：_jspService()
 					6）destroy方法：_jspDestroy()
 					
-##6.4 JSP语法
-###6.4.1 JSP表达式
+##7.4 JSP语法
+###7.4.1 JSP表达式
 语法：<%=变量或表达式%>
 作用： 向浏览器输出变量的值或表达式计算的结果
 注意：		
 	1）表达式的原理就是翻译成out.print(“变量” );通过该方法向浏览器写出内容
 	2）表达式后面不需要带分号结束。
 	
-###6.4.2 JSP的脚本
+###7.4.2 JSP的脚本
 语法：<%java代码 %>
 作用： 执行java代码	
 注意：
 	原理把脚本中java代码原封不动拷贝到_jspService方法中执行。
 	
-###6.4.3 JSP的声明
+###7.4.3 JSP的声明
 语法：<%! 变量或方法 %>
 作用： 声明jsp的变量或方法
 注意:
 变量翻译成成员变量，方法翻译成成员方法。
 
-###6.4.4 JSP的注释
+###7.4.4 JSP的注释
 语法： <%!--  jsp注释  --%>
 注意;
 	html的注释会被翻译和执行。而jsp的注释不能被翻译和执行。
 	
-##6.5 Jsp的三大指令
-###6.5.1 include指令
+##7.5 Jsp的三大指令
+###7.5.1 include指令
 作用： 在当前页面用于包含其他页面
 语法： <%@include file="common/header.jsp"%>
 注意：
 1）原理是把被包含的页面（header.jsp）的内容翻译到包含页面(index.jsp)中,合并成翻译成一个java源文件，再编译运行！！，先合并再翻译，这种包含叫静态包含（源码包含）
 2）如果使用静态包含，被包含页面中不需要出现全局的html标签了！！！（如html、head、body）
 
-###6.5.2 page指令
+###7.5.2 page指令
 作用： 告诉tomcat服务器如何翻译jsp文件
+
 				<%@ page 
 					language="java"   --告诉服务器使用什么动态语言来翻译jsp文件
 					import="java.util.*" --告诉服务器java文件使用什么包
@@ -681,24 +719,25 @@ Jsp的生命周期
 					buffer="8kb":  jsp页面的缓存区大小。
 					session="true":  是否开启session功能。false，不能用session内置对象；true，可以使用session内置对象。
 					isELIgnored="false"： 是否忽略EL表达式。
-	%>
+				%>
 	
-	 < !-- 全局错误处理页面配置 -->
-  < error-page>
-  	< error-code>500</error-code>
-  	<location>/common/500.jsp</location>
-  </error-page>
-  <error-page>
-  	<error-code>404</error-code>
-  	<location>/common/404.html</location>
-  </error-page>
-  
-###6.5.3 taglib指令
+			 < !-- 全局错误处理页面配置 -->
+			  < error-page>
+			  	< error-code>500</error-code>
+			  	<location>/common/500.jsp</location>
+			  </error-page>
+			  <error-page>
+			  	<error-code>404</error-code>
+			  	<location>/common/404.html</location>
+			  </error-page>
+		  
+###7.5.3 taglib指令
 
-##6.6 JSP的内置对象
-###6.6.1 什么是内置对象
+##7.6 JSP的内置对象
+###7.6.1 什么是内置对象
 在jsp开发中，会频繁使用到一些对象。例如：HttpSession, ServletContext, ServletContext, HttpServletRequet。如果我们每次要使用这些对象都去创建这些对象就显的非常麻烦。所以Sun公司设计Jsp时，在jsp页面加载完毕之后就会自动帮开发者创建好这些对象，而开发者只需要直接使用这些对象调用方法即可！，这些创建好的对象就叫内置对象！！！！
 举例：
+
 					servlet: 
 							HttpSession session = request.getSession(true); （需要开发者做）
 				
@@ -706,20 +745,20 @@ Jsp的生命周期
 						tomcat服务器：	HttpSession session = request.getSession(true);(不需要开发者做)
 						开发者做的： session.getId();
 						
-###6.6.2 九大内置对象
-内置对象名          类型
-reques &emsp;&emsp;t	   HttpServletRequest
-response &emsp;&emsp;     HttpServletResponse
-config   &emsp;&emsp;     ServletConfig
-application    &emsp;&emsp;    ServletContext
-session     &emsp;&emsp;    HttpSession
-exception     &emsp;&emsp;   Throwable
-page       &emsp;&emsp;     Object(this)
-out         &emsp;&emsp;    JspWriter
-pageContext   &emsp;&emsp;  PageContext 
+###7.6.2 九大内置对象
+		内置对象名          	类型
+		request	   			HttpServletRequest
+		response      		HttpServletResponse
+		config        		ServletConfig
+		application       	ServletContext
+		session       		HttpSession
+		exception        	Throwable
+		page            	Object(this)
+		out             	JspWriter
+		pageContext    		PageContext 
 
-###6.6.3 Out对象
-out对象类型，JspWriter类，相当于带缓存的PrintWriter
+###7.6.3 Out对象
+		out对象类型，JspWriter类，相当于带缓存的PrintWriter
 
 					PrintWriter： 
 							wrier(内容)： 直接向浏览器写出内容。
@@ -733,9 +772,9 @@ out对象类型，JspWriter类，相当于带缓存的PrintWriter
 						3）关闭缓存区
 						4）执行完毕jsp页面
 						
-###6.6.4 pageContext对象
-pageContext对象的类型是PageContext，它是jsp的上下文对象
-1. 可以获取其他八个内置对象
+###7.6.4 pageContext对象
+		pageContext对象的类型是PageContext，它是jsp的上下文对象
+		1. 可以获取其他八个内置对象
 
 			public class 01_hello_jsp {
 					public void _jspService(request,response){
@@ -760,13 +799,13 @@ pageContext对象的类型是PageContext，它是jsp的上下文对象
 
 				使用场景： 在自定义标签的时候，PageContext对象频繁使用到！！！
 
-2. 保存数据
+		2. 保存数据
 					1）默认情况下，保存到page域
 							pageContext.setAttribute("name");
 					2）可以向四个域对象保存数据
 							pageContext.setAttribute("name",域范围常量)
 							
-3. 获取数据
+		3. 获取数据
 					1）默认情况下，从page域获取
 							pageContext.getAttribute("name")
 					2）可以从四个域中获取数据
@@ -781,7 +820,7 @@ pageContext对象的类型是PageContext，它是jsp的上下文对象
 							pageContext.findAttribute("name");
 						顺序： page域 -> request域 -> session域- > context域（application域）
 						
-###6.6.5 Jsp中的四个域对象
+###7.6.5 Jsp中的四个域对象
 四个域对象：
 					pageContext      page域				
 					request          request域
@@ -802,9 +841,10 @@ pageContext对象的类型是PageContext，它是jsp的上下文对象
 					session域： 只能在同一个会话（session对象）中使用（私有的）
 				      	context域： 只能在同一个web应用中使用。（全局的）
 
-##6.7 EL表达式
-使用EL表达式替换掉jsp表达式，EL表达式作用： 向浏览器输出域对象中的变量值或表达式计算的结果！！！
-语法：
+##7.7 EL表达式
+使用EL表达式替换掉jsp表达式，EL表达式作用： 向浏览器输出域对象中的变量值或表达式计算的结果！
+
+		语法：
 			${变量}
 			输出普通字符串： ${name}
 			输出对象属性：  ${student.name}  注意： .name 相当于  .getName（）方法
@@ -812,25 +852,28 @@ pageContext对象的类型是PageContext，它是jsp的上下文对象
 			输出map集合：  ${map[key].name}  注意：　［key］相当于get（key）方法
 
 输出基本数据类型变量：
-						1.  从四个域获取
-							${name}
-						2.  指定域获取
-							${pageScope.name}
+
+			1.  从四个域获取
+				${name}
+			2.  指定域获取
+				${pageScope.name}
                     域范围： pageScoep / requestScope / sessionScope / applicationScope
                     
-##6.8 jsp标签
+##7.8 jsp标签
 jsp标签作用：替换jsp脚本，用于在jsp页面中执行java代码
 jsp标签分类：
-				1）内置标签（动作标签）： 不需要在jsp页面导入标签
-				2）jstl标签： 需要在jsp页面中导入标签
-				3）自定义标签 ： 开发者自行定义，需要在jsp页面导入标签
+
+			1）内置标签（动作标签）： 不需要在jsp页面导入标签
+			2）jstl标签： 需要在jsp页面中导入标签
+			3）自定义标签 ： 开发者自行定义，需要在jsp页面导入标签
 				
 动作标签：
-				转发标签：	<jsp:forward /> request.getRequesetDipsacher("/路径").foward(request,response);
-            			参数标签：  <jsp:pararm/> 参数标签    ？name=eric
-				包含标签：  <jsp:include/> 包含其他页面 ，动态包含
-				原理： 包含与被包含的页面先各自翻译成java源文件，然后再运行时合并在一起。
-						（先翻译再合并），动态包含
+
+			转发标签：	<jsp:forward /> request.getRequesetDipsacher("/路径").foward(request,response);
+    			参数标签：  <jsp:pararm/> 参数标签    ？name=eric
+			包含标签：  <jsp:include/> 包含其他页面 ，动态包含
+			原理： 包含与被包含的页面先各自翻译成java源文件，然后再运行时合并在一起。
+					（先翻译再合并），动态包含
 						
 静态包含  vs  动态包含的区别？
 
@@ -846,8 +889,9 @@ jsp标签分类：
 				静态包含： 先合并再翻译
 				动态包含： 先翻译再合并
 
-##6.9 JSTL标签
+##7.9 JSTL标签
 使用JSTL标签步骤
+
 			1） 导入jstl支持的jar包（标签背后隐藏的java代码）
 					注意：使用javaee5.0的项目自动导入jstl支持jar包
 			2）使用taglib指令导入标签库 
@@ -855,38 +899,60 @@ jsp标签分类：
 			3）在jsp中使用标签		
 			
 核心标签库的重点标签：
+
 		保存数据：
 			<c:set></c:set>   
 		获取数据： 
              <c:out value=""></c:out>
+             
 		单条件判断
-            <c:if test=""></c:if>
+            <c:if test=""></c:if> (test表示判断条件)
+            例子：
+            <input type="radio" name="gender" value="男"  <c:if test="${contact.gender=='男' }">checked="checked"</c:if> />男
+
+            
 		多条件判断
           <c:choose></c:choose>
     	  <c:when test=""></c:when>
           <c:otherwise></c:otherwise>
+          
    		循环数据
           <c:forEach></c:forEach>
+          例子：
+          <c:forEach items="${contacts}" var="con" varStatus="varSta">
+            <tr>
+                <td>${varSta.count}</td>
+                <td>${con.name}</td>
+                <td>${con.gender }</td>
+                <td>${con.age }</td>
+                <td>${con.phone }</td>
+                <td>${con.email }</td>
+                <td>${con.qq }</td>
+           </tr>
+           
           <c:forTokens items="" delims=""></c:forTokens>
 		重定向
           <c:redirect></c:redirect>
           
-##6.10 JavaBean
+##7.10 JavaBean
 JavaBean就是一个普通的java类。只有符合以下规定才能称之为javabean：
-			  1）必须提供无参数的构造方法
-			  2）类中属性都必须私有化(private)
-			  3）该类提供公开的getter 和 setter方法
+
+		  1）必须提供无参数的构造方法
+		  2）类中属性都必须私有化(private)
+		  3）该类提供公开的getter 和 setter方法
 			  
 JavaBean的作用： 用于封装数据，保存数据。
-				访问javabean只能使用getter和setter方法			  
+
+ 		  访问javabean只能使用getter和setter方法			  
 
 JavaBean的使用场景：
-				1）项目中用到实体对象（entity）符合javabean规范
-				2）EL表达式访问对象属性。${student.name}  调用getName()方法，符合javabean规范。
-				3）jsp标签中的属性赋值。 setNum（Integer num）。符合javabean规范。
-				4）jsp页面中使用javabean。符合javabean规范
+
+		1）项目中用到实体对象（entity）符合javabean规范
+		2）EL表达式访问对象属性。${student.name}  调用getName()方法，符合javabean规范。
+		3）jsp标签中的属性赋值。 setNum（Integer num）。符合javabean规范。
+		4）jsp页面中使用javabean。符合javabean规范
 				
-##6.11 web开发模式	
+##7.11 web开发模式	
 MVC开发模式：
 						Model - JavaBean实现。用于封装业务数据
 						View - Jsp实现。用于显示数据
@@ -896,3 +962,285 @@ MVC开发模式：
 						dao层： 和数据访问相关的操作
 						service层： 和业务逻辑相关的操作
 						web层： 和用户直接交互相关的操作（传接参数，跳转页面）
+
+<br>
+# 第八章 ubuntu16 安装jdk
+##8.1  在官网下载linux版本的jdk（jdk-8u111-Linux-x64.tar.gz）
+##8.2 解压文件jdk-8u111-Linux-x64.tar.gz
+sudo tar -zxvf jdk-8u111-linux-x64.tar.gz
+解压成功后可以看到该目录下多出了文件夹jdk1.8.0_111
+
+先在/usr/local下新建文件夹Java，然后将文件夹jdk1.8.0_111移动到目录/usr/local/java下
+sudo mv &nbsp;   jdk1.8.0_111  &nbsp;   /usr/local/java/
+<br>
+##8.3 配置 java环境
+配置系统环境变量，在全局配置文件/etc/profile下配置，即为所有用户配置Java环境。使用vim命令编辑/etc/profile文件，在文件底部加上四条配置信息。
+
+		export JAVA_HOME=/usr/local/java/jdk1.8.0_111    
+		export JRE_HOME=${JAVA_HOME}/jre     
+		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+		export PATH=${JAVA_HOME}/bin:$PATH
+
+环境变量生效：
+source /etc/profile
+
+<br>
+##8.4 验证 java环境
+在shell中输入
+
+		 java
+		 javac
+		 java -version
+ 
+ <br>
+# 第九章. ubuntu16 安装idea
+ <br>
+## 9.1  在官网下载linux版本的idea(ideaIU-2016.3.3-no-jdk.tar.gz)
+##9.2 解压文件ideaIU-2016.3.3-no-jdk.tar.gz
+sudo tar -zxvf ideaIU-2016.3.3-no-jdk.tar.gz
+解压成功后可以看到该目录下多出了文件夹 ideaIU-2016.3.3
+
+先在/usr/local下新建文件夹Idea，然后将文件夹ideaIU-2016.3.3移动到目录/usr/local/Idea下
+sudo mv &nbsp;    ideaIU-2016.3.3  &nbsp;   /usr/local/Idea/
+
+然后输入./idea.sh即可开启idea
+
+<br>
+
+##9.3 如何激活idea
+将“0.0.0.0 account.jetbrains.com”及“0.0.0.0 www.jetbrains.com”添加到hosts文件中 
+
+输入http://idea.lanyus.com/网址，获取激活码
+<br>
+
+## 9.4 Ubuntu中创建Intellij IDEA快捷方式
+在/home/username/桌面创建文件idea.desktop。
+在文件中添加
+
+		[Desktop Entry]
+		Name=IntelliJ IDEA
+		Comment=IntelliJ IDEA
+		Exec=/home/username/下载/idea-IU-183.6156.11/bin/idea.sh
+		Icon=/home/username/下载/idea-IU-183.6156.11/bin/idea.png
+		Terminal=false
+		Type=Application
+		Categories=Developer;
+
+然后chmod +x /home/username/idea.desktop
+此时桌面就有idea的快捷方式了
+
+<br>
+# 第十章 ubuntu16 安装tomcat
+ <br>
+## 10.1  在官网下载linux版本的tomcat(apache-tomcat-8.5.9.tar.gz)
+## 10.2 解压文件apache-tomcat-8.5.9.tar.gz
+sudo tar -zxvf apache-tomcat-8.5.9.tar.gz
+解压成功后可以看到该目录下多出了文件夹 apache-tomcat-8.5.9
+
+先在/usr/local下新建文件夹tomcat，然后将文件夹apache-tomcat-8.5.9移动到目录/usr/local/tomcat下
+sudo mv &nbsp;   apache-tomcat-8.5.9 &nbsp;   /usr/local/tomcat/
+
+修改tomcat的权限
+sudo chmod 755 -R tomcat
+
+<br>
+## 10.3 配置tomcat环境
+1.进入目录/usr/local/tomcat/apache-tomcat-8.5.9/bin，编辑文件startup.sh，在最后一行之前加入如下信息：
+
+		# set java environment
+		export JAVA_HOME=/usr/java/jdk1.8.0_111
+		export JRE_HOME=${JAVA_HOME}/jre     
+		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+		export PATH=${JAVA_HOME}/bin:$PATH
+
+		# tomcat
+		export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
+
+编辑完后保存退出，然后运行startup.sh
+sudo ./startup.sh
+在浏览器中输localhost:8080会出现tomcat的网站
+<br>
+
+2.如果要关闭tomcat，类似的，需要先在文件shutdown.sh对应位置添加信息：
+
+		# set java environment
+		export JAVA_HOME=/usr/java/jdk1.8.0_111
+		export JRE_HOME=${JAVA_HOME}/jre     
+		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+		export PATH=${JAVA_HOME}/bin:$PATH
+
+		# tomcat
+		export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
+
+然后执行如下命令即可：sudo ./shutdown.sh
+
+3.如果要设置为tomcat开机自启动，需要编辑文件/etc/rc.local，这里存放着开机自启动的程序。配置在/etc/profile和/etc/bash.bashrc文件中的内容是当有用户登录时才起作用，这不符合tomcat需要启动的实际情况） 
+编辑/etc/rc.local：
+sudo vi /etc/rc.local
+
+在最后一行之前加入如下信息：（配置你自己的tomcat的startup.sh文件的路径）
+
+		# set java environment
+		export JAVA_HOME=/usr/java/jdk1.8.0_111
+		export JRE_HOME=${JAVA_HOME}/jre     
+		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+		export PATH=${JAVA_HOME}/bin:$PATH
+
+		/usr/tomcat/apache-tomcat-8.5.9/bin/startup.sh
+<br>
+
+# 第十一章 git的使用
+## 11.1 git的安装
+在ubuntu系统上输入命令sudo apt install git -y
+
+## 11.2 git的配置
+1.输入git用户名：
+git config \--global user.name \"Your Name\"
+
+2.输入git邮箱：
+git config \--global user.email "email@example.com\"
+注意：git config命令的\--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+
+3.查看git配置
+git config \--list
+
+## 11.3 创建版本库
+1.git init
+通过git init命令把这个目录变成Git可以管理的仓库，当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的。所有的版本控制系统，其实只能跟踪文本文件的改动。Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的。如果要真正使用版本控制系统，就要以纯文本方式编写文件。
+
+2.git add
+把文件添加到仓库（暂存区）
+
+3.git commit -m  \"   \"
+把文件提交到仓库（暂存区的内容提交到当前分支）
+
+&emsp;&emsp;  为什么Git添加文件需要add，commit一共两步呢？
+&emsp;&emsp; 因为commit可以一次提交很多文件，所以你可以多次add不同的文件，
+
+4.git status
+查看仓库当前的状态
+
+5.git diff
+查看变化
+
+6.git rm
+删除文件
+
+## 11.4 版本回退
+1.git log
+显示从最近到最远的提交日志，查看提交历史
+
+2.git reset \--hard commit_id
+版本回退到commit_id版
+
+3.git reflog
+查看命令历史，用途：版本回到未来的某个版本
+
+## 11.5 撤销修改
+场景1：当改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout \-- file。
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
+
+场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+## 11.6 远程仓库
+1.创建SSH Key
+ssh-keygen -t rsa -C "youremail@example.com\"
+
+2.登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+
+验证Key是否可以正常工作
+ssh -T git@github.com
+
+3.添加远程库
+git remote add origin git@github.com:michaelliao/learngit.git
+添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
+
+4.推送内容到远程库
+git push -u origin master
+
+5.在推送过程中，如果出现错误的话，可能是远程仓库的文件在本地并不存在，此时需要输入以下命令将内容和并
+git pull \--rebase origin master
+
+## 11.7 分支
+1.git checkout -b dev
+创建dev分支，然后切换到dev分支
+	-b参数表示创建并切换，相当于以下两条命令：
+git branch dev
+git checkout dev
+
+2.git branch
+查看当前分支，git branch命令会列出所有分支，当前分支前面会标一个*号。
+
+3.git merge dev
+把dev分支的工作成果合并到master分支上，git merge命令用于合并指定分支到当前分支。
+
+4.git branch -d dev
+合并完成后，就可以删除dev分支了
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
+
+## 11.8 多人协作
+1.分支管理
+
+    master分支是主分支，因此要时刻与远程同步；
+
+    dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+    bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+    feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+    
+  2.多人协作的工作模式通常是这样：
+  
+
+    首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+    如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+    如果合并有冲突，则解决冲突，并在本地提交；
+
+    没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+    
+## 11.9 创建标签
+tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
+1.git tag < tagname>
+新建一个标签，默认为HEAD，也可以指定一个commit id；
+
+2.git tag < tagname> commit_id
+新建一个标签，指定commit id；
+
+3.git tag -a < tagname> -m "blablabla..." commit_id
+指定标签信息
+
+4.git tag
+查看所有标签
+
+5.git tag -d <  tagname>
+删除标签
+
+6.git push origin < tagname>
+推送某个标签到远程
+
+##11.10 删除github中某个文件夹
+在github上只能删除仓库,却无法删除文件夹或文件, 所以只能通过命令来解决
+1. git rm -r --cached target 
+	删除target文件夹
+2. git commit -m '删除了target' 
+提交,添加操作说明
+3. git push -u origin master 
+将本次更改更新到github项目上去
+
+注:本地项目中的target文件夹不收操作影响,删除的只是远程仓库中的target, 可放心删除
+每次增加文件或删除文件，都要commit 然后直接 git push -u origin master，就可以同步到github上了
+
+
+
+
+
+
+
+
+
+
+

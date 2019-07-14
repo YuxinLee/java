@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JSP:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f975de47-02d5-4027-bbf9-f0485887cd19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Tomcat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tomcat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat/docs/mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Tomcat/docs/mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat/src/d_cookie/HelloCookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/Exceptiondemo/FinallyDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/FileOutputStreamDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/FileOutputStreamDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/ReflectDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/CallableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/MyCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/MyLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/ExecutorsDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicketDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicketDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemonDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoinDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriorityDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleepDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYieldDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/MyTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/TimerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/ThreadGroupDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/GetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/SetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/GetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/SetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/Exceptiondemo/FinallyDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/ArrayListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/ArrayListDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FileDeleteDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FileDeleteDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FilePathDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FilePathDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/BufferedInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/BufferedInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/FileInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/FileInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/BufferedOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/BufferedOutputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/FileOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/FileOutputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/readerdemo/BufferedReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/readerdemo/BufferedReaderDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/writerdemo/BufferedWriterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/writerdemo/BufferedWriterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/reflect/ReflectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/reflect_learning/ReflectDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/callable/CallableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/callable/CallableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/dielock/DieLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/dielock/DieLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/executors/ExecutorsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/executors/ExecutorsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/lockdemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/lockdemo/SellTicketDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/synchronizeddemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/synchronized_demo/SellTicketDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyRunnableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyRunnableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyThreadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadDaemonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadDaemonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadJoinDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadJoinDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadPriorityDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadPriorityDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadSleepDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadSleepDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadYieldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadYieldDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/timer/TimerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/timer/TimerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/treadgroup/ThreadGroupDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/treadgroup/ThreadGroupDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify/StudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify2/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify2/StudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/取消社团预约.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/道路修建.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/五人捕鱼.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/数转换为字符串.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/huawei/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jinritoutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qq/test/小Q的歌单.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yongyou/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/Y型排队.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/员工上车.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/zuoyebang/test/Main1.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/service/impl/ContactServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/AddContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/listContact.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="45" selection-start-column="45" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/addContact.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/QueryContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/ListContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/UpdateContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/DeleteContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/test/TestContactOperatorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ContactSys/util/XMLUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/jsp_basic/01.hello.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp_basic/02.script.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp_basic/common/header.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp_basic/03.index.jsp" />
+        <option value="$PROJECT_DIR$/src/entity/Contact.java" />
+        <option value="$PROJECT_DIR$/src/util/XMLUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/TestContactOperatorImpl.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/dao/ContactDao.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/dao/impl/ContactDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/servlet/AddContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/servlet/DeleteContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/servlet/ListContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/servlet/QueryContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys_jsp/servlet/UpdateContactServlet.java" />
+        <option value="$PROJECT_DIR$/web/ContactSys_jsp/listContact.jsp" />
+        <option value="$PROJECT_DIR$/src/ContactSys/entity/Contact.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/exception/NameRepeatException.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/util/XMLUtil.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/test/TestContactOperatorImpl.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/servlet/AddContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/servlet/DeleteContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/service/impl/ContactServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/servlet/ListContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/servlet/QueryContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/servlet/UpdateContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/dao/ContactDao.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/dao/impl/ContactDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/ContactSys/service/ContactService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1395" />
+    <option name="y" value="186" />
+    <option name="width" value="1920" />
+    <option name="height" value="993" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactSys_jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp_basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562079047640" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java-interview" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ContactSys" />
+      <recent name="$PROJECT_DIR$/web/ContactSys_jsp" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/ContactSys_jsp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="JSP" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JSP_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JSP:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JSP_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JSP" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="32906" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JSP:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f975de47-02d5-4027-bbf9-f0485887cd19" name="Default Changelist" comment="" />
+      <created>1561989304637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561989304637</updated>
+      <workItem from="1561989313168" duration="1564000" />
+      <workItem from="1562076447684" duration="3258000" />
+      <workItem from="1562160177501" duration="2422000" />
+      <workItem from="1562372330883" duration="722000" />
+      <workItem from="1562455556384" duration="597000" />
+      <workItem from="1562591434551" duration="151000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8714000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1395" y="186" width="1920" height="993" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26602563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.1797235" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/jsp_basic/01.hello.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/jsp_basic/02.script.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/jsp_basic/03.index.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/jsp_basic/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/addContact.html" />
+    <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/修改联系人.html" />
+    <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/updateContact.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/exception/NameRepeatException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/entity/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/dao/impl/ContactDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="180" column="5" lean-forward="true" selection-start-line="176" selection-start-column="4" selection-end-line="180" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/dao/ContactDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/service/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/service/impl/ContactServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/AddContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/listContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ContactSys_jsp/addContact.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/QueryContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/ListContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/UpdateContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/servlet/DeleteContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/test/TestContactOperatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactSys/util/XMLUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JSP:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JSP</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

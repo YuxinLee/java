@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JDBC2:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1066873a-1754-48c5-b8a6-6d8b1f278c30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Tomcat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tomcat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Tomcat/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat/docs/mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Tomcat/docs/mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat/src/d_cookie/HelloCookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/Exceptiondemo/FinallyDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/ArrayListDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/Student1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/file/FileDeleteDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/file/FilePathDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/inputstream/BufferedInputStreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/inputstream/FileInputStreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/BufferedOutputStreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/FileOutputStreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/readerdemo/BufferedReaderDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/writerdemo/BufferedWriterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/ReflectDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/CallableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/MyCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/MyLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/ExecutorsDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicketDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicketDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemonDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoinDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriorityDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleepDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYieldDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/MyTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/TimerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/ThreadGroupDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/GetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/SetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/GetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/SetThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/Exceptiondemo/FinallyDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/ArrayListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/ArrayListDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FileDeleteDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FileDeleteDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FilePathDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FilePathDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/BufferedInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/BufferedInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/FileInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/FileInputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/BufferedOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/BufferedOutputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/FileOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/FileOutputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/readerdemo/BufferedReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/readerdemo/BufferedReaderDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/writerdemo/BufferedWriterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/writerdemo/BufferedWriterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/reflect/ReflectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/reflect_learning/ReflectDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/callable/CallableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/callable/CallableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/dielock/DieLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/dielock/DieLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/executors/ExecutorsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/executors/ExecutorsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/lockdemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/lockdemo/SellTicketDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/synchronizeddemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/synchronized_demo/SellTicketDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyRunnableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyRunnableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyThreadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadDaemonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadDaemonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadJoinDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadJoinDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadPriorityDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadPriorityDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadSleepDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadSleepDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadYieldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadYieldDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/timer/TimerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/timer/TimerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/treadgroup/ThreadGroupDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/treadgroup/ThreadGroupDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify/StudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify2/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify2/StudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/取消社团预约.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/道路修建.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/五人捕鱼.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/数转换为字符串.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/huawei/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jinritoutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qq/test/小Q的歌单.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yongyou/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/Y型排队.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/员工上车.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/zuoyebang/test/Main1.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/AddContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/ListContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/listContact.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/QueryContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/updateContact.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/UpdateContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/DeleteContactServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/addContact.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/util/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo2.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/util/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/exception/NameRepeatException.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/service/ContactService.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/service/impl/ContactServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/dao/impl/ContactDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/test/TestContactOperatorImpl.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/servlet/AddContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/servlet/ListContactServlet.java" />
+        <option value="$PROJECT_DIR$/web/contactSys_jdbc/addContact.jsp" />
+        <option value="$PROJECT_DIR$/web/contactSys_jdbc/listContact.jsp" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/servlet/QueryContactServlet.java" />
+        <option value="$PROJECT_DIR$/web/contactSys_jdbc/updateContact.jsp" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/servlet/DeleteContactServlet.java" />
+        <option value="$PROJECT_DIR$/src/contactSys_jdbc/servlet/UpdateContactServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-4" />
+    <option name="width" value="1366" />
+    <option name="height" value="709" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contactSys_jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contactSys_jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contactSys_jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="contactSys_jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563098299096" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.JDBC">
+    <configuration name="TestContactOperatorImpl.testAddContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactSys_jdbc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
+      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
+      <option name="METHOD_NAME" value="testAddContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestContactOperatorImpl.testCheckContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactSys_jdbc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
+      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
+      <option name="METHOD_NAME" value="testCheckContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestContactOperatorImpl.testDeleteContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactSys_jdbc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
+      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
+      <option name="METHOD_NAME" value="testDeleteContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestContactOperatorImpl.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactSys_jdbc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
+      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestContactOperatorImpl.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactSys_jdbc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
+      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JDBC2_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JDBC2:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JDBC2_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JDBC2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="44178" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JDBC2:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestContactOperatorImpl.testAddContact" />
+        <item itemvalue="JUnit.TestContactOperatorImpl.testFindAll" />
+        <item itemvalue="JUnit.TestContactOperatorImpl.testFindById" />
+        <item itemvalue="JUnit.TestContactOperatorImpl.testDeleteContact" />
+        <item itemvalue="JUnit.TestContactOperatorImpl.testCheckContact" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1066873a-1754-48c5-b8a6-6d8b1f278c30" name="Default Changelist" comment="" />
+      <created>1562769840396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562769840396</updated>
+      <workItem from="1562769843078" duration="707000" />
+      <workItem from="1562853325252" duration="2998000" />
+      <workItem from="1562933835147" duration="5372000" />
+      <workItem from="1562977368808" duration="28309000" />
+      <workItem from="1563065566665" duration="5917000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestContactOperatorImpl_testFindAll - 2019.07.13 at 15h 44m 16s.xml">
+      <configuration name="TestContactOperatorImpl.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testFindAll - 2019.07.13 at 15h 46m 22s.xml">
+      <configuration name="TestContactOperatorImpl.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testFindById - 2019.07.13 at 15h 47m 02s.xml">
+      <configuration name="TestContactOperatorImpl.testFindById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testFindById - 2019.07.13 at 15h 47m 47s.xml">
+      <configuration name="TestContactOperatorImpl.testFindById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testCheckContact - 2019.07.13 at 15h 48m 26s.xml">
+      <configuration name="TestContactOperatorImpl.testCheckContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testDeleteContact - 2019.07.13 at 15h 49m 10s.xml">
+      <configuration name="TestContactOperatorImpl.testDeleteContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testDeleteContact - 2019.07.13 at 16h 36m 26s.xml">
+      <configuration name="TestContactOperatorImpl.testDeleteContact" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testFindById - 2019.07.13 at 16h 59m 36s.xml">
+      <configuration name="TestContactOperatorImpl.testFindById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testFindAll - 2019.07.13 at 16h 59m 50s.xml">
+      <configuration name="TestContactOperatorImpl.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContactOperatorImpl_testAddContact - 2019.07.13 at 17h 10m 10s.xml">
+      <configuration name="TestContactOperatorImpl.testAddContact" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43303000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-11" width="1368" height="717" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7280164" visible="true" weight="0.19499241" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.27198365" side_tool="true" weight="0.21699545" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26618704" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.053956833" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.19784173" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7280164" visible="true" weight="0.19499241" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.27198365" side_tool="true" weight="0.21699545" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19784173" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.053956833" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.19784173" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/b_prepared/JDBC_Demo1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/b_prepared/JDBC_Demo2.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/c_callable/JDBC_Demo1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo3.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/entity/Contact.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/exception/NameRepeatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/servlet-api.jar!/javax/servlet/ServletRequest.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/ResultSetImpl.class" />
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/dao/impl/ContactDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="181" column="52" selection-start-line="181" selection-start-column="52" selection-end-line="181" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/dao/ContactDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/service/impl/ContactServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/service/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/test/TestContactOperatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_211/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="375" column="18" selection-start-line="375" selection-start-column="18" selection-end-line="375" selection-end-column="18" />
+          <folding>
+            <element signature="e#15711#15712#0" expanded="true" />
+            <element signature="e#15747#15748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/util/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/AddContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/META-INF/c.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/DeleteContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/QueryContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/UpdateContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/addContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/ListContactServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/listContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/updateContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JDBC2:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>dom4j-1.6.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JDBC</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<contactList> 
+  <contact id="3"> 
+    <name>zhangsan</name>  
+    <gender>女</gender>  
+    <age>30</age>  
+    <phone>135222233333</phone>  
+    <email>zhangsan@qq.com</email>  
+    <qq>33334444</qq> 
+  </contact> 
+</contactList>
