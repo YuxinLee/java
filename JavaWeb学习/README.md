@@ -1,8 +1,8 @@
 # JavaWeb 教程
 
-##1. [Tomcat](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/Tomcat#第一章Tomcat)
+##1. [Tomcat](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/Tomcat#第一章-tomcat)
 
-##2. [HTTP协议 - Request](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/Tomcat)
+##2. [HTTP协议 - Request](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/Tomcat#第二章-http协议--request)
 
 ##3. [HTTP协议 - Response](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/Tomcat)
 
