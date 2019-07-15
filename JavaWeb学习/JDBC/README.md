@@ -436,13 +436,13 @@ SELECT empName,deptName       -- 2）确定哪些字段
 		ON d.id=e.deptId;
 	
 ## 13.9 存储过程
-###13.9.1 存储过程介绍
+### 13.9.1 存储过程介绍
 存储过程：带有逻辑的sql语句
 存储过程特点：				
 			1）执行效率非常快！存储过程是在数据库的服务器端执行的！！！
 			2）移植性很差！不同数据库的存储过程是不能移植。
 			
-###13.9.2 存储过程语法			
+### 13.9.2 存储过程语法			
 	-- 创建存储过程
 	DELIMITER $       -- 声明存储过程的结束符
 	CREATE PROCEDURE pro_test()           --存储过程名称(参数列表)
@@ -459,7 +459,7 @@ IN：   表示输入参数，可以携带数据带存储过程中
 OUT： 表示输出参数，可以从存储过程中返回结果
 INOUT： 表示输入输出参数，既可以输入功能，也可以输出功能
 
-###13.9.3 带有输入参数的存储过程
+### 13.9.3 带有输入参数的存储过程
 	-- 需求：传入一个员工的id，查询员工信息
 	DELIMITER $
 	CREATE PROCEDURE pro_findById(IN eid INT)  -- IN: 输入参数
@@ -473,7 +473,7 @@ INOUT： 表示输入输出参数，既可以输入功能，也可以输出功�
 	-- 删除存储过程
 	DROP PROCEDURE pro_testOut;
 
-###13.9.4 带有输出参数的存储过程
+### 13.9.4 带有输出参数的存储过程
 	DELIMITER $
 	CREATE PROCEDURE pro_testOut(OUT str VARCHAR(20))  -- OUT：输出参数
 	BEGIN
@@ -502,7 +502,7 @@ CALL pro_testOut(@NAME);
 -- 查看变量值
 SELECT @NAME;
 
-###13.9.5 带有输入输出参数的存储过程
+### 13.9.5 带有输入输出参数的存储过程
 	DELIMITER $
 	CREATE PROCEDURE pro_testInOut(INOUT n INT)  -- INOUT： 输入输出参数
 	BEGIN
@@ -518,7 +518,7 @@ SELECT @NAME;
 
 	SELECT @n;
 
-###13.9.6 带有条件判断的存储过程
+### 13.9.6 带有条件判断的存储过程
 	-- 需求：输入一个整数，如果1，则返回“星期一”,如果2，返回“星期二”,如果3，返回“星期三”。其他数字，返回“错误输入”;
 	DELIMITER $
 	CREATE PROCEDURE pro_testIf(IN num INT,OUT str VARCHAR(20))
@@ -537,7 +537,7 @@ SELECT @NAME;
 	 
 	SELECT @str;
 	
-###13.9.7 带有循环功能的存储过程
+### 13.9.7 带有循环功能的存储过程
 	-- 需求： 输入一个整数，求和。例如，输入100，统计1-100的和
 	DELIMITER $
 	CREATE PROCEDURE pro_testWhile(IN num INT,OUT result INT)
@@ -561,7 +561,7 @@ SELECT @NAME;
 
 	USE day16;
 
-###13.9.8 使用查询的结果赋值给变量（INTO）
+### 13.9.8 使用查询的结果赋值给变量（INTO）
 	DELIMITER $
 	CREATE PROCEDURE pro_findById2(IN eid INT,OUT vname VARCHAR(20) )
 	BEGIN
@@ -572,7 +572,7 @@ SELECT @NAME;
 
 	SELECT @NAME;
 
-##13.10 触发器
+## 13.10 触发器
 当操作了某张表时，希望同时触发一些动作/行为，可以使用触发器完成！！
 例如： 当向员工表插入一条记录时，希望同时往日志表插入数据
 
@@ -599,7 +599,7 @@ CREATE TRIGGER tri_empDel AFTER DELETE ON employee FOR EACH ROW    -- 当往员�
  -- 删除
  DELETE FROM employee WHERE id=7;
  
-##13.11 权限问题
+## 13.11 权限问题
 - mysql数据库权限问题：root ：拥有所有权限（可以干任何事情）
  -- 权限账户，只拥有部分权限（CURD）例如，只能操作某个数据库的某张表
  -- 如何修改mysql的用户密码？
@@ -705,7 +705,7 @@ systemctl status firewalld
 					|- boolean next() ： 将光标移动到下一行
 					|-getXX() : 获取列的值
 
-##15.2 使用Statement执行sql语句
+## 15.2 使用Statement执行sql语句
 		/**
 	 	* 执行DDL语句(创建表)
 		 */
@@ -818,7 +818,7 @@ systemctl status firewalld
 		}
 	}
 	
-##15.3 使用Statement执行sql语句
+## 15.3 使用Statement执行sql语句
 		public class Demo1 {
 
 		/**

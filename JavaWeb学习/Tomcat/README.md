@@ -237,7 +237,7 @@ POST方式： 参数放在实体内容中
 		Pragma: no-cache    
 		Connection: close/Keep-Alive           -- 表示服务器和浏览器的连接状态。close：关闭连接 keep-alive:保存连接   
 
-## 3.2 HttpServletResponse对象
+## 3.3 HttpServletResponse对象
 HttpServletResponse对象修改响应信息：
 
 响应行： 
@@ -253,16 +253,16 @@ HttpServletResponse对象修改响应信息：
 		response.getWriter().writer();   发送字符实体内容
 		response.getOutputStream().writer()  发送字节实体内容 
 
-## 3.3 请求重定向（Location）
+## 3.4 请求重定向（Location）
 当浏览器得到302状态码之后，会再次自动向服务器发出一个请求，请求的地址就是location的value值的地址。请求重定向浏览器一共向服务器发出2次请求。请求重定向到url：
 
 		response.sendRedirect("url")
 
-## 3.4 定时刷新（refresh）
+## 3.5 定时刷新（refresh）
 		response.setHeader("refresh","1");  &emsp;&emsp;	//每隔1秒刷新一次当前网页
 		response.setHeader("refresh", "3;url=/adv.html");  &emsp;&emsp;	//隔3秒之后跳转到adv.html
 
-## 3.5 设置content-Type
+## 3.6 设置content-Type
 设置服务器发送给浏览器的数据类型和内容编码：
 
 		response.setContentType("text/html;charset=utf-8");
@@ -545,7 +545,7 @@ Cookie cookie = new Cookie("name","xxxx");
 3. Cookie数据类型只能保存非中文字符串类型的。可以保存多个cookie，但是浏览器一般只允许存放300个Cookie，每个站点最多存放20个Cookie，每个Cookie的大小限制为4KB。
 
 # 第六章 Session
-##6.1 Session技术核心
+## 6.1 Session技术核心
 如果要保存非字符串，超过4kb内容，只能使用session技术
 Session特点：会话数据保存在服务器端。（内存中）
 
@@ -563,7 +563,7 @@ HttpSession类：用于保存会话数据
 				java.lang.Object getAttribute(java.lang.String name)  ： 获取数据
 				void removeAttribute(java.lang.String name) ： 清除数据
 
-##6.2 Session原理
+## 6.2 Session原理
 问题： 服务器能够识别不同的浏览者！！！
 前提： 在哪个session域对象保存数据，就必须从哪个域对象取出！！！！
 
@@ -605,7 +605,7 @@ HttpSession类：用于保存会话数据
 			结论：通过JSESSION的cookie值在服务器找session对象！！！！！
 
 
-##6.3 Session细节
+## 6.3 Session细节
 			1）java.lang.String getId()  ： 得到session编号
 			2）两个getSession方法：
 					getSession(true) / getSession()  : 创建或得到session对象。没有匹配的session编号，自动创建新的session对象。
@@ -629,7 +629,7 @@ HttpSession类：用于保存会话数据
 		response.addCookie(c);
 
 # 第七章 JSP
-##7.1 JSP特点
+## 7.1 JSP特点
 Servlet的作用： 用java语言开发动态资源的技术！！！
 Jsp的作用：用java语言（+html语言）开发动态资源的技术，Jsp就是servlet！！！（继承自Servlet）
 
@@ -639,7 +639,7 @@ JSP的特点：
 		2）jsp页面既可以写html代码，也可以写java代码。
 				（html页面不能写java代码 。而jsp页面可以写java代码）
 				
-##7.2 JSP的执行过程
+## 7.2 JSP的执行过程
 问题： 访问http://localhost:8080/day12/01.hello.jsp  如何显示效果？
 
 			1）访问到01.hello.jsp页面，tomcat扫描到jsp文件，在%tomcat%/work把jsp文件翻译成java源文件
@@ -656,7 +656,7 @@ JSP的特点：
 				
 				注意：jsp文件修改了或jsp的临时文件被删除了，要重新走翻译（1）和编译（2）的过程
 				
-##7.3 Servlet和Jsp的生命周期对比
+## 7.3 Servlet和Jsp的生命周期对比
 Servlet的生命周期：
 					1）构造方法（第1次访问）
 					2）init方法（第1次访问）
@@ -671,40 +671,40 @@ Jsp的生命周期
 					5）service方法：_jspService()
 					6）destroy方法：_jspDestroy()
 					
-##7.4 JSP语法
-###7.4.1 JSP表达式
+## 7.4 JSP语法
+### 7.4.1 JSP表达式
 语法：<%=变量或表达式%>
 作用： 向浏览器输出变量的值或表达式计算的结果
 注意：		
 	1）表达式的原理就是翻译成out.print(“变量” );通过该方法向浏览器写出内容
 	2）表达式后面不需要带分号结束。
 	
-###7.4.2 JSP的脚本
+### 7.4.2 JSP的脚本
 语法：<%java代码 %>
 作用： 执行java代码	
 注意：
 	原理把脚本中java代码原封不动拷贝到_jspService方法中执行。
 	
-###7.4.3 JSP的声明
+### 7.4.3 JSP的声明
 语法：<%! 变量或方法 %>
 作用： 声明jsp的变量或方法
 注意:
 变量翻译成成员变量，方法翻译成成员方法。
 
-###7.4.4 JSP的注释
+### 7.4.4 JSP的注释
 语法： <%!--  jsp注释  --%>
 注意;
 	html的注释会被翻译和执行。而jsp的注释不能被翻译和执行。
 	
-##7.5 Jsp的三大指令
-###7.5.1 include指令
+## 7.5 Jsp的三大指令
+### 7.5.1 include指令
 作用： 在当前页面用于包含其他页面
 语法： <%@include file="common/header.jsp"%>
 注意：
 1）原理是把被包含的页面（header.jsp）的内容翻译到包含页面(index.jsp)中,合并成翻译成一个java源文件，再编译运行！！，先合并再翻译，这种包含叫静态包含（源码包含）
 2）如果使用静态包含，被包含页面中不需要出现全局的html标签了！！！（如html、head、body）
 
-###7.5.2 page指令
+### 7.5.2 page指令
 作用： 告诉tomcat服务器如何翻译jsp文件
 
 				<%@ page 
@@ -731,10 +731,10 @@ Jsp的生命周期
 			  	<location>/common/404.html</location>
 			  </error-page>
 		  
-###7.5.3 taglib指令
+### 7.5.3 taglib指令
 
-##7.6 JSP的内置对象
-###7.6.1 什么是内置对象
+## 7.6 JSP的内置对象
+### 7.6.1 什么是内置对象
 在jsp开发中，会频繁使用到一些对象。例如：HttpSession, ServletContext, ServletContext, HttpServletRequet。如果我们每次要使用这些对象都去创建这些对象就显的非常麻烦。所以Sun公司设计Jsp时，在jsp页面加载完毕之后就会自动帮开发者创建好这些对象，而开发者只需要直接使用这些对象调用方法即可！，这些创建好的对象就叫内置对象！！！！
 举例：
 
@@ -745,7 +745,7 @@ Jsp的生命周期
 						tomcat服务器：	HttpSession session = request.getSession(true);(不需要开发者做)
 						开发者做的： session.getId();
 						
-###7.6.2 九大内置对象
+### 7.6.2 九大内置对象
 		内置对象名          	类型
 		request	   			HttpServletRequest
 		response      		HttpServletResponse
@@ -757,7 +757,7 @@ Jsp的生命周期
 		out             	JspWriter
 		pageContext    		PageContext 
 
-###7.6.3 Out对象
+### 7.6.3 Out对象
 		out对象类型，JspWriter类，相当于带缓存的PrintWriter
 
 					PrintWriter： 
@@ -772,7 +772,7 @@ Jsp的生命周期
 						3）关闭缓存区
 						4）执行完毕jsp页面
 						
-###7.6.4 pageContext对象
+### 7.6.4 pageContext对象
 		pageContext对象的类型是PageContext，它是jsp的上下文对象
 		1. 可以获取其他八个内置对象
 
@@ -820,7 +820,7 @@ Jsp的生命周期
 							pageContext.findAttribute("name");
 						顺序： page域 -> request域 -> session域- > context域（application域）
 						
-###7.6.5 Jsp中的四个域对象
+### 7.6.5 Jsp中的四个域对象
 四个域对象：
 					pageContext      page域				
 					request          request域
@@ -841,7 +841,7 @@ Jsp的生命周期
 					session域： 只能在同一个会话（session对象）中使用（私有的）
 				      	context域： 只能在同一个web应用中使用。（全局的）
 
-##7.7 EL表达式
+## 7.7 EL表达式
 使用EL表达式替换掉jsp表达式，EL表达式作用： 向浏览器输出域对象中的变量值或表达式计算的结果！
 
 		语法：
@@ -859,7 +859,7 @@ Jsp的生命周期
 				${pageScope.name}
                     域范围： pageScoep / requestScope / sessionScope / applicationScope
                     
-##7.8 jsp标签
+## 7.8 jsp标签
 jsp标签作用：替换jsp脚本，用于在jsp页面中执行java代码
 jsp标签分类：
 
@@ -889,7 +889,7 @@ jsp标签分类：
 				静态包含： 先合并再翻译
 				动态包含： 先翻译再合并
 
-##7.9 JSTL标签
+## 7.9 JSTL标签
 使用JSTL标签步骤
 
 			1） 导入jstl支持的jar包（标签背后隐藏的java代码）
@@ -934,7 +934,7 @@ jsp标签分类：
 		重定向
           <c:redirect></c:redirect>
           
-##7.10 JavaBean
+## 7.10 JavaBean
 JavaBean就是一个普通的java类。只有符合以下规定才能称之为javabean：
 
 		  1）必须提供无参数的构造方法
@@ -952,7 +952,7 @@ JavaBean的使用场景：
 		3）jsp标签中的属性赋值。 setNum（Integer num）。符合javabean规范。
 		4）jsp页面中使用javabean。符合javabean规范
 				
-##7.11 web开发模式	
+## 7.11 web开发模式	
 MVC开发模式：
 						Model - JavaBean实现。用于封装业务数据
 						View - Jsp实现。用于显示数据
@@ -965,15 +965,15 @@ MVC开发模式：
 
 <br>
 # 第八章 ubuntu16 安装jdk
-##8.1  在官网下载linux版本的jdk（jdk-8u111-Linux-x64.tar.gz）
-##8.2 解压文件jdk-8u111-Linux-x64.tar.gz
+## 8.1  在官网下载linux版本的jdk（jdk-8u111-Linux-x64.tar.gz）
+## 8.2 解压文件jdk-8u111-Linux-x64.tar.gz
 sudo tar -zxvf jdk-8u111-linux-x64.tar.gz
 解压成功后可以看到该目录下多出了文件夹jdk1.8.0_111
 
 先在/usr/local下新建文件夹Java，然后将文件夹jdk1.8.0_111移动到目录/usr/local/java下
 sudo mv &nbsp;   jdk1.8.0_111  &nbsp;   /usr/local/java/
 <br>
-##8.3 配置 java环境
+## 8.3 配置 java环境
 配置系统环境变量，在全局配置文件/etc/profile下配置，即为所有用户配置Java环境。使用vim命令编辑/etc/profile文件，在文件底部加上四条配置信息。
 
 		export JAVA_HOME=/usr/local/java/jdk1.8.0_111    
@@ -985,7 +985,7 @@ sudo mv &nbsp;   jdk1.8.0_111  &nbsp;   /usr/local/java/
 source /etc/profile
 
 <br>
-##8.4 验证 java环境
+## 8.4 验证 java环境
 在shell中输入
 
 		 java
@@ -996,7 +996,7 @@ source /etc/profile
 # 第九章. ubuntu16 安装idea
  <br>
 ## 9.1  在官网下载linux版本的idea(ideaIU-2016.3.3-no-jdk.tar.gz)
-##9.2 解压文件ideaIU-2016.3.3-no-jdk.tar.gz
+## 9.2 解压文件ideaIU-2016.3.3-no-jdk.tar.gz
 sudo tar -zxvf ideaIU-2016.3.3-no-jdk.tar.gz
 解压成功后可以看到该目录下多出了文件夹 ideaIU-2016.3.3
 
@@ -1007,7 +1007,7 @@ sudo mv &nbsp;    ideaIU-2016.3.3  &nbsp;   /usr/local/Idea/
 
 <br>
 
-##9.3 如何激活idea
+## 9.3 如何激活idea
 将“0.0.0.0 account.jetbrains.com”及“0.0.0.0 www.jetbrains.com”添加到hosts文件中 
 
 输入http://idea.lanyus.com/网址，获取激活码
@@ -1222,7 +1222,7 @@ tag就是一个让人容易记住的有意义的名字，它跟某个commit绑�
 6.git push origin < tagname>
 推送某个标签到远程
 
-##11.10 删除github中某个文件夹
+## 11.10 删除github中某个文件夹
 在github上只能删除仓库,却无法删除文件夹或文件, 所以只能通过命令来解决
 1. git rm -r --cached target 
 	删除target文件夹
