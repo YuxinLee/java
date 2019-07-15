@@ -50,24 +50,26 @@ qemu-img info test.qcow2：查看磁盘信息
 #  第十三章 MySQL
 ## 13.1 数据库简单介绍
 1. 数据保存到内存：
-		优点：
-			1）读写非常快
-		缺点：
-		1）程序关闭导致数据丢失
+	优点：
+		1）读写非常快
+	缺点：
+	1）程序关闭导致数据丢失
 						
 2. 数据保存到文件：
-					优点：
-						1）数据可以永久保存
-					缺点：
-						1）频繁地IO操作，效率不高！
-						2）数据管理不方便。例如查询某个数据需要全部读取出来，再匹配。	
+
+	优点：
+		1）数据可以永久保存
+	缺点：
+		1）频繁地IO操作，效率不高！
+		2）数据管理不方便。例如查询某个数据需要全部读取出来，再匹配。	
 						
 3. 数据保存到数据库软件：
-					优点：
-						1）数据永久保存下来
-						2）数据管理非常方便。（例如查询非常快速和方便）	
+
+	优点：
+		1）数据永久保存下来
+		2）数据管理非常方便。（例如查询非常快速和方便）	
 						
-4. 市面上数据库软件
+4. 市面上数据库软件       
 																				  			（1）Oracle，甲骨文公司的产品。 当前最流行应用最广泛的数据库软件。和java语言兼容非常好。适合中大型，中大应用。
 
 	（2）SQL Server: 是微软公司的产品。window平台应用非常广泛。和c#，net平台兼容非常好。
@@ -82,10 +84,10 @@ qemu-img info test.qcow2：查看磁盘信息
 1. 	查询所有数据库
 show databases;
 
- information_schema  &emsp;    \-- mysql元数据，基础数据
- mysql         &emsp;  &emsp;   &emsp; &emsp;&emsp;&emsp;&emsp;   \--mysql配置数据库，其中包含用户信息。（用户名和密码，权限管理）
- performance_schema   &emsp;  \--mysql数据库软件的运行数据，日志信息，性能数据
- test     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;          &emsp;     \--测试数据库。空的
+ information_schema  &emsp;    \-- mysql元数据，基础数据       
+ mysql         &emsp;  &emsp;   &emsp; &emsp;&emsp;&emsp;&emsp;   \--mysql配置数据库，其中包含用户信息。（用户名和密码，权限管理）      
+ performance_schema   &emsp;  \--mysql数据库软件的运行数据，日志信息，性能数据       
+ test     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;          &emsp;     \--测试数据库。空的      
 
 2. 创建数据库
 create database database_name default character set utf8; -- 指定默认字符集创建数据库
@@ -117,7 +119,7 @@ desc table_name;
 5. 删除表
 drop table table_name;
 
-6. 修改表
+6. 修改表       
 (1) 添加字段
 alter table student add column sgender varchar(2);
 
@@ -674,36 +676,36 @@ systemctl status firewalld
 
 # 第十五章 JDBC
 ## 15.1 JDBC接口核心的API
-			|- Driver接口： 表示java驱动程序接口。所有的具体的数据库厂商要来实现此接口。
-				connect(url, properties):  连接数据库的方法。
-						url: 连接数据库的URL 
-							URL语法： jdbc协议:数据库子协议://主机:端口/数据库
-							user： 数据库的用户名
-							password： 数据库用户密码
-			|- DriverManager类： 驱动管理器类，用于管理所有注册的驱动程序
-				|-registerDriver(driver)  : 注册驱动类对象
-				|-Connection getConnection(url,user,password);  获取连接对象
+	|- Driver接口： 表示java驱动程序接口。所有的具体的数据库厂商要来实现此接口。
+		connect(url, properties):  连接数据库的方法。
+				url: 连接数据库的URL 
+					URL语法： jdbc协议:数据库子协议://主机:端口/数据库
+					user： 数据库的用户名
+					password： 数据库用户密码
+	|- DriverManager类： 驱动管理器类，用于管理所有注册的驱动程序
+		|-registerDriver(driver)  : 注册驱动类对象
+		|-Connection getConnection(url,user,password);  获取连接对象
 
-			|- Connection接口： 表示java程序和数据库的连接对象。
-					|- Statement createStatement() ： 创建Statement对象
-					|- PreparedStatement prepareStatement(String sql)  创建PreparedStatement对象
-					|- CallableStatement prepareCall(String sql) 创建CallableStatement对象
+	|- Connection接口： 表示java程序和数据库的连接对象。
+			|- Statement createStatement() ： 创建Statement对象
+			|- PreparedStatement prepareStatement(String sql)  创建PreparedStatement对象
+			|- CallableStatement prepareCall(String sql) 创建CallableStatement对象
 
-			|- Statement接口： 用于执行静态的sql语句
-					|- int executeUpdate(String sql)  ： 执行静态的更新sql语句（DDL，DML）
-					|- ResultSet executeQuery(String sql)  ：执行的静态的查询sql语句（DQL）
+	|- Statement接口： 用于执行静态的sql语句
+			|- int executeUpdate(String sql)  ： 执行静态的更新sql语句（DDL，DML）
+			|- ResultSet executeQuery(String sql)  ：执行的静态的查询sql语句（DQL）
 
-				|-PreparedStatement接口：用于执行预编译sql语句
-						|- int executeUpdate() ： 执行预编译的更新sql语句（DDL，DML）
-						|-ResultSet executeQuery()  ： 执行预编译的查询sql语句（DQL）
+		|-PreparedStatement接口：用于执行预编译sql语句
+				|- int executeUpdate() ： 执行预编译的更新sql语句（DDL，DML）
+				|-ResultSet executeQuery()  ： 执行预编译的查询sql语句（DQL）
 
-					|-CallableStatement接口：用于执行存储过程的sql语句（call xxx）
-							|-ResultSet executeQuery()  ： 调用存储过程的方法
+			|-CallableStatement接口：用于执行存储过程的sql语句（call xxx）
+					|-ResultSet executeQuery()  ： 调用存储过程的方法
 
 
-			|- ResultSet接口：用于封装查询出来的数据
-					|- boolean next() ： 将光标移动到下一行
-					|-getXX() : 获取列的值
+	|- ResultSet接口：用于封装查询出来的数据
+			|- boolean next() ： 将光标移动到下一行
+			|-getXX() : 获取列的值
 
 ## 15.2 使用Statement执行sql语句
 		/**
@@ -901,11 +903,12 @@ systemctl status firewalld
 	
 <br>
 
-PreparedStatement vs Statment
-		1）语法不同：PreparedStatement可以使用预编译的sql，而Statment只能使用静态的sql
-		2）效率不同： PreparedStatement可以使用sql缓存区，效率比Statment高
-		3）安全性不同： PreparedStatement可以有效防止sql注入，而Statment不能防止sql注入。
-		推荐使用PreparedStatement
+PreparedStatement vs Statment      
+
+	1）语法不同：PreparedStatement可以使用预编译的sql，而Statment只能使用静态的sql
+	2）效率不同： PreparedStatement可以使用sql缓存区，效率比Statment高
+	3）安全性不同： PreparedStatement可以有效防止sql注入，而Statment不能防止sql注入。
+	推荐使用PreparedStatement
 
 
 

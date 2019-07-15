@@ -10,10 +10,11 @@ B/S (Broswer -Server 浏览器端- 服务器端)
 &nbsp; &nbsp;&nbsp;&nbsp;		(1) 不需要安装特定的客户端(只需要安装浏览器即可)   
 &nbsp; &nbsp;&nbsp;&nbsp;		(2) 服务器端升级,浏览器不需要升级
 
-
 <br>
+
 ## 1.2 Tomcat 基本使用
 ### 1.2.1 运行 tomcat
+
 &nbsp; &nbsp; a) 找到%tomcat%/bin/startup.bat， 双击这个文件   
 &nbsp; &nbsp; b) 弹出窗口，显示信息(不要关闭此窗口)    
 &nbsp; &nbsp; c) 打开浏览器，输入地址(http://localhost.8080)   
@@ -63,7 +64,7 @@ Servlet手动编写步骤：
 ## 1.4 idea开发servlet
 &emsp;&emsp; 1. 创建web项目， 添加Tomcat   
 &emsp;&emsp; 2. 编写servlet文件    
-&emsp;&emsp; 3. 部署servlet文件（两种方式）
+&emsp;&emsp; 3. 部署servlet文件（两种方式）    
 &emsp;&emsp;	(1) 在web.xml文件的<web-app>标签中添加如下内容：  
 	 
 		 <servlet>  
@@ -328,8 +329,8 @@ HttpServletResponse对象修改响应信息：
    注意：
    1. url-pattern要么以 / 开头，要么以\*开头。  例如， itcast是非法路径。
    2.  不能同时使用两种模糊匹配，例如 /itcast/*.do是非法路径
-   3. 当有输入的URL有多个servlet同时被匹配的情况下：
-  &emsp;&emsp;   精确匹配优先。（长的最像优先被匹配）
+   3. 当有输入的URL有多个servlet同时被匹配的情况下：    
+  &emsp;&emsp;   精确匹配优先。（长的最像优先被匹配）        
   &emsp;&emsp;   以后缀名结尾的模糊url-pattern优先级最低！！！
   
 ## 4.3 Servlet缺省路径
@@ -352,9 +353,9 @@ Servlet程序的生命周期由tomcat服务器控制的！！！！
 		3. service方法： 每次发出请求时调用。调用n次。
 		4. destroy方法： 销毁servlet对象的时候调用。停止服务器或者重新部署web应用时销毁servlet对象。只调用1次。
 ### 4.4.2 伪代码演示Servlet的生命周期
-Tomtcat内部代码运行：
-1.通过映射找到servlet-class的内容，字符串： gz.itcast.a_servlet.FirstServlet
-2.通过反射构造FirstServlet对象
+Tomtcat内部代码运行：       
+1.通过映射找到servlet-class的内容，字符串： gz.itcast.a_servlet.FirstServlet      
+2.通过反射构造FirstServlet对象      
  &emsp; 2.1 得到字节码对象
  
 		Class clazz = class.forName("gz.itcast.a_servlet.FirstServlet");
@@ -370,7 +371,7 @@ Tomtcat内部代码运行：
       
   		m.invoke(obj,config);             --2.servlet的init方法被调用
   		
-   4.创建request，response对象，通过反射调用service方法
+   4.创建request，response对象，通过反射调用service方法      
      &emsp;  4.1 得到方法对象
      
  			Methodm m =clazz.getDeclareMethod("service",HttpServletRequest.class,HttpServletResponse.class);
@@ -378,7 +379,7 @@ Tomtcat内部代码运行：
  &emsp;  4.2 调用方法
     
   			m.invoke(obj,request,response);  --3.servlet的service方法被调用
-5.当tomcat服务器停止或web应用重新部署，通过反射调用destroy方法
+5.当tomcat服务器停止或web应用重新部署，通过反射调用destroy方法       
        &emsp;  5.1 得到方法对象
        
     		 Method m = clazz.getDeclareMethod("destroy",null);
@@ -429,10 +430,10 @@ ServletConfig对象: 主要是用于加载servlet的初始化参数。在一个w
   
   ServletConfig的API：
   
-		1. 	java.lang.String getInitParameter(java.lang.String name)  根据参数名获取参数值
-		2. 	java.util.Enumeration getInitParameterNames()    获取所有参数
-		3. 	ServletContext getServletContext()     得到servlet上下文对象
-		4. 	java.lang.String getServletName()       得到servlet的名称
+		1. java.lang.String getInitParameter(java.lang.String name)  根据参数名获取参数值
+		2. java.util.Enumeration getInitParameterNames()    获取所有参数
+		3. ServletContext getServletContext()     得到servlet上下文对象
+		4. java.lang.String getServletName()       得到servlet的名称
 
 ## 4.8 ServletContext对象
 ServletContext对象 ,叫做Servlet的上下文对象。表示一个当前的web应用环境。一个web应用中只有一个ServletContext对象。
@@ -459,38 +460,38 @@ ServletContext对象 ,叫做Servlet的上下文对象。表示一个当前的web
 				SerlvetContext context = config.getServletContext();
 		}
 ### 4.8.2 ServletContext对象的核心API
-			java.lang.String getContextPath()   --得到当前web应用的路径，用在请求重定向的资源名称中
-			context.getRequestDispatcher("路径").forward(request,response);
-			等价于：request.getContextPath()
+		java.lang.String getContextPath()   --得到当前web应用的路径，用在请求重定向的资源名称中
+		context.getRequestDispatcher("路径").forward(request,response);
+		等价于：request.getContextPath()
 
-			java.lang.String getInitParameter(java.lang.String name)  --得到web应用的初始化参数（全局）
-			java.util.Enumeration getInitParameterNames()  
-			//web应用参数可以让当前web应用的所有servlet获取！！！
+		java.lang.String getInitParameter(java.lang.String name)  --得到web应用的初始化参数（全局）
+		java.util.Enumeration getInitParameterNames()  
+		//web应用参数可以让当前web应用的所有servlet获取！！！
 
-			void setAttribute(java.lang.String name, java.lang.Object object) --域对象有关的方法 保存数据
-			java.lang.Object getAttribute(java.lang.String name)   //获取数据
-			void removeAttribute(java.lang.String name)  //删除数据
+		void setAttribute(java.lang.String name, java.lang.Object object) --域对象有关的方法 保存数据
+		java.lang.Object getAttribute(java.lang.String name)   //获取数据
+		void removeAttribute(java.lang.String name)  //删除数据
 
-			context.getRequestDispatcher("路径").forward(request,response);  --转发（类似于重定向）
-			/*RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/GetDataServlet");
-		rd.forward(request, response);*/
-			等价于：request.getRequestDispacher("路径").forward(request,response);  
-			
-			转发和重定向的区别
-			1） 转发
-				a）地址栏不会改变
-				b）转发只能转发到当前web应用内的资源
-				c）可以在转发过程中，可以把数据保存到request域对象中
-				request.getRequestDispacher("路径").forward(request,response);  
-			2）重定向
-				a）地址栏会改变，变成重定向到地址。
-				b）重定向可以跳转到当前web应用，或其他web应用，甚至是外部域名网站。
-				c）不能再重定向的过程，把数据保存到request中。
-				response.sendRedirect("url")
-			结论： 如果要使用request域对象进行数据共享，只能用转发技术！！！
+		context.getRequestDispatcher("路径").forward(request,response);  --转发（类似于重定向）
+		/*RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/GetDataServlet");
+	rd.forward(request, response);*/
+		等价于：request.getRequestDispacher("路径").forward(request,response);  
+		
+		转发和重定向的区别
+		1） 转发
+			a）地址栏不会改变
+			b）转发只能转发到当前web应用内的资源
+			c）可以在转发过程中，可以把数据保存到request域对象中
+			request.getRequestDispacher("路径").forward(request,response);  
+		2）重定向
+			a）地址栏会改变，变成重定向到地址。
+			b）重定向可以跳转到当前web应用，或其他web应用，甚至是外部域名网站。
+			c）不能再重定向的过程，把数据保存到request中。
+			response.sendRedirect("url")
+		结论： 如果要使用request域对象进行数据共享，只能用转发技术！！！
 
-			java.lang.String getRealPath(java.lang.String path)     --得到web应用的资源文件
-			java.io.InputStream getResourceAsStream(java.lang.String path)  
+		java.lang.String getRealPath(java.lang.String path)     --得到web应用的资源文件
+		java.io.InputStream getResourceAsStream(java.lang.String path)  
 ## 4.9 Servlet有参数的init和无参的init方法
 有参数的init方法：该方法是servlet的生命周期方法，一定会被tomcat服务器调用，有参数的方法内部调用无参数的方法
 无参数的init方法：该方法是servlet的编写初始化代码的方法。是Sun公司设计出来专门给开发者进行覆盖，然后在里面编写servlet的初始逻辑代码的方法。
@@ -501,25 +502,25 @@ ServletContext对象 ,叫做Servlet的上下文对象。表示一个当前的web
 ## 5.1 Cookie技术：会话数据保存在浏览器客户端
 Cookie类：用于存储会话数据
 
-			1）构造Cookie对象
-				Cookie(java.lang.String name, java.lang.String value)
-			2）设置cookie
-				void setPath(java.lang.String uri)   ：设置cookie的有效访问路径
-				void setMaxAge(int expiry) ： 设置cookie的有效时间
-				void setValue(java.lang.String newValue) ：设置cookie的值
-			3）发送cookie到浏览器端保存
-				void response.addCookie(Cookie cookie)  : 发送cookie
-			4）服务器接收cookie
-				Cookie[] request.getCookies()  : 接收cookie
+	1）构造Cookie对象
+		Cookie(java.lang.String name, java.lang.String value)
+	2）设置cookie
+		void setPath(java.lang.String uri)   ：设置cookie的有效访问路径
+		void setMaxAge(int expiry) ： 设置cookie的有效时间
+		void setValue(java.lang.String newValue) ：设置cookie的值
+	3）发送cookie到浏览器端保存
+		void response.addCookie(Cookie cookie)  : 发送cookie
+	4）服务器接收cookie
+		Cookie[] request.getCookies()  : 接收cookie
 					
 ## 5.2  Cookie原理
 1. 服务器创建cookie对象，把会话数据存储到cookie对象中。
 
-		new Cookie("name","value");
+	new Cookie("name","value");
 
 2. 服务器发送cookie信息到浏览器
 
-		response.addCookie(cookie);
+	response.addCookie(cookie);
 举例： set-cookie: name=eric  (隐藏发送了一个set-cookie名称的响应头)
 
 3. 浏览器得到服务器发送的cookie，然后保存在浏览器端。
@@ -529,7 +530,7 @@ Cookie类：用于存储会话数据
 
 5. 服务器接收到浏览器带来的cookie信息
 
-		request.getCookies();
+	request.getCookies();
 
 ## 5.3 Cookie的细节
 1. void setPath(java.lang.String uri)   ：设置cookie的有效访问路径。有效路径指的是cookie的有效路径保存在哪里，那么浏览器在有效路径下访问服务器时就会带着cookie信息，否则不带cookie信息。
@@ -538,9 +539,9 @@ Cookie类：用于存储会话数据
 2. void setMaxAge(int expiry) ： 设置cookie的有效时间。
 正整数：表示cookie数据保存浏览器的缓存目录（硬盘中），数值表示保存的时间。
 负整数：表示cookie数据保存浏览器的内存中。浏览器关闭cookie就丢失了！！
-零：表示删除同名的cookie数据
-Cookie cookie = new Cookie("name","xxxx");
-		cookie.setMaxAge(0);//删除同名的cookie
+零：表示删除同名的cookie数据    
+	Cookie cookie = new Cookie("name","xxxx");    
+	cookie.setMaxAge(0);//删除同名的cookie
 
 3. Cookie数据类型只能保存非中文字符串类型的。可以保存多个cookie，但是浏览器一般只允许存放300个Cookie，每个站点最多存放20个Cookie，每个Cookie的大小限制为4KB。
 
@@ -551,71 +552,71 @@ Session特点：会话数据保存在服务器端。（内存中）
 
 HttpSession类：用于保存会话数据
 
-			1）创建或得到session对象
-				HttpSession getSession()  
-				HttpSession getSession(boolean create)  
-			2）设置session对象
-				void setMaxInactiveInterval(int interval)  ： 设置session的有效时间
-				void invalidate()     ： 销毁session对象
-				java.lang.String getId()  ： 得到session编号
-			3）保存会话数据到session对象
-				void setAttribute(java.lang.String name, java.lang.Object value)  ： 保存数据
-				java.lang.Object getAttribute(java.lang.String name)  ： 获取数据
-				void removeAttribute(java.lang.String name) ： 清除数据
+	1）创建或得到session对象
+		HttpSession getSession()  
+		HttpSession getSession(boolean create)  
+	2）设置session对象
+		void setMaxInactiveInterval(int interval)  ： 设置session的有效时间
+		void invalidate()     ： 销毁session对象
+		java.lang.String getId()  ： 得到session编号
+	3）保存会话数据到session对象
+		void setAttribute(java.lang.String name, java.lang.Object value)  ： 保存数据
+		java.lang.Object getAttribute(java.lang.String name)  ： 获取数据
+		void removeAttribute(java.lang.String name) ： 清除数据
 
 ## 6.2 Session原理
 问题： 服务器能够识别不同的浏览者！！！
 前提： 在哪个session域对象保存数据，就必须从哪个域对象取出！！！！
 
-			浏览器1：(给s1分配一个唯一的标记：s001,把s001发送给浏览器)
-					1）创建session对象，保存会话数据
-							HttpSession session = request.getSession();   --保存会话数据 s1
-			浏览器1	的新窗口（带着s001的标记到服务器查询，s001->s1,返回s1）	
-					1）得到session对象的会话数据
-						    HttpSession session = request.getSession();   --可以取出  s1
+	浏览器1：(给s1分配一个唯一的标记：s001,把s001发送给浏览器)
+			1）创建session对象，保存会话数据
+					HttpSession session = request.getSession();   --保存会话数据 s1
+	浏览器1	的新窗口（带着s001的标记到服务器查询，s001->s1,返回s1）	
+			1）得到session对象的会话数据
+				    HttpSession session = request.getSession();   --可以取出  s1
 
-			新的浏览器1：(没有带s001,不能返回s1)
-					1）得到session对象的会话数据
-						    HttpSession session = request.getSession();   --不可以取出  s2
+	新的浏览器1：(没有带s001,不能返回s1)
+			1）得到session对象的会话数据
+				    HttpSession session = request.getSession();   --不可以取出  s2
 
-			浏览器2：(没有带s001,不能返回s1)
-					1）得到session对象的会话数据
-						    HttpSession session = request.getSession();  --不可以取出  s3
-						    
+	浏览器2：(没有带s001,不能返回s1)
+	1）得到session对象的会话数据
+		    HttpSession session = request.getSession();  --不可以取出  s3
+				    
 代码解读：HttpSession session = request.getSession();
-				
-			1）第一次访问创建session对象，给session对象分配一个唯一的ID，叫JSESSIONID
-					new HttpSession();
-			2）把JSESSIONID作为Cookie的值发送给浏览器保存
-					Cookie cookie = new Cookie("JSESSIONID", sessionID);
-					response.addCookie(cookie);
-			3）第二次访问的时候，浏览器带着JSESSIONID的cookie访问服务器
-			4）服务器得到JSESSIONID，在服务器的内存中搜索是否存放对应编号的session对象。
-					if(找到){
-						return map.get(sessionID);
-					}
-					Map<String,HttpSession>]
+		
+	1）第一次访问创建session对象，给session对象分配一个唯一的ID，叫JSESSIONID
+			new HttpSession();
+	2）把JSESSIONID作为Cookie的值发送给浏览器保存
+			Cookie cookie = new Cookie("JSESSIONID", sessionID);
+			response.addCookie(cookie);
+	3）第二次访问的时候，浏览器带着JSESSIONID的cookie访问服务器
+	4）服务器得到JSESSIONID，在服务器的内存中搜索是否存放对应编号的session对象。
+			if(找到){
+				return map.get(sessionID);
+			}
+			Map<String,HttpSession>]
 
 
-					<"s001", s1>
-					<"s001,"s2>
-			5）如果找到对应编号的session对象，直接返回该对象
-			6）如果找不到对应编号的session对象，创建新的session对象，继续走1的流程
-	
-			结论：通过JSESSION的cookie值在服务器找session对象！！！！！
+			<"s001", s1>
+			<"s001,"s2>
+	5）如果找到对应编号的session对象，直接返回该对象
+	6）如果找不到对应编号的session对象，创建新的session对象，继续走1的流程
+
+	结论：通过JSESSION的cookie值在服务器找session对象！！！！！
 
 
 ## 6.3 Session细节
-			1）java.lang.String getId()  ： 得到session编号
-			2）两个getSession方法：
-					getSession(true) / getSession()  : 创建或得到session对象。没有匹配的session编号，自动创建新的session对象。
-					getSession(false):              得到session对象。没有匹配的session编号，返回null
-			3）void setMaxInactiveInterval(int interval)  ： 设置session的有效时间
-						session对象销毁时间：
-							3.1 默认情况30分服务器自动回收
-							3.2 修改session回收时间
-							3.3 全局修改session有效时间
-							
+	1）java.lang.String getId()  ： 得到session编号
+	2）两个getSession方法：
+			getSession(true) / getSession()  : 创建或得到session对象。没有匹配的session编号，自动创建新的session对象。
+			getSession(false):              得到session对象。没有匹配的session编号，返回null
+	3）void setMaxInactiveInterval(int interval)  ： 设置session的有效时间
+				session对象销毁时间：
+					3.1 默认情况30分服务器自动回收
+					3.2 修改session回收时间
+					3.3 全局修改session有效时间
+						
 	<!-- 修改session全局有效时间:分钟 -->
 	<session-config>
 		<session-timeout>1</session-timeout>
@@ -630,53 +631,56 @@ HttpSession类：用于保存会话数据
 
 # 第七章 JSP
 ## 7.1 JSP特点
-Servlet的作用： 用java语言开发动态资源的技术！！！
-Jsp的作用：用java语言（+html语言）开发动态资源的技术，Jsp就是servlet！！！（继承自Servlet）
+Servlet的作用： 用java语言开发动态资源的技术！！！     
+Jsp的作用：用java语言（+html语言）开发动态资源的技术，Jsp就是servlet！！！（继承自Servlet）     
 
 JSP的特点：
-		1）jsp的运行必须交给tomcat服务器！！！！
-				tomcat的work目录： tomcat服务器存放jsp运行时的临时文件
-		2）jsp页面既可以写html代码，也可以写java代码。
-				（html页面不能写java代码 。而jsp页面可以写java代码）
+
+	1）jsp的运行必须交给tomcat服务器！！！！
+			tomcat的work目录： tomcat服务器存放jsp运行时的临时文件
+	2）jsp页面既可以写html代码，也可以写java代码。
+			（html页面不能写java代码 。而jsp页面可以写java代码）
 				
 ## 7.2 JSP的执行过程
 问题： 访问http://localhost:8080/day12/01.hello.jsp  如何显示效果？
 
-			1）访问到01.hello.jsp页面，tomcat扫描到jsp文件，在%tomcat%/work把jsp文件翻译成java源文件
-						(01.hello.jsp   ->   _01_hello_jsp.java) （翻译）
-			2）tomcat服务器把java源文件编译成class字节码文件 （编译）
-					（_01_hello_jsp.java  ->  _01_hello_jsp.class）
-			3）tomcat服务器构造_01_hello_jsp类对象
-			4）tomcat服务器调用_01_hello_jsp类里面方法，返回内容显示到浏览器。
-				第一次访问jsp：
-				走（1）（2）（3）（4）
-				
-				第n次访问jsp：
-				走（4）
-				
-				注意：jsp文件修改了或jsp的临时文件被删除了，要重新走翻译（1）和编译（2）的过程
+	1）访问到01.hello.jsp页面，tomcat扫描到jsp文件，在%tomcat%/work把jsp文件翻译成java源文件
+				(01.hello.jsp   ->   _01_hello_jsp.java) （翻译）
+	2）tomcat服务器把java源文件编译成class字节码文件 （编译）
+			（_01_hello_jsp.java  ->  _01_hello_jsp.class）
+	3）tomcat服务器构造_01_hello_jsp类对象
+	4）tomcat服务器调用_01_hello_jsp类里面方法，返回内容显示到浏览器。
+		第一次访问jsp：
+		走（1）（2）（3）（4）
+		
+		第n次访问jsp：
+		走（4）
+		
+		注意：jsp文件修改了或jsp的临时文件被删除了，要重新走翻译（1）和编译（2）的过程
 				
 ## 7.3 Servlet和Jsp的生命周期对比
 Servlet的生命周期：
-					1）构造方法（第1次访问）
-					2）init方法（第1次访问）
-					3）service方法
-					4）destroy方法	
+
+	1）构造方法（第1次访问）
+	2）init方法（第1次访问）
+	3）service方法
+	4）destroy方法	
 					
 Jsp的生命周期
-					1）翻译： jsp->java文件
-					2）编译： java文件->class文件（servlet程序）
-					3）构造方法（第1次访问）
-					4）init方法（第1次访问）：_jspInit()
-					5）service方法：_jspService()
-					6）destroy方法：_jspDestroy()
+
+	1）翻译： jsp->java文件
+	2）编译： java文件->class文件（servlet程序）
+	3）构造方法（第1次访问）
+	4）init方法（第1次访问）：_jspInit()
+	5）service方法：_jspService()
+	6）destroy方法：_jspDestroy()
 					
 ## 7.4 JSP语法
 ### 7.4.1 JSP表达式
 语法：<%=变量或表达式%>
 作用： 向浏览器输出变量的值或表达式计算的结果
 注意：		
-	1）表达式的原理就是翻译成out.print(“变量” );通过该方法向浏览器写出内容
+	1）表达式的原理就是翻译成out.print(“变量” );通过该方法向浏览器写出内容      
 	2）表达式后面不需要带分号结束。
 	
 ### 7.4.2 JSP的脚本
@@ -699,204 +703,206 @@ Jsp的生命周期
 ## 7.5 Jsp的三大指令
 ### 7.5.1 include指令
 作用： 在当前页面用于包含其他页面
-语法： <%@include file="common/header.jsp"%>
-注意：
-1）原理是把被包含的页面（header.jsp）的内容翻译到包含页面(index.jsp)中,合并成翻译成一个java源文件，再编译运行！！，先合并再翻译，这种包含叫静态包含（源码包含）
-2）如果使用静态包含，被包含页面中不需要出现全局的html标签了！！！（如html、head、body）
+语法： <%@include file="common/header.jsp"%>     
+注意：      
+1）原理是把被包含的页面（header.jsp）的内容翻译到包含页面(index.jsp)中,合并成翻译成一个java源文件，再编译运行！，先合并再翻译，这种包含叫静态包含（源码包含）      
+2）如果使用静态包含，被包含页面中不需要出现全局的html标签了！（如html、head、body）
 
 ### 7.5.2 page指令
 作用： 告诉tomcat服务器如何翻译jsp文件
 
-				<%@ page 
-					language="java"   --告诉服务器使用什么动态语言来翻译jsp文件
-					import="java.util.*" --告诉服务器java文件使用什么包
-												导入包，多个包之间用逗号分割
-					pageEncoding="utf-8"  --告诉服务器使用什么编码翻译jsp文件成java文件（jsp->java文件）
-				 	contentType="text/html; charset=utf-8" 服务器发送浏览器的数据类型和内容编码（tomcat服务器->浏览器）
-						注意：在开发工具中，以后只需要设置pageEncoding即可解决中文乱码问题
-					errorPage="error.jsp":  指定当前jsp页面的错误处理页面。
-					isErrorPage="false"指定当前页面是否为错误处理页面。false，不是错误处理页面，则不能使用exception内置对象；true，是错误处理页面，可以使用exception内置对象。		
-					buffer="8kb":  jsp页面的缓存区大小。
-					session="true":  是否开启session功能。false，不能用session内置对象；true，可以使用session内置对象。
-					isELIgnored="false"： 是否忽略EL表达式。
-				%>
-	
-			 < !-- 全局错误处理页面配置 -->
-			  < error-page>
-			  	< error-code>500</error-code>
-			  	<location>/common/500.jsp</location>
-			  </error-page>
-			  <error-page>
-			  	<error-code>404</error-code>
-			  	<location>/common/404.html</location>
-			  </error-page>
-		  
+	<%@ page 
+		language="java"   --告诉服务器使用什么动态语言来翻译jsp文件
+		import="java.util.*" --告诉服务器java文件使用什么包
+									导入包，多个包之间用逗号分割
+		pageEncoding="utf-8"  --告诉服务器使用什么编码翻译jsp文件成java文件（jsp->java文件）
+	 	contentType="text/html; charset=utf-8" 服务器发送浏览器的数据类型和内容编码（tomcat服务器->浏览器）
+			注意：在开发工具中，以后只需要设置pageEncoding即可解决中文乱码问题
+		errorPage="error.jsp":  指定当前jsp页面的错误处理页面。
+		isErrorPage="false"指定当前页面是否为错误处理页面。false，不是错误处理页面，则不能使用exception内置对象；true，是错误处理页面，可以使用exception内置对象。		
+		buffer="8kb":  jsp页面的缓存区大小。
+		session="true":  是否开启session功能。false，不能用session内置对象；true，可以使用session内置对象。
+		isELIgnored="false"： 是否忽略EL表达式。
+	%>
+
+	 < !-- 全局错误处理页面配置 -->
+	  < error-page>
+	  	< error-code>500</error-code>
+	  	<location>/common/500.jsp</location>
+	  </error-page>
+	  <error-page>
+	  	<error-code>404</error-code>
+	  	<location>/common/404.html</location>
+	  </error-page>
+
 ### 7.5.3 taglib指令
 
 ## 7.6 JSP的内置对象
 ### 7.6.1 什么是内置对象
-在jsp开发中，会频繁使用到一些对象。例如：HttpSession, ServletContext, ServletContext, HttpServletRequet。如果我们每次要使用这些对象都去创建这些对象就显的非常麻烦。所以Sun公司设计Jsp时，在jsp页面加载完毕之后就会自动帮开发者创建好这些对象，而开发者只需要直接使用这些对象调用方法即可！，这些创建好的对象就叫内置对象！！！！
+在jsp开发中，会频繁使用到一些对象。例如：HttpSession, ServletContext, ServletContext, HttpServletRequet。如果我们每次要使用这些对象都去创建这些对象就显的非常麻烦。所以Sun公司设计Jsp时，在jsp页面加载完毕之后就会自动帮开发者创建好这些对象，而开发者只需要直接使用这些对象调用方法即可！，这些创建好的对象就叫内置对象！      
 举例：
 
-					servlet: 
-							HttpSession session = request.getSession(true); （需要开发者做）
-				
-					jsp:
-						tomcat服务器：	HttpSession session = request.getSession(true);(不需要开发者做)
-						开发者做的： session.getId();
+	servlet: 
+			HttpSession session = request.getSession(true); （需要开发者做）
+
+	jsp:
+		tomcat服务器：	HttpSession session = request.getSession(true);(不需要开发者做)
+		开发者做的： session.getId();
 						
 ### 7.6.2 九大内置对象
-		内置对象名          	类型
-		request	   			HttpServletRequest
-		response      		HttpServletResponse
-		config        		ServletConfig
-		application       	ServletContext
-		session       		HttpSession
-		exception        	Throwable
-		page            	Object(this)
-		out             	JspWriter
-		pageContext    		PageContext 
+	内置对象名          	类型
+	request	   			HttpServletRequest
+	response      		HttpServletResponse
+	config        		ServletConfig
+	application       	ServletContext
+	session       		HttpSession
+	exception        	Throwable
+	page            	Object(this)
+	out             	JspWriter
+	pageContext    		PageContext 
 
 ### 7.6.3 Out对象
-		out对象类型，JspWriter类，相当于带缓存的PrintWriter
+	out对象类型，JspWriter类，相当于带缓存的PrintWriter
 
-					PrintWriter： 
-							wrier(内容)： 直接向浏览器写出内容。
+				PrintWriter： 
+						wrier(内容)： 直接向浏览器写出内容。
 
-					JspWriter
-							writer(内容): 向jsp缓冲区写出内容
+				JspWriter
+						writer(内容): 向jsp缓冲区写出内容
 
-				当满足以下条件之一，缓冲区内容写出：
-						1）缓冲区满了
-						2）刷新缓存区
-						3）关闭缓存区
-						4）执行完毕jsp页面
+			当满足以下条件之一，缓冲区内容写出：
+					1）缓冲区满了
+					2）刷新缓存区
+					3）关闭缓存区
+					4）执行完毕jsp页面
 						
 ### 7.6.4 pageContext对象
-		pageContext对象的类型是PageContext，它是jsp的上下文对象
-		1. 可以获取其他八个内置对象
+	pageContext对象的类型是PageContext，它是jsp的上下文对象
+	1. 可以获取其他八个内置对象
 
-			public class 01_hello_jsp {
-					public void _jspService(request,response){
-						创建内置对象
-						HttpSession session =....;
-						ServletConfig config = ....;
+		public class 01_hello_jsp {
+				public void _jspService(request,response){
+					创建内置对象
+					HttpSession session =....;
+					ServletConfig config = ....;
 
-						把8个经常使用的内置对象封装到PageContext对象中
-						PageContext pageContext  = 封装；
-						调用method1方法
-						method1(pageContext);
-					}
-					
-					public void method1(PageContext pageContext){
-						希望使用内置对象
-						从PageContext对象中获取其他8个内置对象
-						JspWriter out =pageContext.getOut();
-						HttpServletRequest rquest = 	pageContext.getRequest();
-						........
-					}
-			}
+					把8个经常使用的内置对象封装到PageContext对象中
+					PageContext pageContext  = 封装；
+					调用method1方法
+					method1(pageContext);
+				}
+				
+				public void method1(PageContext pageContext){
+					希望使用内置对象
+					从PageContext对象中获取其他8个内置对象
+					JspWriter out =pageContext.getOut();
+					HttpServletRequest rquest = 	pageContext.getRequest();
+					........
+				}
+		}
 
-				使用场景： 在自定义标签的时候，PageContext对象频繁使用到！！！
+			使用场景： 在自定义标签的时候，PageContext对象频繁使用到！！！
 
-		2. 保存数据
-					1）默认情况下，保存到page域
-							pageContext.setAttribute("name");
-					2）可以向四个域对象保存数据
-							pageContext.setAttribute("name",域范围常量)
-							
-		3. 获取数据
-					1）默认情况下，从page域获取
-							pageContext.getAttribute("name")
-					2）可以从四个域中获取数据
-							pageContext.getAttribute("name",域范围常量)
+	2. 保存数据
+				1）默认情况下，保存到page域
+						pageContext.setAttribute("name");
+				2）可以向四个域对象保存数据
+						pageContext.setAttribute("name",域范围常量)
+						
+	3. 获取数据
+				1）默认情况下，从page域获取
+						pageContext.getAttribute("name")
+				2）可以从四个域中获取数据
+						pageContext.getAttribute("name",域范围常量)
 
-						域范围常量:
-							PageContext.PAGE_SCOPE
-							PageContext.REQUEST_SCOPE
-							PageContext..SESSION_SCOPE
-							PageContext.APPLICATION_SCOPE
-					3）自动在四个域中搜索数据
-							pageContext.findAttribute("name");
-						顺序： page域 -> request域 -> session域- > context域（application域）
+					域范围常量:
+						PageContext.PAGE_SCOPE
+						PageContext.REQUEST_SCOPE
+						PageContext..SESSION_SCOPE
+						PageContext.APPLICATION_SCOPE
+				3）自动在四个域中搜索数据
+						pageContext.findAttribute("name");
+					顺序： page域 -> request域 -> session域- > context域（application域）
 						
 ### 7.6.5 Jsp中的四个域对象
 四个域对象：
-					pageContext      page域				
-					request          request域
-					session          session域
-					application       context域
+
+	pageContext      page域				
+	request          request域
+	session          session域
+	application       context域
 					
-1）域对象作用：
-					保存数据  和 获取数据 ，用于数据共享。
+1）域对象作用：保存数据  和 获取数据 ，用于数据共享。
 					
 2）域对象方法：
-					setAttribute("name",Object) 保存数据
-					getAttribute("name")  获取数据
-					removeAttribute("name") 清除数据
+
+	setAttribute("name",Object) 保存数据
+	getAttribute("name")  获取数据
+	removeAttribute("name") 清除数据
 					
 3）域对象作用范围：
-					page域： 只能在当前jsp页面中使用（当前页面）
-					request域： 只能在同一个请求中使用（转发）
-					session域： 只能在同一个会话（session对象）中使用（私有的）
-				      	context域： 只能在同一个web应用中使用。（全局的）
+
+	page域： 只能在当前jsp页面中使用（当前页面）
+	request域： 只能在同一个请求中使用（转发）
+	session域： 只能在同一个会话（session对象）中使用（私有的）
+      	context域： 只能在同一个web应用中使用。（全局的）
 
 ## 7.7 EL表达式
 使用EL表达式替换掉jsp表达式，EL表达式作用： 向浏览器输出域对象中的变量值或表达式计算的结果！
 
-		语法：
-			${变量}
-			输出普通字符串： ${name}
-			输出对象属性：  ${student.name}  注意： .name 相当于  .getName（）方法
-			输出List集合：   ${list[0].name }   注意： [0]  相当于 get（下标）方法
-			输出map集合：  ${map[key].name}  注意：　［key］相当于get（key）方法
+	语法：
+	${变量}
+	输出普通字符串： ${name}
+	输出对象属性：  ${student.name}  注意： .name 相当于  .getName（）方法
+	输出List集合：   ${list[0].name }   注意： [0]  相当于 get（下标）方法
+	输出map集合：  ${map[key].name}  注意：　［key］相当于get（key）方法
 
 输出基本数据类型变量：
 
-			1.  从四个域获取
-				${name}
-			2.  指定域获取
-				${pageScope.name}
-                    域范围： pageScoep / requestScope / sessionScope / applicationScope
+	1.  从四个域获取
+		${name}
+	2.  指定域获取
+		${pageScope.name}
+    域范围： pageScoep / requestScope / sessionScope / applicationScope
                     
 ## 7.8 jsp标签
 jsp标签作用：替换jsp脚本，用于在jsp页面中执行java代码
 jsp标签分类：
 
-			1）内置标签（动作标签）： 不需要在jsp页面导入标签
-			2）jstl标签： 需要在jsp页面中导入标签
-			3）自定义标签 ： 开发者自行定义，需要在jsp页面导入标签
+	1）内置标签（动作标签）： 不需要在jsp页面导入标签
+	2）jstl标签： 需要在jsp页面中导入标签
+	3）自定义标签 ： 开发者自行定义，需要在jsp页面导入标签
 				
 动作标签：
 
-			转发标签：	<jsp:forward /> request.getRequesetDipsacher("/路径").foward(request,response);
-    			参数标签：  <jsp:pararm/> 参数标签    ？name=eric
-			包含标签：  <jsp:include/> 包含其他页面 ，动态包含
-			原理： 包含与被包含的页面先各自翻译成java源文件，然后再运行时合并在一起。
-					（先翻译再合并），动态包含
+	转发标签：	<jsp:forward /> request.getRequesetDipsacher("/路径").foward(request,response);
+	参数标签：  <jsp:pararm/> 参数标签    ？name=eric
+	包含标签：  <jsp:include/> 包含其他页面 ，动态包含
+	原理： 包含与被包含的页面先各自翻译成java源文件，然后再运行时合并在一起。
+			（先翻译再合并），动态包含
 						
 静态包含  vs  动态包含的区别？
 
-				1） 语法不同
-				静态包含语法： <%@inclue file="被包含的页面"%>
-				动态包含语法：　<jsp:include page="被包含的页面">
+	1） 语法不同
+	静态包含语法： <%@inclue file="被包含的页面"%>
+	动态包含语法：　<jsp:include page="被包含的页面">
 
-				2）参数传递不同
-				静态包含不能向被包含页面传递参数
-				动态包含可以向被包含页面传递参数
-	
-				3）原理不同
-				静态包含： 先合并再翻译
-				动态包含： 先翻译再合并
+	2）参数传递不同
+	静态包含不能向被包含页面传递参数
+	动态包含可以向被包含页面传递参数
+
+	3）原理不同
+	静态包含： 先合并再翻译
+	动态包含： 先翻译再合并
 
 ## 7.9 JSTL标签
 使用JSTL标签步骤
 
-			1） 导入jstl支持的jar包（标签背后隐藏的java代码）
-					注意：使用javaee5.0的项目自动导入jstl支持jar包
-			2）使用taglib指令导入标签库 
-							<%@taglib uri="tld文件的uri名称" prefix="简写" %>
-			3）在jsp中使用标签		
+	1） 导入jstl支持的jar包（标签背后隐藏的java代码）
+			注意：使用javaee5.0的项目自动导入jstl支持jar包
+	2）使用taglib指令导入标签库 
+					<%@taglib uri="tld文件的uri名称" prefix="简写" %>
+	3）在jsp中使用标签		
 			
 核心标签库的重点标签：
 
@@ -937,66 +943,79 @@ jsp标签分类：
 ## 7.10 JavaBean
 JavaBean就是一个普通的java类。只有符合以下规定才能称之为javabean：
 
-		  1）必须提供无参数的构造方法
-		  2）类中属性都必须私有化(private)
-		  3）该类提供公开的getter 和 setter方法
+	  1）必须提供无参数的构造方法
+	  2）类中属性都必须私有化(private)
+	  3）该类提供公开的getter 和 setter方法
 			  
 JavaBean的作用： 用于封装数据，保存数据。
 
- 		  访问javabean只能使用getter和setter方法			  
+	  访问javabean只能使用getter和setter方法			  
 
 JavaBean的使用场景：
 
-		1）项目中用到实体对象（entity）符合javabean规范
-		2）EL表达式访问对象属性。${student.name}  调用getName()方法，符合javabean规范。
-		3）jsp标签中的属性赋值。 setNum（Integer num）。符合javabean规范。
-		4）jsp页面中使用javabean。符合javabean规范
+	1）项目中用到实体对象（entity）符合javabean规范
+	2）EL表达式访问对象属性。${student.name}  调用getName()方法，符合javabean规范。
+	3）jsp标签中的属性赋值。 setNum（Integer num）。符合javabean规范。
+	4）jsp页面中使用javabean。符合javabean规范
 				
 ## 7.11 web开发模式	
 MVC开发模式：
-						Model - JavaBean实现。用于封装业务数据
-						View - Jsp实现。用于显示数据
-						Controller-  servlet实现。用于控制model和view
+
+	Model - JavaBean实现。用于封装业务数据
+	View - Jsp实现。用于显示数据
+	Controller-  servlet实现。用于控制model和view
 						
 三层结构：
-						dao层： 和数据访问相关的操作
-						service层： 和业务逻辑相关的操作
-						web层： 和用户直接交互相关的操作（传接参数，跳转页面）
+
+	dao层： 和数据访问相关的操作
+	service层： 和业务逻辑相关的操作
+	web层： 和用户直接交互相关的操作（传接参数，跳转页面）
 
 <br>
+
 # 第八章 ubuntu16 安装jdk
+
 ## 8.1  在官网下载linux版本的jdk（jdk-8u111-Linux-x64.tar.gz）
+
 ## 8.2 解压文件jdk-8u111-Linux-x64.tar.gz
+
 sudo tar -zxvf jdk-8u111-linux-x64.tar.gz
 解压成功后可以看到该目录下多出了文件夹jdk1.8.0_111
 
 先在/usr/local下新建文件夹Java，然后将文件夹jdk1.8.0_111移动到目录/usr/local/java下
 sudo mv &nbsp;   jdk1.8.0_111  &nbsp;   /usr/local/java/
 <br>
+
 ## 8.3 配置 java环境
 配置系统环境变量，在全局配置文件/etc/profile下配置，即为所有用户配置Java环境。使用vim命令编辑/etc/profile文件，在文件底部加上四条配置信息。
 
-		export JAVA_HOME=/usr/local/java/jdk1.8.0_111    
-		export JRE_HOME=${JAVA_HOME}/jre     
-		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
-		export PATH=${JAVA_HOME}/bin:$PATH
+	export JAVA_HOME=/usr/local/java/jdk1.8.0_111    
+	export JRE_HOME=${JAVA_HOME}/jre     
+	export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+	export PATH=${JAVA_HOME}/bin:$PATH
 
 环境变量生效：
 source /etc/profile
 
 <br>
+
 ## 8.4 验证 java环境
 在shell中输入
 
-		 java
-		 javac
-		 java -version
+	 java
+	 javac
+	 java -version
  
  <br>
+ 
 # 第九章. ubuntu16 安装idea
+
  <br>
+ 
 ## 9.1  在官网下载linux版本的idea(ideaIU-2016.3.3-no-jdk.tar.gz)
+
 ## 9.2 解压文件ideaIU-2016.3.3-no-jdk.tar.gz
+
 sudo tar -zxvf ideaIU-2016.3.3-no-jdk.tar.gz
 解压成功后可以看到该目录下多出了文件夹 ideaIU-2016.3.3
 
@@ -1017,14 +1036,14 @@ sudo mv &nbsp;    ideaIU-2016.3.3  &nbsp;   /usr/local/Idea/
 在/home/username/桌面创建文件idea.desktop。
 在文件中添加
 
-		[Desktop Entry]
-		Name=IntelliJ IDEA
-		Comment=IntelliJ IDEA
-		Exec=/home/username/下载/idea-IU-183.6156.11/bin/idea.sh
-		Icon=/home/username/下载/idea-IU-183.6156.11/bin/idea.png
-		Terminal=false
-		Type=Application
-		Categories=Developer;
+	[Desktop Entry]
+	Name=IntelliJ IDEA
+	Comment=IntelliJ IDEA
+	Exec=/home/username/下载/idea-IU-183.6156.11/bin/idea.sh
+	Icon=/home/username/下载/idea-IU-183.6156.11/bin/idea.png
+	Terminal=false
+	Type=Application
+	Categories=Developer;
 
 然后chmod +x /home/username/idea.desktop
 此时桌面就有idea的快捷方式了
@@ -1044,17 +1063,18 @@ sudo mv &nbsp;   apache-tomcat-8.5.9 &nbsp;   /usr/local/tomcat/
 sudo chmod 755 -R tomcat
 
 <br>
+
 ## 10.3 配置tomcat环境
 1.进入目录/usr/local/tomcat/apache-tomcat-8.5.9/bin，编辑文件startup.sh，在最后一行之前加入如下信息：
 
-		# set java environment
-		export JAVA_HOME=/usr/java/jdk1.8.0_111
-		export JRE_HOME=${JAVA_HOME}/jre     
-		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
-		export PATH=${JAVA_HOME}/bin:$PATH
+	# set java environment
+	export JAVA_HOME=/usr/java/jdk1.8.0_111
+	export JRE_HOME=${JAVA_HOME}/jre     
+	export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+	export PATH=${JAVA_HOME}/bin:$PATH
 
-		# tomcat
-		export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
+	# tomcat
+	export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
 
 编辑完后保存退出，然后运行startup.sh
 sudo ./startup.sh
@@ -1063,14 +1083,14 @@ sudo ./startup.sh
 
 2.如果要关闭tomcat，类似的，需要先在文件shutdown.sh对应位置添加信息：
 
-		# set java environment
-		export JAVA_HOME=/usr/java/jdk1.8.0_111
-		export JRE_HOME=${JAVA_HOME}/jre     
-		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
-		export PATH=${JAVA_HOME}/bin:$PATH
+	# set java environment
+	export JAVA_HOME=/usr/java/jdk1.8.0_111
+	export JRE_HOME=${JAVA_HOME}/jre     
+	export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+	export PATH=${JAVA_HOME}/bin:$PATH
 
-		# tomcat
-		export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
+	# tomcat
+	export TOMCAT_HOME=/usr/tomcat/apache-tomcat-8.5.9
 
 然后执行如下命令即可：sudo ./shutdown.sh
 
@@ -1080,13 +1100,13 @@ sudo vi /etc/rc.local
 
 在最后一行之前加入如下信息：（配置你自己的tomcat的startup.sh文件的路径）
 
-		# set java environment
-		export JAVA_HOME=/usr/java/jdk1.8.0_111
-		export JRE_HOME=${JAVA_HOME}/jre     
-		export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
-		export PATH=${JAVA_HOME}/bin:$PATH
+	# set java environment
+	export JAVA_HOME=/usr/java/jdk1.8.0_111
+	export JRE_HOME=${JAVA_HOME}/jre     
+	export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib      
+	export PATH=${JAVA_HOME}/bin:$PATH
 
-		/usr/tomcat/apache-tomcat-8.5.9/bin/startup.sh
+	/usr/tomcat/apache-tomcat-8.5.9/bin/startup.sh
 <br>
 
 # 第十一章 git的使用
