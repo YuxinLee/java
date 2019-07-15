@@ -26,7 +26,7 @@
 
 ## 13.  [MySQL](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/JDBC)
 
-## 14.  [CentOS7下安装MySQL5.7安装与配置（YUM](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/JDBC)
+## 14.  [CentOS7下安装MySQL5.7安装与配置（YUM)](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/JDBC)
 
 ## 15.  [JDBC](https://github.com/YuxinLee/java/tree/master/JavaWeb学习/JDBC)
 
