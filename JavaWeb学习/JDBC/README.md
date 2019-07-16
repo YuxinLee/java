@@ -123,17 +123,17 @@ drop table table_name;
 (1) 添加字段
 alter table student add column sgender varchar(2);
 
-(2) 删除字段
-alter table student drop column sgender;
+	(2) 删除字段
+	alter table student drop column sgender;
 
-(3) 修改字段类型
-alter table student modify column remark varchar(100);
+	(3) 修改字段类型
+	alter table student modify column remark varchar(100);
 
-(4) 修改字段名称
-alter table student change column sgender gender varchar(2);
+	(4) 修改字段名称
+	alter table student change column sgender gender varchar(2);
 
-(5) 修改表名称
-alter table student rename to teacher;
+	(5) 修改表名称
+	alter table student rename to teacher;
 
 ## 13.4 增删改数据
 （1）插入所有字段。一定依次按顺序插入

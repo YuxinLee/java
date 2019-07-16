@@ -362,7 +362,7 @@ Tomtcat内部代码运行：
  &emsp; 2.2 调用无参数的构造方法来构造对象
  
 		Object obj = clazz.newInstance();     ---1.servlet的构造方法被调用
-  3.创建ServletConfig对象，通过反射调用init方法
+  3.创建ServletConfig对象，通过反射调用init方法     
    &emsp;  3.1 得到方法对象
    
    		Method m = clazz.getDeclareMethod("init",ServletConfig.class);
@@ -1049,8 +1049,11 @@ sudo mv &nbsp;    ideaIU-2016.3.3  &nbsp;   /usr/local/Idea/
 此时桌面就有idea的快捷方式了
 
 <br>
+
 # 第十章 ubuntu16 安装tomcat
+
  <br>
+ 
 ## 10.1  在官网下载linux版本的tomcat(apache-tomcat-8.5.9.tar.gz)
 ## 10.2 解压文件apache-tomcat-8.5.9.tar.gz
 sudo tar -zxvf apache-tomcat-8.5.9.tar.gz
