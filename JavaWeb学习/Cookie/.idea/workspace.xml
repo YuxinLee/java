@@ -7,6 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2312cc5b-407a-4610-8f0a-11f08241d626" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/JDBC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/Exceptiondemo/FinallyDemo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/ArrayListDemo.class" beforeDir="false" />
@@ -108,6 +112,8 @@
       <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/treadgroup/ThreadGroupDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/treadgroup/ThreadGroupDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify/StudentDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify2/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify2/StudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/wrapperdemo/IntegerDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/wrapper_learning/IntegerDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/wrapperdemo/IntegerDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/wrapper_learning/IntegerDemo2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
@@ -344,6 +350,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,8 +372,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,11 +505,13 @@
       <workItem from="1562979059904" duration="1948000" />
       <workItem from="1563065556402" duration="595000" />
       <workItem from="1563283023682" duration="595000" />
+      <workItem from="1563373016018" duration="595000" />
+      <workItem from="1563659690316" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46002000" />
+    <option name="totallyTimeSpent" value="47190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,15 +524,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-4" width="1920" height="1021" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60697675" visible="true" weight="0.19572192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6048387" visible="true" weight="0.19978632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.39302325" side_tool="true" visible="true" weight="0.19572192" />
+      <window_info id="Web" order="7" sideWeight="0.3951613" side_tool="true" visible="true" weight="0.19978632" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37096775" />

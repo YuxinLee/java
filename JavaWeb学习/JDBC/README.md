@@ -911,9 +911,66 @@ PreparedStatement vs Statment
 	推荐使用PreparedStatement
 
 
+## 15.4 批处理
+批处理相关方法
 
+	void addBatch(String sql)     添加批处理
+	void clearBatch()            清空批处理
+	int[] executeBatch()         执行批处理
 
+## 15.5 事务
+事务是指一组最小逻辑操作单元，里面有多个操作组成。 组成事务的每一部分必须要同时提交成功，如果有一个操作失败，整个操作就回滚。
 
+事务ACID特性
+
+	1. 原子性（Atomicity）
+		原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生。 
+		
+	2. 一致性（Consistency）
+		事务必须使数据库从一个一致性状态变换到另外一个一致性状态。
+		
+	3. 隔离性（Isolation）
+		事务的隔离性是多个用户并发访问数据库时，数据库为每一个用户开启的事务，不能被其他事务的操作数据所干扰，多个并发事务之间要相互隔离。
+		
+	4. 持久性（Durability）
+		持久性是指一个事务一旦被提交，它对数据库中数据的改变就是永久性的，接下来即使数据库发生故障也不应该对其有任何影响
+		
+事务的特性：
+
+	原子性，是一个最小逻辑操作单元 !
+	一致性，事务过程中，数据处于一致状态。
+	持久性， 事务一旦提交成功，对数据的更改会反映到数据库中。
+	隔离性， 事务与事务之间是隔离的。
+	
+事务API：
+
+	|-- Connection
+	void setAutoCommit(boolean autoCommit) ;  设置事务是否自动提交
+	如果设置为false，表示手动提交事务。默认为自动提交
+	void commit() ();						  手动提交事务
+	void rollback() ;						  回滚（出现异常时候，所有已经执行成功的代码需要回退到事务开始前的状态。）
+	Savepoint setSavepoint(String name) 
+<br>
+
+	
+# 第十六章 BeanUtils组件
+
+## 16.1 简介
+程序中对 javabean 的操作很频繁， 所以apache提供了一套开源的api，方便对javabean的操作！即BeanUtils组件。作用是简化javabean的操作！      
+
+使用BenUtils组件：      
+1. 引入commons-beanutils-1.8.3.jar核心包       
+2. 引入日志支持包: commons-logging-1.1.3.jar        
+
+## 16.2 基本方法
+	方法1： 对象属性的拷贝
+	BeanUtils.copyProperty(admin, "userName", "jack");
+	BeanUtils.setProperty(admin, "age", 18);
+	方法2： 对象的拷贝
+	BeanUtils.copyProperties(newAdmin, admin);
+	方法3： map数据拷贝到javabean中  
+	【注意：map中的key要与javabean的属性名称一致】
+	BeanUtils.populate(adminMap, map);
 
 
 
