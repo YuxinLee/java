@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0081177a-2f2a-46f6-be12-c6c4b215fcab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/antlr-2.7.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/hibernate3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/javassist-3.12.0.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/jta-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/mysql-connector-java-5.1.12-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/slf4j-api-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/Employee.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/App_ddl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/EmployeeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/IEmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/Employee.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/CompositeKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/JDBC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/ContactDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/impl/ContactDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/entity/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/exception/NameRepeatException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/impl/ContactServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/AddContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/DeleteContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/ListContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/QueryContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/UpdateContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/test/TestContactOperatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/c_callable/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/EmpDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/impl/AdminDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/exception/UserExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/servlet/AdminServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/basic_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/basic_learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/TryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/InetAddressDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ClientDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ServerDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/UploadClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/UploadServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/ReceiveDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/SendDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/ChatRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/ReceiveThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/SendThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/InetAddressDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/InetAddressDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo1/ClientDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ClientDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo2/ClientDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ServerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo1/ServerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ServerDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo2/ServerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/UploadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo5/UploadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/UploadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo5/UploadServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/ReceiveDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/demo1/ReceiveDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/SendDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/demo1/SendDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/ReceiveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/ReceiveThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/SendThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/SendThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/取消社团预约.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/道路修建.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/五人捕鱼.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/数转换为字符串.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/huawei/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jinritoutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qq/test/小Q的歌单.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yongyou/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/Y型排队.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/员工上车.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/zuoyebang/test/Main1.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mystruts2/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mystruts2/HelloAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mystruts2/DataAction.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mystruts2/DataAction_bak.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mystruts2/MyConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/mystruts/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/action/RegisterAction.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/bean/ActionMappingManager.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/bean/ActionMapping.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/bean/Result.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/framework/ActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/mystruts/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/mystruts2/HelloAction.java" />
+        <option value="$PROJECT_DIR$/src/mystruts2/struts.xml" />
+        <option value="$PROJECT_DIR$/src/mystruts2/DataAction.java" />
+        <option value="$PROJECT_DIR$/src/mystruts2/DataAction_bak.java" />
+        <option value="$PROJECT_DIR$/src/mystruts2/MyConverter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-198" />
+    <option name="y" value="24" />
+    <option name="width" value="1918" />
+    <option name="height" value="681" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="struts_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="struts_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="struts_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="struts_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="struts_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="struts_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569938881273" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/xwork-core-2.3.4.1.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mystruts2" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/struts_learning_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="struts_learning:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/struts_learning_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_struts_learning" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="36983" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="struts_learning:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0081177a-2f2a-46f6-be12-c6c4b215fcab" name="Default Changelist" comment="" />
+      <created>1569141689112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569141689112</updated>
+      <workItem from="1569141692309" duration="2920000" />
+      <workItem from="1569245454038" duration="3413000" />
+      <workItem from="1569591490604" duration="1485000" />
+      <workItem from="1569632922359" duration="905000" />
+      <workItem from="1569896803160" duration="849000" />
+      <workItem from="1570063195727" duration="605000" />
+      <workItem from="1570147709301" duration="971000" />
+      <workItem from="1570232768957" duration="1864000" />
+      <workItem from="1570353964238" duration="1192000" />
+      <workItem from="1570420252118" duration="1260000" />
+      <workItem from="1570626827130" duration="595000" />
+      <workItem from="1570713817899" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16657000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-11" width="1368" height="717" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25948405" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" visible="true" weight="0.06834532" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/service/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/bean/ActionMappingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/action/RegisterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/bean/ActionMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/bean/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/framework/ActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts2/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts2/HelloAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts2/DataAction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts2/DataAction_bak.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mystruts2/MyConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>struts_learning:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>dom4j-1.6.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>struts_learning</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

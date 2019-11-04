@@ -11,109 +11,51 @@
       <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JDBC/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/JDBC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JDBC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/ContactDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/impl/ContactDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/entity/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/exception/NameRepeatException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/impl/ContactServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/AddContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/DeleteContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/ListContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/QueryContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/UpdateContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/test/TestContactOperatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/c_callable/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/EmpDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/impl/AdminDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/exception/UserExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/servlet/AdminServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/util/JdbcUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/Exceptiondemo/FinallyDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/ArrayListDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/Student1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/collectiondemo/TreeSetDemo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/CopyFile/CopyFileDemo8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/file/FileDeleteDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/file/FilePathDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/inputstream/BufferedInputStreamDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/inputstream/FileInputStreamDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/BufferedOutputStreamDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/outputstream/FileOutputStreamDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/readerdemo/BufferedReaderDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/filedemo/writerdemo/BufferedWriterDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/reflect/ReflectDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/CallableDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/callable/MyCallable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/DieLockDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/dielock/MyLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/ExecutorsDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/executors/MyRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/lockdemo/SellTicketDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/synchronizeddemo/SellTicketDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyRunnableDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/MyThreadDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadDaemonDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadJoinDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadPriorityDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadSleepDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYield.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/threaddemo/ThreadYieldDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/MyTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/timer/TimerDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/MyRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/treadgroup/ThreadGroupDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/GetThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/SetThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify/StudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/GetThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/SetThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/thread/waitnotify2/StudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/wrapperdemo/IntegerDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/Exceptiondemo/FinallyDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/ArrayListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/ArrayListDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/collectiondemo/TreeSetDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/collection_learning/TreeSetDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/CopyFile/CopyFileDemo8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/CopyFile/CopyFileDemo8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FileDeleteDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FileDeleteDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/file/FilePathDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/file/FilePathDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/BufferedInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/BufferedInputStreamDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/inputstream/FileInputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/inputstream/FileInputStreamDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/BufferedOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/BufferedOutputStreamDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/outputstream/FileOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/outputstream/FileOutputStreamDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/readerdemo/BufferedReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/readerdemo/BufferedReaderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/filedemo/writerdemo/BufferedWriterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/IO_learning/writerdemo/BufferedWriterDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/reflect/ReflectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/reflect_learning/ReflectDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/callable/CallableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/callable/CallableDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/dielock/DieLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/dielock/DieLockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/executors/ExecutorsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/executors/ExecutorsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/lockdemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/lockdemo/SellTicketDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/synchronizeddemo/SellTicketDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/synchronized_demo/SellTicketDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyRunnableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyRunnableDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/MyThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/MyThreadDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadDaemonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadDaemonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadJoinDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadJoinDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadPriorityDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadPriorityDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadSleepDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadSleepDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/threaddemo/ThreadYieldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/threaddemo/ThreadYieldDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/timer/TimerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/timer/TimerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/treadgroup/ThreadGroupDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/treadgroup/ThreadGroupDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify/StudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/thread/waitnotify2/StudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/thread_learning/waitnotify2/StudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/wrapperdemo/IntegerDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/wrapper_learning/IntegerDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/wrapperdemo/IntegerDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/wrapper_learning/IntegerDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/TryTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
@@ -191,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/session_xml/servlet/AddContactServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="144">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -335,11 +277,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1366" />
-    <option name="y" value="-4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1021" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="681" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -507,11 +448,16 @@
       <workItem from="1563283023682" duration="595000" />
       <workItem from="1563373016018" duration="595000" />
       <workItem from="1563659690316" duration="593000" />
+      <workItem from="1564195538529" duration="599000" />
+      <workItem from="1564275874970" duration="595000" />
+      <workItem from="1564794963717" duration="597000" />
+      <workItem from="1564883390327" duration="597000" />
+      <workItem from="1565483570271" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47190000" />
+    <option name="totallyTimeSpent" value="50177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,17 +469,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="-4" width="1920" height="1021" extended-state="7" />
+    <frame x="0" y="-4" width="1366" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6048387" visible="true" weight="0.19978632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5971223" visible="true" weight="0.1828528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.3951613" side_tool="true" visible="true" weight="0.19978632" />
+      <window_info id="Web" order="7" sideWeight="0.4028777" side_tool="true" visible="true" weight="0.1828528" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37096775" />
@@ -861,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/session_xml/servlet/AddContactServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="144">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
       </provider>
     </entry>

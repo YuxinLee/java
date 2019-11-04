@@ -971,9 +971,67 @@ PreparedStatement vs Statment
 	方法3： map数据拷贝到javabean中  
 	【注意：map中的key要与javabean的属性名称一致】
 	BeanUtils.populate(adminMap, map);
+	
+## 16.3 元数据
+在jdbc中获取数据库的定义，例如：数据库、表、列的定义信息。就用到元数据。
+在jdbc中可以使用： 数据库元数据、参数元数据、结果集元数据
 
+1.数据库元数据
 
+	Connection.getDatabaseMetaData() 返回DataBaseMetaData对象
+		DataBaseMetaData对象
+			getURL()：返回一个String类对象，代表数据库的URL。
+			getUserName()：返回连接当前数据库管理系统的用户名。
+			getDatabaseProductName()：返回数据库的产品名称。
+			getDatabaseProductVersion()：返回数据库的版本号。
+			getDriverName()：返回驱动驱动程序的名称。
+			getDriverVersion()：返回驱动程序的版本号。
+			isReadOnly()：返回一个boolean值，指示数据库是否只允许读操作。
+			
+2.参数元数据			
 
+	PreparedStatement . getParameterMetaData()  :获得代表PreparedStatement元数据的ParameterMetaData对象。 
+		Select * from user where name=? And password=?
+		
+		ParameterMetaData对象
+			getParameterCount() :获得指定参数的个数
+			getParameterType(int param) :获得指定参数的sql类型
+		
+3.结果集元数据
+
+	ResultSet. getMetaData() :获得代表ResultSet对象元数据的ResultSetMetaData对象。 
+		ResultSetMetaData对象
+			getColumnCount() :返回resultset对象的列数
+			getColumnName(int column) :获得指定列的名称
+			 getColumnTypeName(int column):获得指定列的类型 
+			
+## 16.4 DbUtils组件
+commons-dbutils 是 Apache 组织提供的一个开源 JDBC工具类库，它是对JDBC的简单封装，学习成本极低，并且使用dbutils能极大简化jdbc编码的工作量，同时也不会影响程序的性能。因此dbutils成为很多不喜欢hibernate的公司的首选。
+
+DbUtils组件，
+1. 简化jdbc操作
+2. 下载组件，引入jar文件 : commons-dbutils-1.6.jar
+
+	|-- DbUtils   关闭资源、加载驱动
+	|-- QueryRunner   组件的核心工具类：定义了所有的与数据库操作的方法(查询、更新)
+	
+		int  update(Connection conn, String sql, Object param);   执行更新带一个占位符的sql
+		int  update(Connection conn, String sql, Object…  param); 执行更新带多个占位符的sql
+		int[]  batch(Connection conn, String sql, Object[][] params)        批处理
+		T  query(Connection conn ,String sql, ResultSetHandler<T> rsh, Object... params)   查询方法
+		
+	注意： 如果调用DbUtils组件的操作数据库方法，没有传入连接对象，那么在实例化QueryRunner对象的时候需要传入数据源对象： QueryRunner qr = new QueryRunner(ds);
+	int  update( String sql, Object param);  
+	int  update( String sql, Object…  param); 
+	int[]  batch( String sql, Object[][] params)     
+	
+		DbUtils提供的封装结果的一些对象：
+			1） BeanHandler: 查询返回单个对象
+			2） BeanListHandler: 查询返回list集合，集合元素是指定的对象
+			3)  ArrayHandler, 查询返回结果记录的第一行，封装对对象数组, 即返回：Object[]
+			4)  ArrayListHandler, 把查询的每一行都封装为对象数组，再添加到list集合中
+			5)  ScalarHandler 查询返回结果记录的第一行的第一列  (在聚合函数统计的时候用)
+			6)  MapHandler  查询返回结果的第一条记录封装为map
 
 
 

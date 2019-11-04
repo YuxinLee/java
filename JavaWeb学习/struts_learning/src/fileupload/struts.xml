@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 二、总配置文件：引入其他所有配置文件 -->
+	
+	<include file="constant.xml"></include>
+	<include file="cn/itcast/a_config/struts.xml"></include>
+	<include file="cn/itcast/b_config2/config.xml"></include>
+	<include file="cn/itcast/c_data/data.xml"></include>
+	<include file="cn/itcast/d_type/type.xml"></include>
+	<include file="cn/itcast/e_fileupload/upload.xml"></include>
+	
+</struts>

@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="495b8d13-d2f3-4a28-b3a8-823da4a1766d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/antlr-2.7.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/hibernate3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/javassist-3.12.0.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/jta-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/mysql-connector-java-5.1.12-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/lib/slf4j-api-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/Employee.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/a_hello/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/App_ddl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/EmployeeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/b_crud/IEmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/Employee.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/c_hbm_config/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/CompositeKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/d_compositeKey/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hibernate_learning/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/JDBC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/bean_utils/a_beans/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/ContactDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/dao/impl/ContactDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/entity/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/exception/NameRepeatException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/service/impl/ContactServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/AddContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/DeleteContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/ListContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/QueryContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/servlet/UpdateContactServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/test/TestContactOperatorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/contactSys_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/c_callable/JDBC_Demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/d_batch/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/EmpDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/e_auto/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/APP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/f_transaction/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/g_longtext/App_Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/jdbc_learning/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/dao/impl/AdminDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/exception/UserExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/servlet/AdminServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC/out/production/JDBC/register_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/basic_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/basic_learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/TryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/InetAddressDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ClientDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/ServerDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/UploadClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/tcpdemo/UploadServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/ReceiveDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/SendDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/ChatRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/ReceiveThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/network/udpdemo/chatdemo/SendThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/InetAddressDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/InetAddressDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo1/ClientDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ClientDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo2/ClientDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ServerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo1/ServerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/ServerDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo2/ServerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/UploadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo5/UploadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/tcpdemo/UploadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/tcpdemo/demo5/UploadServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/ReceiveDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/demo1/ReceiveDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/SendDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/demo1/SendDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/ReceiveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/ReceiveThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic_learning/src/base/network/udpdemo/chatdemo/SendThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/src/base/network_learning/udpdemo/chatdemo/SendThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/取消社团预约.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/道路修建.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/五人捕鱼.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/数转换为字符串.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/huawei/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jinritoutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qq/test/小Q的歌单.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yongyou/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/Y型排队.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/员工上车.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java-interview/src/zuoyebang/test/Main1.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/p_anno/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1272">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/p_anno/Dept.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/p_anno/DeptDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/p_anno/DeptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/p_anno/LogDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao_bak.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/entity/Dept.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/service/DeptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring_hibernate/junit/test/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/spring_struts/itcast/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/src/f_static/App.java" />
+        <option value="$PROJECT_DIR$/src/f_static/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/f_static/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/f_static/UserDaoProxy.java" />
+        <option value="$PROJECT_DIR$/src/b_dynamic/App.java" />
+        <option value="$PROJECT_DIR$/src/g_dynamic/App.java" />
+        <option value="$PROJECT_DIR$/src/g_dynamic/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/g_dynamic/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/g_dynamic/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/h_cglib/App.java" />
+        <option value="$PROJECT_DIR$/src/h_cglib/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/h_cglib/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/i_myaop/Aop.java" />
+        <option value="$PROJECT_DIR$/src/i_myaop/App.java" />
+        <option value="$PROJECT_DIR$/src/i_myaop/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/i_myaop/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/j_myaop1/Aop.java" />
+        <option value="$PROJECT_DIR$/src/j_myaop1/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/j_myaop1/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/j_myaop1/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/k_aop_anno/Aop.java" />
+        <option value="$PROJECT_DIR$/src/k_aop_anno/App.java" />
+        <option value="$PROJECT_DIR$/src/k_aop_anno/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/k_aop_anno/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/k_aop_anno/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/l_aop_xml/Aop.java" />
+        <option value="$PROJECT_DIR$/src/l_aop_xml/App.java" />
+        <option value="$PROJECT_DIR$/src/l_aop_xml/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/l_aop_xml/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/l_aop_xml/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/m_pointcut/Aop.java" />
+        <option value="$PROJECT_DIR$/src/m_pointcut/App.java" />
+        <option value="$PROJECT_DIR$/src/m_pointcut/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/m_pointcut/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/m_pointcut/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/n_jdbc/App.java" />
+        <option value="$PROJECT_DIR$/src/n_jdbc/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/n_jdbc/UserDao01.java" />
+        <option value="$PROJECT_DIR$/src/n_jdbc/UserDao02.java" />
+        <option value="$PROJECT_DIR$/src/o_tx/App.java" />
+        <option value="$PROJECT_DIR$/src/o_tx/DeptDao.java" />
+        <option value="$PROJECT_DIR$/src/o_tx/DeptService.java" />
+        <option value="$PROJECT_DIR$/src/p_anno/App.java" />
+        <option value="$PROJECT_DIR$/src/p_anno/DeptDao.java" />
+        <option value="$PROJECT_DIR$/src/p_anno/DeptService.java" />
+        <option value="$PROJECT_DIR$/src/p_anno/LogDao.java" />
+        <option value="$PROJECT_DIR$/src/spring_hibernate/junit/test/App.java" />
+        <option value="$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao.java" />
+        <option value="$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao_bak.java" />
+        <option value="$PROJECT_DIR$/src/spring_hibernate/cn/itcast/service/DeptService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="79" />
+    <option name="y" value="211" />
+    <option name="width" value="1366" />
+    <option name="height" value="645" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ssh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570962688031" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/spring_hibernate" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/src/spring_struts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="495b8d13-d2f3-4a28-b3a8-823da4a1766d" name="Default Changelist" comment="" />
+      <created>1570925417304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570925417304</updated>
+      <workItem from="1570925422159" duration="5944000" />
+      <workItem from="1571660286364" duration="599000" />
+      <workItem from="1572100610488" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6560000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="79" y="211" width="1366" height="645" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579666" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/f_static/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/f_static/UserDaoProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/g_dynamic/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/g_dynamic/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/g_dynamic/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/g_dynamic/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/h_cglib/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/h_cglib/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/h_cglib/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i_myaop/Aop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i_myaop/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i_myaop/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i_myaop/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j_myaop1/Aop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j_myaop1/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j_myaop1/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j_myaop1/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j_myaop1/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k_aop_anno/Aop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k_aop_anno/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k_aop_anno/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k_aop_anno/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k_aop_anno/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l_aop_xml/Aop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l_aop_xml/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l_aop_xml/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l_aop_xml/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l_aop_xml/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/m_pointcut/Aop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/m_pointcut/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/m_pointcut/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/m_pointcut/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/m_pointcut/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/n_jdbc/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/n_jdbc/Dept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/n_jdbc/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/n_jdbc/UserDao01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/n_jdbc/UserDao02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/o_tx/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/o_tx/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/o_tx/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p_anno/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p_anno/Dept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p_anno/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p_anno/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p_anno/LogDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/dao/DeptDao_bak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/entity/Dept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring_hibernate/junit/test/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring_hibernate/cn/itcast/service/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
