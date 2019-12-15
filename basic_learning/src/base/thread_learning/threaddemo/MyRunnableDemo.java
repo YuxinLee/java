@@ -1,4 +1,9 @@
 package base.thread_learning.threaddemo;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 /*
  * 方式2：实现Runnable接口
  * 步骤：
@@ -13,18 +18,72 @@ public class MyRunnableDemo {
         // Thread(Runnable target, String name)
         Thread t1 = new Thread(my, "线程1");
         Thread t2 = new Thread(my, "线程2");
+        Thread t3 = new Thread(my, "线程3");
 
         t1.start();
         t2.start();
+        t3.start();
     }
 }
 
 class MyRunnable implements Runnable{
+
+    private static Map<String, People> hashMap = new HashMap<>();
+
+    static {
+        hashMap.put("s1", new People("people1", 11));
+        hashMap.put("s2", new People("people2", 12));
+        hashMap.put("s3", new People("people3", 11));
+    }
+
+//    private static Iterator<Map.Entry<String, People>> iterator = hashMap.entrySet().iterator();
+//
     @Override
     public void run() {
-        for (int x = 0; x < 100; x++) {
-            // 由于实现接口的方式就不能直接使用Thread类的方法了,但是可以间接的使用
-            System.out.println(Thread.currentThread().getName() + ":" + x);
-        }
+        People p = hashMap.entrySet().iterator().next().getValue();
+        System.out.println(p);
+//        synchronized(this) {
+//            People p = iterator.next().getValue();
+//            System.out.println(p);
+//        }
+
     }
 }
+
+class People {
+    private String name;
+    private int age;
+
+    public People(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public People() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+

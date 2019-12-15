@@ -20,6 +20,10 @@ public class String_Demo1 {
         String s3 = s1 + "World";   //进行StringBuilder转换
         String s4 = s1 + s2;    //进行StringBuilder转换
         System.out.println(s3==s4); //false
+
+        String s = "*";
+        byte[] i = s.getBytes();
+
     }
 
 }
