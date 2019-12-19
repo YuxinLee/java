@@ -7,107 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1066873a-1754-48c5-b8a6-6d8b1f278c30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cookie/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JDBC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/bean_utils/a_beans/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/bean_utils/a_beans/App$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/bean_utils/a_beans/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/dao/ContactDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/dao/impl/ContactDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/entity/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/exception/NameRepeatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/service/ContactService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/service/impl/ContactServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/servlet/AddContactServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/servlet/DeleteContactServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/servlet/ListContactServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/servlet/QueryContactServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/servlet/UpdateContactServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/test/TestContactOperatorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/contactSys_jdbc/util/JdbcUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/a_statement/JDBC_Demo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/b_prepared/JDBC_Demo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/c_callable/JDBC_Demo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/d_batch/APP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/d_batch/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/d_batch/AdminDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/e_auto/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/e_auto/Dept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/e_auto/EmpDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/e_auto/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/f_transaction/APP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/f_transaction/AccountDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/g_longtext/App_Blob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/g_longtext/App_Text.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/jdbc_learning/util/JdbcUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/dao/AdminDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/dao/impl/AdminDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/exception/UserExistsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/service/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/servlet/AdminServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBC/register_jdbc/util/JdbcUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hibernate_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate_learning/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_learning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/Exception_Demo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../basic_learning/out/production/basic_learning/base/exception_learning/TryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java-interview/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/ali/test/Main9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/Main6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/取消社团预约.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/beike/test/道路修建.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/五人捕鱼.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/guanglianda/test/数转换为字符串.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/haoweilai/test/Main4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/huawei/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jindong/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/jinritoutiao/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/meituan/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qq/test/小Q的歌单.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/qunaer/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/shangtang/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/souhu/test/Main4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/toutiao/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/wangyi/test/Main6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yixin/test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yongyou/test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/Y型排队.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/yuanfudao/test/员工上车.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-interview/src/zuoyebang/test/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,25 +24,101 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_learning/i_metadata_test/BaseDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="999">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/Statement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1782">
+              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jdbc_learning/b_prepared/JDBC_Demo1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/PreparedStatement.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8775">
+              <caret line="364" column="17" selection-start-line="364" selection-start-column="17" selection-end-line="364" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55944">
+              <caret line="2164" selection-start-line="2164" selection-end-line="2164" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15525">
+              <caret line="622" selection-start-line="622" selection-end-line="622" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#22821#22822#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_learning/i_metadata_test/AdminDao.java">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/StatementImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="3726">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/DriverManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5508">
+              <caret line="235" column="29" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/dao/impl/ContactDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -203,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/jdbc_learning/j_dbUtils/App_Update.java" />
         <option value="$PROJECT_DIR$/src/jdbc_learning/j_dbUtils/App_Query.java" />
         <option value="$PROJECT_DIR$/src/register_jdbc/dao/impl/AdminDaoImpl2.java" />
+        <option value="$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java" />
       </list>
     </option>
   </component>
@@ -213,11 +198,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1722" />
-    <option name="y" value="24" />
-    <option name="width" value="1364" />
-    <option name="height" value="673" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1014" />
+    <option name="y" value="-12" />
+    <option name="width" value="918" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -228,7 +213,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +230,20 @@
               <item name="JDBC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="a_statement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="b_prepared" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
@@ -276,13 +274,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564848389538" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../basic_learning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -313,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.App.test3">
+  <component name="RunManager" selected="JUnit.JDBC_Demo1.testInsert">
     <configuration name="App.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JDBC" />
       <extension name="coverage">
@@ -362,6 +362,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDBC_Demo1.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc_learning.b_prepared.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdbc_learning.b_prepared" />
+      <option name="MAIN_CLASS_NAME" value="jdbc_learning.b_prepared.JDBC_Demo1" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestContactOperatorImpl.testAddContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JDBC" />
       <extension name="coverage">
@@ -373,22 +389,6 @@
       <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
       <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
       <option name="METHOD_NAME" value="testAddContact" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestContactOperatorImpl.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactSys_jdbc.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactSys_jdbc.test" />
-      <option name="MAIN_CLASS_NAME" value="contactSys_jdbc.test.TestContactOperatorImpl" />
-      <option name="METHOD_NAME" value="testFindAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -469,11 +469,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBC_Demo1.testInsert" />
         <item itemvalue="JUnit.App.test3" />
         <item itemvalue="JUnit.App.test2" />
         <item itemvalue="JUnit.App.test1" />
         <item itemvalue="JUnit.TestContactOperatorImpl.testAddContact" />
-        <item itemvalue="JUnit.TestContactOperatorImpl.testFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -500,16 +500,17 @@
       <workItem from="1564794977371" duration="8997000" />
       <workItem from="1564883405211" duration="3240000" />
       <workItem from="1565483587145" duration="671000" />
+      <workItem from="1575287482273" duration="2765000" />
+      <workItem from="1575344589077" duration="920000" />
+      <workItem from="1575424015203" duration="734000" />
+      <workItem from="1575774506771" duration="650000" />
+      <workItem from="1576376281567" duration="724000" />
+      <workItem from="1576659881835" duration="599000" />
+      <workItem from="1576718511573" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestContactOperatorImpl_testDeleteContact - 2019.07.13 at 15h 49m 10s.xml">
-      <configuration name="TestContactOperatorImpl.testDeleteContact" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestContactOperatorImpl_testDeleteContact - 2019.07.13 at 16h 36m 26s.xml">
-      <configuration name="TestContactOperatorImpl.testDeleteContact" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestContactOperatorImpl_testFindById - 2019.07.13 at 16h 59m 36s.xml">
       <configuration name="TestContactOperatorImpl.testFindById" configurationId="JUnit" />
     </history-entry>
@@ -534,25 +535,32 @@
     <history-entry file="App_test3 - 2019.07.21 at 15h 28m 25s.xml">
       <configuration name="App.test3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JDBC_Demo1_testInsert - 2019.12.02 at 20h 32m 44s.xml">
+      <configuration name="JDBC_Demo1.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBC_Demo1_testInsert - 2019.12.02 at 20h 38m 19s.xml">
+      <configuration name="JDBC_Demo1.testInsert" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77729000" />
+    <option name="totallyTimeSpent" value="84719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1722" y="24" width="1364" height="673" extended-state="0" />
+    <frame x="676" y="-8" width="612" height="696" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7192308" visible="true" weight="0.2879939" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70392156" visible="true" weight="0.22909091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.28076923" side_tool="true" visible="true" weight="0.2879939" />
+      <window_info id="Web" order="7" sideWeight="0.29607844" side_tool="true" visible="true" weight="0.22909091" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30875576" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30875576" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34521577" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -564,8 +572,9 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.19784173" />
+      <window_info anchor="bottom" id="JProfiler" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24979724" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -612,69 +621,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/AddContactServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/ListContactServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/listContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/QueryContactServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/updateContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/UpdateContactServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/servlet/DeleteContactServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/contactSys_jdbc/addContact.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -693,20 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1992">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-254">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/b_prepared/JDBC_Demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3254">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -941,13 +878,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_211/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="446" column="9" selection-start-line="446" selection-start-column="9" selection-end-line="446" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_211/src.zip!/java/sql/PreparedStatement.java" />
     <entry file="file://$PROJECT_DIR$/src/jdbc_learning/i_metadata_test/AdminDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1048,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jdbc_learning/i_metadata_test/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="507">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1058,8 +989,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jdbc_learning/i_metadata_test/AdminDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="729">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/a_statement/JDBC_Demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/b_prepared/JDBC_Demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8775">
+          <caret line="364" column="17" selection-start-line="364" selection-start-column="17" selection-end-line="364" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55944">
+          <caret line="2164" selection-start-line="2164" selection-end-line="2164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15525">
+          <caret line="622" selection-start-line="622" selection-end-line="622" />
+          <folding>
+            <element signature="e#22821#22822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar!/com/mysql/jdbc/StatementImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3726">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5508">
+          <caret line="235" column="29" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contactSys_jdbc/dao/impl/ContactDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>

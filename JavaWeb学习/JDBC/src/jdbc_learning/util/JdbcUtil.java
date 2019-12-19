@@ -18,7 +18,7 @@ public class JdbcUtil {
      * 信息可以在文件中读取
      */
     static {
-        url = "jdbc:mysql://192.168.122.246:3306/database_name";
+        url = "jdbc:mysql://192.168.127.128:3306/test";
         user = "root";
         password = "Passw0rd!";
         driverClass = "com.mysql.jdbc.Driver";

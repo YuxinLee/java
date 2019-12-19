@@ -34,7 +34,7 @@ Employee.java     对象
 
 	//一、 对象
 	public class Employee {
-
+	
 		private int empId;
 		private String empName;
 		private Date workDate;
@@ -47,7 +47,7 @@ Employee.hbm.xml  对象的映射
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.a_hello">
 	
 		<class name="Employee" table="employee">
@@ -62,15 +62,15 @@ Employee.hbm.xml  对象的映射
 			<property name="workDate" column="workDate"></property>
 		
 		</class>
-
-	</hibernate-mapping>
 	
+	</hibernate-mapping>
+
 hibernate.cfg.xml    主配置文件
 
 	<!DOCTYPE hibernate-configuration PUBLIC
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-
+	
 	<hibernate-configuration>
 		<session-factory>
 			<!-- 数据库连接配置 -->
@@ -86,11 +86,11 @@ hibernate.cfg.xml    主配置文件
 			<mapping resource="cn/itcast/a_hello/Employee.hbm.xml"/>
 		</session-factory>
 	</hibernate-configuration>
-	
+
 App.java   测试类
 
 	public class App {
-
+	
 		@Test
 		public void testHello() throws Exception {
 			// 对象
@@ -123,15 +123,15 @@ App.java   测试类
 							默认加载src/hibernate.cfg.xml
 		config.configure(“cn/config/hibernate.cfg.xml”);   加载指定路径下指定名称的主配置文件
 		config.buildSessionFactory();   创建session的工厂对象
-
+	
 	|-- SessionFactory     session的工厂（或者说代表了这个hibernate.cfg.xml配置文件）
 		sf.openSession();   创建一个sesison对象
 		sf.getCurrentSession();  创建session或取出session对象
-
+	
 	|--Session       session对象维护了一个连接(Connection), 代表了与数据库连接的会话。
 				   Hibernate最重要的对象： 只用使用hibernate与数据库操作，都用到这个对象
 			session.beginTransaction(); 开启一个事务； hibernate要求所有的与数据库的操作必须有事务的环境，否则报错！
-			
+
 
 	更新：
 		session.save(obj);   保存一个对象
@@ -140,18 +140,18 @@ App.java   测试类
 								没有设置主键，执行保存；
 								有设置主键，执行更新操作; 
 								如果设置主键不存在报错！
-
+	
 	主键查询：
 		session.get(Employee.class, 1);    主键查询
 		session.load(Employee.class, 1);   主键查询 (支持懒加载)
-		
+
 ## 21.4 三种查询方式
 
 1. HQL查询：
 	&emsp; HQL查询与SQL查询区别：
 		&emsp; &emsp; SQL: (结构化查询语句)查询的是表以及字段;  不区分大小写。
 		&emsp; &emsp; HQL: hibernate  query  language 即hibernate提供的面向对象的查询语言。查询的是对象以及对象的属性。区分大小写。
-		
+	
 2. Criteria查询：完全面向对象的查询。
 
 3. 本地SQL查询：复杂的查询，就要使用原生态的sql查询，也可以，就是本地sql查询的支持！
@@ -161,7 +161,7 @@ App.java   测试类
 根据主键查询：
 
 	public class EmployeeDaoImpl implements IEmployeeDao{
-
+	
 		@Override
 		public Employee findById(Serializable id) {
 			Session session = null;
@@ -200,7 +200,7 @@ App.java   测试类
 				session.close();
 			}
 		}
-		
+
 条件查询：
 			
 	@Override
@@ -309,16 +309,17 @@ App.java   测试类
 			}
 		}
 	}
-	
+
 ## 21.6 Hibernate.cfg.xml 主配置
 
-Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其他参数、映射信息！
+# # Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其他参数、映射信息！
+
 常用配置查看源码：hibernate-distribution-3.6.0.Final\project\etc\hibernate.properties
 
 数据库连接参数配置（MySQL）：
 
 	## MySQL
-
+	
 	#hibernate.dialect org.hibernate.dialect.MySQLDialect
 	#hibernate.dialect org.hibernate.dialect.MySQLInnoDBDialect
 	#hibernate.dialect org.hibernate.dialect.MySQLMyISAMDialect
@@ -326,21 +327,21 @@ Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其
 	#hibernate.connection.url jdbc:mysql:///test
 	#hibernate.connection.username gavin
 	#hibernate.connection.password
-	
+
 自动建表：
 
 	Hibernate.properties
-
+	
 	#hibernate.hbm2ddl.auto create-drop 每次在创建sessionFactory时候执行创建表；
 									当调用sesisonFactory的close方法的时候，删除表！
 	#hibernate.hbm2ddl.auto create   每次都重新建表； 如果表已经存在就先删除再创建
 	#hibernate.hbm2ddl.auto update  如果表不存在就创建； 表存在就不创建；
 	#hibernate.hbm2ddl.auto validate  (生成环境时候) 执行验证： 当映射文件的内容与数据库表结构不一样的时候就报错！
-	
+
 代码自动建表：
 
 	public class App_ddl {
-
+	
 		// 自动建表
 		@Test
 		public void testCreate() throws Exception {
@@ -382,7 +383,7 @@ Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其
 					  如：session.createQuery("from cn.itcast.c_hbm_config.Employee").list();
 	 -->
 	<hibernate-mapping package="cn.itcast.c_hbm_config" auto-import="true">
-
+	
 	<!-- 
 			class 映射某一个对象的(一般情况，一个对象写一个映射文件，即一个class节点)
 				name 指定要映射的对象的类型
@@ -425,10 +426,10 @@ Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其
 			<property name="desc" column="`desc`" type="java.lang.String"></property>
 		
 		</class>
-	
+
 
 	</hibernate-mapping>
-	
+
 ## 21.8 复合主键映射
 
 	// 复合主键类
@@ -437,9 +438,9 @@ Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其
 		private String address;
 	   // .. get/set
 	}
-
+	
 	public class User {
-
+	
 		// 名字跟地址，不会重复
 		private CompositeKeys keys;
 		private int age;
@@ -451,7 +452,7 @@ User.hbm.xml
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.d_compositeKey" auto-import="true">
 	
 		<class name="User">
@@ -464,10 +465,10 @@ User.hbm.xml
 		
 			<property name="age" type="int"></property>	
 			</class>
-	
+
 
 	</hibernate-mapping>
-	
+
 App.java
 
 	public class App2 {
@@ -522,18 +523,19 @@ App.java
 				System.out.println(user.getKeys().getAddress());
 				System.out.println(user.getAge());
 			}
-		
-		
-			tx.commit();
-			session.close();
-		}
-	}
+
+
+​		
+​			tx.commit();
+​			session.close();
+​		}
+​	}
 
 ## 21.9 集合映射
 
 	// javabean设计
 	public class User {
-
+	
 		private int userId;
 		private String userName;
 		// 一个用户，对应的多个地址
@@ -543,13 +545,14 @@ App.java
 		private Map<String,String> addressMap = new HashMap<String, String>();
 	
 	}
-	
-	
-	<?xml version="1.0"?>
-	<!DOCTYPE hibernate-mapping PUBLIC 
-		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
+
+​	
+​	<?xml version="1.0"?>
+​	<!DOCTYPE hibernate-mapping PUBLIC 
+​		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+​		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+​	
 	<hibernate-mapping package="cn.itcast.a_collection">
 	
 		<class name="User" table="t_user">
@@ -591,20 +594,22 @@ App.java
 			  	<map-key column="shortName" type="string" ></map-key>
 			  	<element column="address" type="string" ></element>
 			  </map>
-			  
-			 
-		</class>
-	
+
+
+​			 
+​		</class>
+
 
 	</hibernate-mapping>
-	
-	
-	// 保存set
-		@Test
-		public void testSaveSet() throws Exception {
-			Session session = sf.openSession();
-			session.beginTransaction();
-		
+
+
+​	
+​	// 保存set
+​		@Test
+​		public void testSaveSet() throws Exception {
+​			Session session = sf.openSession();
+​			session.beginTransaction();
+​		
 			//-- 保存
 			Set<String> addressSet = new HashSet<String>();
 			addressSet.add("广州");
@@ -644,31 +649,31 @@ App.java
 			session.getTransaction().commit();
 			session.close();
 		}
-		
+
 ## 21.10 关联映射
 
 	public class Dept {
-
+	
 		private int deptId;
 		private String deptName;
 		// 【一对多】 部门对应的多个员工
 		private Set<Employee> emps = new HashSet<Employee>();
 	
 	public class Employee {
-
+	
 		private int empId;
 		private String empName;
 		private double salary;
 		// 【多对一】员工与部门
 		private Dept dept;
-		
+
 Dept.hbm.xml
 
 	<?xml version="1.0"?>
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.b_one2Many">
 	
 		<class name="Dept" table="t_dept">
@@ -690,17 +695,17 @@ Dept.hbm.xml
 			 	 <one-to-many class="Employee"/>
 			 </set>
 			 </class>
-	
+
 
 	</hibernate-mapping>
-	
+
 Employee.hbm.xml
 
 	<?xml version="1.0"?>
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.b_one2Many">
 	
 		<class name="Employee" table="t_employee">
@@ -720,10 +725,10 @@ Employee.hbm.xml
 			 <many-to-one name="dept" column="dept_id" class="Dept"></many-to-one>
 			 
 		</class>
-	
+
 
 	</hibernate-mapping>
-	
+
 测试
 
 	public class App {
@@ -736,7 +741,7 @@ Employee.hbm.xml
 				.addClass(Employee.class)   // 测试时候使用
 				.buildSessionFactory();
 		}
-
+	
 		// 保存， 部门方 【一的一方法操作】
 		@Test
 		public void save() {
@@ -791,13 +796,14 @@ Employee.hbm.xml
 		// 关系
 		emp_zs.setDept(dept);
 		emp_ls.setDept(dept);
-		
-		
-		// 保存
-		session.save(dept); // 先保存一的方法
-		session.save(emp_zs);
-		session.save(emp_ls);// 再保存多的一方，关系回自动维护(映射配置完)
-		
+
+
+​		
+​		// 保存
+​		session.save(dept); // 先保存一的方法
+​		session.save(emp_zs);
+​		session.save(emp_ls);// 再保存多的一方，关系回自动维护(映射配置完)
+​		
 		session.getTransaction().commit();
 		session.close();
 		/*
@@ -810,7 +816,7 @@ Employee.hbm.xml
 		 	}
 	
 	}
-	
+
 ## 21.11 Inverse属性
 
 Inverse属性，是在维护关联关系的时候起作用的。表示控制权是否转移。(在一的一方起作用)
@@ -842,7 +848,7 @@ cascade  表示级联操作  【可以设置到一的一方或多的一方】
 	delete		  级联删除
 	save-update,delete    级联保存、更新、删除
 	all                 同上。级联保存、更新、删除
-	
+
 ## 21.13 多对多映射
 
 	/**
@@ -854,7 +860,7 @@ cascade  表示级联操作  【可以设置到一的一方或多的一方】
 		// 开发人员，参数的多个项目
 		private Set<Project> projects = new HashSet<Project>();
 	}
-
+	
 	/**
 	 * 项目
 	 */
@@ -863,14 +869,14 @@ cascade  表示级联操作  【可以设置到一的一方或多的一方】
 		private String prj_name;
 		// 项目下的多个员工
 		private Set<Developer> developers = new HashSet<Developer>();
-		
+
 Project.hbm.xml
 
 	<?xml version="1.0"?>
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.c_many2many">
 	
 		<class name="Project" table="t_project">
@@ -892,17 +898,17 @@ Project.hbm.xml
 			 </set>
 			 
 		</class>
-	
+
 
 	</hibernate-mapping>
-	
+
 Developer.hbm.xml
 
 	<?xml version="1.0"?>
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.c_many2many">
 	
 		<class name="Developer" table="t_developer">
@@ -924,13 +930,14 @@ Developer.hbm.xml
 				<key column="did"></key>
 				<many-to-many column="prjId" class="Project"></many-to-many>
 				</set>
-		
-			 
-		</class>
-	
+
+
+​			 
+​		</class>
+
 
 	</hibernate-mapping>
-	
+
 维护关联关系
 
 	设置inverse属性，在多对多种维护关联关系的影响？
@@ -940,7 +947,7 @@ Developer.hbm.xml
 		inverse=true,  没有控制权， 不会往中间表插入数据。
 	2） 获取数据
 		无。
-
+	
 	3） 解除关系
 		// 有影响。
 		// inverse=false ,有控制权， 解除关系就是删除中间表的数据。
@@ -973,7 +980,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 	1. session.flush();       让一级缓存与数据库同步
 	2. session.evict(arg0);    清空一级缓存中指定的对象
 	3. session.clear();       清空一级缓存中缓存的所有对象
-
+	
 	在什么情况用上面方法？
 			批量操作使用使用：
 				 Session.flush();   // 先与数据库同步
@@ -985,7 +992,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 		Session2.update(u1);     把u1放入session2的缓存
 		U1.setName(‘new Name’);
 		如果生成2条update sql， 说明不同的session使用不同的缓存区，不能共享。
-
+	
 	面试题2： list与iterator查询的区别？
 		list() 
 			一次把所有的记录都查询出来，
@@ -1001,7 +1008,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 	面试题3： get、load方法区别？
 		get: 及时加载，只要调用get方法立刻向数据库查询
 		load:默认使用懒加载，当用到数据的时候才向数据库查询。
-
+	
 	懒加载：(lazy)
 	概念：当用到数据的时候才向数据库查询，这就是hibernate的懒加载特性。
 			目的：提供程序执行效率！
@@ -1011,7 +1018,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 		extra   (在集合数据懒加载时候提升效率)
 	在真正使用数据的时候才向数据库发送查询的sql；
 	如果调用集合的size()/isEmpty()方法，只是统计，不真正查询数据！ 
-
+	
 		懒加载异常
 		Session关闭后，不能使用懒加载数据！
 		如果session关闭后，使用懒加载数据报错：
@@ -1024,12 +1031,12 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			// 方式3：关闭懒加载
 				设置lazy=false;
 			// 方式4： 在使用数据之后，再关闭session！ 
-			
+
 基于外键的映射
 
 	// 身份证
 	public class IdCard {
-
+	
 		// 身份证号(主键)
 		private String cardNum;// 对象唯一表示(Object Identified, OID)
 		private String place; //  身份证地址
@@ -1038,18 +1045,25 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 		
 	// 用户
 	public class User {
-
+	
 		private int userId;
 		private String userName;
 		// 用户与身份证信息， 一对一关系
 		private IdCard idCard;		
-	
-	
-			
-	<?xml version="1.0"?>
+
+
+​			
+​	
+
+```
+<?xml version="1.0"?>
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+```
+
+
+​	
 
 	<hibernate-mapping package="cn.itcast.c_one2one">
 	
@@ -1066,13 +1080,14 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			
 		</class>	
 		</hibernate-mapping>	
-			
-			
-	<?xml version="1.0"?>
-	<!DOCTYPE hibernate-mapping PUBLIC 
-		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
+
+​			
+​	<?xml version="1.0"?>
+​	<!DOCTYPE hibernate-mapping PUBLIC 
+​		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+​		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+​	
 	<hibernate-mapping package="cn.itcast.c_one2one">
 	
 		<class name="User" table="t_user">
@@ -1086,16 +1101,17 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			 <one-to-one name="idCard" class="IdCard"></one-to-one>
 				 
 		</class>
-	
+
 
 	</hibernate-mapping>		
-			
-			
+
+
+​			
 基于主键的映射		
 
 	// 身份证
 	public class IdCard {
-
+	
 		private int user_id;
 		// 身份证号
 		private String cardNum;
@@ -1107,7 +1123,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 	<!DOCTYPE hibernate-mapping PUBLIC 
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+	
 	<hibernate-mapping package="cn.itcast.c_one2one2">
 	
 		<class name="IdCard" table="t_IdCard">
@@ -1133,18 +1149,19 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			cascade="save-update"></one-to-one>
 			
 		</class>
-	
+
 
 	</hibernate-mapping>	
-	
-	
+
+
+​	
 ## 21.17 组件映射
 
 类组合关系的映射，也叫做组件映射！
 注意：组件类和被包含的组件类，共同映射到一张表！			
 			
 	public class Car {
-
+	
 		private int id;
 		private String name;
 		// 车轮
@@ -1153,7 +1170,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			
 	// 车轮
 	public class Wheel {
-
+	
 		private int count;
 		private int size;
 	}	
@@ -1171,16 +1188,17 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 				<property name="size"></property>
 				<property name="count"></property>
 			</component>
-		
-						 
-		</class>	
-		</hibernate-mapping>
-		
+
+
+​						 
+​		</class>	
+​		</hibernate-mapping>
+
 ## 21.18 继承映射
 
 	// 动物类
 	public abstract class Animal {
-
+	
 		private int id;
 		private String name;
 		
@@ -1196,7 +1214,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			<property name="na"></property>
 			<property name="catchMouse"></property>					 
 		</class>
-	
+
 
 	</hibernate-mapping>
 	
@@ -1220,7 +1238,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			session.close();
 		
 		}
-		
+
 ## 21.19 HQL查询
 
 	public class App {
@@ -1239,7 +1257,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			3)	HQL查询，  Hibernate Query language  hibernate 提供的面向对象的查询语言。
 			4)	Criteria 查询，   完全面向对象的查询（Query By Criteria  ,QBC）
 			5)	SQLQuery， 本地SQL查询
-
+	
 		 */
 		 
 		 @Test
@@ -1265,11 +1283,11 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			// a. 查询全部列
 	//		Query q = session.createQuery("from Dept");  //OK
 	//		Query q = session.createQuery("select * from Dept");  //NOK, 错误，不
-
+	
 	支持*
 	//		Query q = session.createQuery("select d from Dept d");  // OK
 	//		System.out.println(q.list());
-
+	
 			// b. 查询指定的列  【返回对象数据Object[] 】
 	//		Query q = session.createQuery("select d.deptId,d.deptName from Dept d");  
 	//		System.out.println(q.list());
@@ -1277,7 +1295,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			// c. 查询指定的列, 自动封装为对象  【必须要提供带参数构造器】
 	//		Query q = session.createQuery("select new Dept(d.deptId,d.deptName) from Dept d");  
 	//		System.out.println(q.list());
-
+	
 	// d. 条件查询: 一个条件/多个条件and or/between and/模糊查询
 			// 条件查询： 占位符
 	//		Query q = session.createQuery("from Dept d where deptName=?");
@@ -1300,7 +1318,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 	//		Query q = session.createQuery("from Dept d where deptName like ?");
 	//		q.setString(0, "%部%");
 	//		System.out.println(q.list());
-		
+
 
 			// e. 聚合函数统计
 	//		Query q = session.createQuery("select count(*) from Dept");
@@ -1313,7 +1331,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			// HQL写法
 	//		Query q = session.createQuery("select e.dept, count(*) from Employee e group by e.dept");
 	//		System.out.println(q.list());
-
+	
 	session.getTransaction().commit();
 			session.close();
 		}
@@ -1330,7 +1348,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 		
 			//2) 左外连接
 	//		Query q = session.createQuery("from Dept d left join d.emps");
-
+	
 			//3) 右外连接
 			Query q = session.createQuery("from Employee e right join e.dept");
 			q.list();
@@ -1374,7 +1392,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			session.close();
 		}
 	}
-		
+
 ## 21.20 Criteria 查询
 
 	//4)	Criteria 查询，
@@ -1389,11 +1407,12 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 	//		criteria.add(Restrictions.idEq(12));  // 主键查询
 		
 			System.out.println(criteria.list());
-		
-		
-			session.getTransaction().commit();
-			session.close();
-		}
+
+
+​		
+​			session.getTransaction().commit();
+​			session.close();
+​		}
 
 ## 21.21 SQLQuery， 本地SQL查询
 
@@ -1412,12 +1431,13 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			session.getTransaction().commit();
 			session.close();
 		}
-		
-		
-	// 分页查询
-		@Test
-		public void all() {
-		
+
+
+​		
+​	// 分页查询
+​		@Test
+​		public void all() {
+​		
 			Session session = sf.openSession();
 			session.beginTransaction();
 		
@@ -1439,7 +1459,7 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 			session.getTransaction().commit();
 			session.close();
 		}
-		
+
 ## 21.22 hibernate对连接池的支持
 
 Hibernate 自带的也有一个连接池，且对C3P0连接池也有支持！
@@ -1448,7 +1468,7 @@ Hbm 自带连接池：只维护一个连接，比较简陋。可以查看hiberna
 	#################################
 	### Hibernate Connection Pool ###     
 	#################################
-
+	
 	hibernate.connection.pool_size 1        【Hbm 自带连接池： 只有一个连接】
 
 
@@ -1456,7 +1476,7 @@ Hbm 自带连接池：只维护一个连接，比较简陋。可以查看hiberna
 	###########################
 	### C3P0 Connection Pool###		   【Hbm对C3P0连接池支持】
 	###########################
-
+	
 	#hibernate.c3p0.max_size 2				最大连接数
 	#hibernate.c3p0.min_size 2				最小连接数
 	#hibernate.c3p0.timeout 5000           超时时间
@@ -1464,7 +1484,7 @@ Hbm 自带连接池：只维护一个连接，比较简陋。可以查看hiberna
 	#hibernate.c3p0.idle_test_period 3000    空闲测试时间
 	#hibernate.c3p0.acquire_increment 2     连接不够用的时候， 每次增加的连接数
 	#hibernate.c3p0.validate false
-	
+
 Hibernate.cfg.xml 中增加连接池相关配置：
 
 	<!-- 【连接池配置】 -->
@@ -1477,7 +1497,7 @@ Hibernate.cfg.xml 中增加连接池相关配置：
 			<property name="hibernate.c3p0.max_statements">10</property>
 			<property name="hibernate.c3p0.idle_test_period">30000</property>
 			<property name="hibernate.c3p0.acquire_increment">2</property>
-			
+
 ## 21.23 二级缓存
 
 二级缓存：
@@ -1485,20 +1505,20 @@ Hibernate.cfg.xml 中增加连接池相关配置：
 		Hibernate提供了基于应用程序级别的缓存， 可以跨多个session，即不同的session都可以访问缓存数据。 这个换存也叫二级缓存。
 		Hibernate提供的二级缓存有默认的实现，且是一种可插配的缓存框架！如果用户想用二级缓存，只需要在hibernate.cfg.xml中配置即可； 不想用，直接移除，不影响代码。
 		如果用户觉得hibernate提供的框架不好用，自己可以换其他的缓存框架或自己实现缓存框架都可以。
-		
+
 使用二级缓存
 
 	查看hibernate.properties配置文件，二级缓存如何配置？
-
+	
 	##########################
 	### Second-level Cache ###
 	##########################
-
+	
 	#hibernate.cache.use_second_level_cache false【二级缓存默认不开启，需要手动开启】
 	#hibernate.cache.use_query_cache true      【开启查询缓存】
-
+	
 	## choose a cache implementation		【二级缓存框架的实现】
-
+	
 	#hibernate.cache.provider_class org.hibernate.cache.EhCacheProvider
 	
 		#hibernate.cache.provider_class org.hibernate.cache.EmptyCacheProvider
@@ -1506,25 +1526,25 @@ Hibernate.cfg.xml 中增加连接池相关配置：
 	#hibernate.cache.provider_class org.hibernate.cache.TreeCacheProvider
 	#hibernate.cache.provider_class org.hibernate.cache.OSCacheProvider
 	#hibernate.cache.provider_class org.hibernate.cache.SwarmCacheProvider
-	
+
 缓存策略
 
 	<class-cache usage="read-only"/>     放入二级缓存的对象，只读; 
 		<class-cache usage="nonstrict-read-write"/>  非严格的读写
 		<class-cache usage="read-write"/>    读写； 放入二级缓存的对象可以读、写；
 		<class-cache usage="transactional"/>   (基于事务的策略)
-		
+
 集合缓存
 
 	<!-- 集合缓存[集合缓存的元素对象，也加加入二级缓存] -->
 			<collection-cache 
 	usage="read-write" collection="cn.itcast.b_second_cache.Dept.emps"/>
-	
+
 查询缓存
 
 	list() 默认情况只会放入缓存，不会从一级缓存中取！
 	   使用查询缓存，可以让list()查询从二级缓存中取！
-	
+
 完整案例：
 Hibernate.cfg.xml
 
@@ -1588,17 +1608,18 @@ App  测试类
 			System.out.println(q.list());
 			session1.getTransaction().commit();
 			session1.close();
-		
-		
-			Session session2 = sf.openSession();
-			session2.beginTransaction();
-			q = session2.createQuery("from Dept").setCacheable(true);
-			System.out.println(q.list());  // 不查询数据库： 需要开启查询缓存
-			session2.getTransaction().commit();
-			session2.close();
-		}
-	}
-	
+
+
+​		
+​			Session session2 = sf.openSession();
+​			session2.beginTransaction();
+​			q = session2.createQuery("from Dept").setCacheable(true);
+​			System.out.println(q.list());  // 不查询数据库： 需要开启查询缓存
+​			session2.getTransaction().commit();
+​			session2.close();
+​		}
+​	}
+
 ## 21.24 项目中session的管理方式
 Session的创建方式：
 
@@ -1622,4 +1643,5 @@ Session的创建方式：
 			//session4.close(); 报错，因为同一个session已经关闭了！
 		}
 
-	
+
+​	

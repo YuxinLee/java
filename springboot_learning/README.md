@@ -7,6 +7,7 @@
 网址为：http://start.spring.io。Dependencies选择：Web, AOP, 模板引擎(Freemarker)(Velocity)。选择web：会自动添加Tomcat和Spring MVC的依赖。
 然后在Intellij idea中设置import project(导入java项目)	。File -> new -> module from existing sources。然后点击pom.xml 点击next和finish即可 
 			
+
 ### 1.2 使用Intellij idea直接创建Spring Boot项目
 
 新建Spring Initializr项目

@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35311cfb-b607-4b2c-93bb-f0259a133888" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/advance/annotation_learning/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/advance/annotation_learning/Id.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaWeb学习/JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaWeb学习/JDBC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaWeb学习/JDBC/src/jdbc_learning/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaWeb学习/JDBC/src/jdbc_learning/util/JdbcUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaWeb学习/hibernate_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaWeb学习/hibernate_learning/README.md" afterDir="false" />
@@ -31,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="49">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
+            <state relative-caret-position="427">
               <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -197,7 +193,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -384,7 +380,7 @@
       <workItem from="1575774495398" duration="3598000" />
       <workItem from="1576376268668" duration="5896000" />
       <workItem from="1576659871643" duration="3022000" />
-      <workItem from="1576718511573" duration="1586000" />
+      <workItem from="1576718511573" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="update things">
       <created>1576381352796</created>
@@ -393,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576381352796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update annotation">
+      <created>1576743419557</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576743419557</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -429,13 +432,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195731000" />
+    <option name="totallyTimeSpent" value="197014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24898621" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24898621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -445,13 +448,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21452145" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1782364" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27579737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27579737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.21146953" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32833022" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.30824372" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -473,7 +476,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update things" />
-    <option name="LAST_COMMIT_MESSAGE" value="update things" />
+    <MESSAGE value="update annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -837,16 +841,6 @@
       </provider>
     </entry>
     <entry file="file://J:/java就业篇1/day27_基础增强/day27/src/cn/itcast/d_anno/App_1.java" />
-    <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -871,10 +865,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/advance/annotation_learning/Annotation_Demo1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="49">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
