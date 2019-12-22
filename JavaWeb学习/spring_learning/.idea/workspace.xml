@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="495b8d13-d2f3-4a28-b3a8-823da4a1766d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/Direction2Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/DirectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/SexEnumDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBC/src/jdbc_learning/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/src/jdbc_learning/util/JdbcUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hibernate_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate_learning/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1014" />
     <option name="y" value="-12" />
     <option name="width" value="918" />
@@ -149,8 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,22 +158,12 @@
               <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="e_anno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="e_anno2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,17 +211,21 @@
       <workItem from="1576573294402" duration="652000" />
       <workItem from="1576659882945" duration="1216000" />
       <workItem from="1576718511589" duration="598000" />
+      <workItem from="1576768199376" duration="599000" />
+      <workItem from="1576804110190" duration="1253000" />
+      <workItem from="1576851560492" duration="129000" />
+      <workItem from="1576851949348" duration="4000" />
+      <workItem from="1576852197948" duration="225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9026000" />
+    <option name="totallyTimeSpent" value="11236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
-    <editor active="true" />
+    <frame x="676" y="-8" width="612" height="696" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09975669" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23636363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

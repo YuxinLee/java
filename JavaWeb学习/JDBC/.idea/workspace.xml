@@ -7,15 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1066873a-1754-48c5-b8a6-6d8b1f278c30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/Direction2Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/DirectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../basic_learning/src/base/enum_learning/SexEnumDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_learning/util/JdbcUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hibernate_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate_learning/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_learning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic_learning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/java/com/example/demo/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot_learning/springboot_jpa/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -198,7 +195,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1014" />
     <option name="y" value="-12" />
     <option name="width" value="918" />
@@ -212,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,33 +220,6 @@
               <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
               <item name="JDBC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="a_statement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="b_prepared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDBC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="i_metadata_test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JDBC" type="b2602c69:ProjectViewProjectNode" />
@@ -274,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -507,6 +477,11 @@
       <workItem from="1576376281567" duration="724000" />
       <workItem from="1576659881835" duration="599000" />
       <workItem from="1576718511573" duration="598000" />
+      <workItem from="1576768197948" duration="599000" />
+      <workItem from="1576804109267" duration="598000" />
+      <workItem from="1576851553757" duration="135000" />
+      <workItem from="1576851948149" duration="5000" />
+      <workItem from="1576852176969" duration="246000" />
     </task>
     <servers />
   </component>
@@ -543,20 +518,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84719000" />
+    <option name="totallyTimeSpent" value="86302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="-8" width="612" height="696" extended-state="1" />
-    <editor active="true" />
+    <frame x="676" y="-8" width="612" height="696" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70392156" visible="true" weight="0.22909091" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69215685" visible="true" weight="0.27818182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.29607844" side_tool="true" visible="true" weight="0.22909091" />
+      <window_info id="Web" order="7" sideWeight="0.30784315" side_tool="true" visible="true" weight="0.27818182" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30875576" />
