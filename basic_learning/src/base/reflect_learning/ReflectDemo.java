@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/*
+/**
  * 反射：就是通过class文件对象，去使用该文件中的成员变量，构造方法，成员方法。
  *
  * Person p = new Person();

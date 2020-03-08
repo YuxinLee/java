@@ -312,7 +312,7 @@ App.java   测试类
 
 ## 21.6 Hibernate.cfg.xml 主配置
 
-# # Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其他参数、映射信息！
+Hibernate.cfg.xml：主配置文件中主要配置：数据库连接信息、其他参数、映射信息！
 
 常用配置查看源码：hibernate-distribution-3.6.0.Final\project\etc\hibernate.properties
 
@@ -548,13 +548,16 @@ App.java
 
 
 ​	
-​	<?xml version="1.0"?>
-​	<!DOCTYPE hibernate-mapping PUBLIC 
-​		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-​		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-​	
-	<hibernate-mapping package="cn.itcast.a_collection">
+
+```
+<?xml version="1.0"?>
+	<!DOCTYPE hibernate-mapping PUBLIC 
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 	
+	<hibernate-mapping package="cn.itcast.a_collection">
+```
+
 		<class name="User" table="t_user">
 			<id name="userId" column="id">
 				<generator class="native"></generator>
@@ -610,15 +613,15 @@ App.java
 ​			Session session = sf.openSession();
 ​			session.beginTransaction();
 ​		
-			//-- 保存
-			Set<String> addressSet = new HashSet<String>();
-			addressSet.add("广州");
-			addressSet.add("深圳");
-			// 用户对象
-			User user = new User();
-			user.setUserName("Jack");
-			user.setAddress(addressSet);
-		
+​			//-- 保存
+​			Set<String> addressSet = new HashSet<String>();
+​			addressSet.add("广州");
+​			addressSet.add("深圳");
+​			// 用户对象
+​			User user = new User();
+​			user.setUserName("Jack");
+​			user.setAddress(addressSet);
+​		
 			// 保存
 			session.save(user);
 		
@@ -804,17 +807,17 @@ Employee.hbm.xml
 ​		session.save(emp_zs);
 ​		session.save(emp_ls);// 再保存多的一方，关系回自动维护(映射配置完)
 ​		
-		session.getTransaction().commit();
-		session.close();
-		/*
-		 *  结果
-		 *  Hibernate: insert into t_dept (deptName) values (?)
-			Hibernate: insert into t_employee (empName, salary, dept_id) values (?, ?, ?)
-			Hibernate: insert into t_employee (empName, salary, dept_id) values (?, ?, ?)
-			少生成2条update  sql
-		 */
-		 	}
-	
+​		session.getTransaction().commit();
+​		session.close();
+​		/*
+​		 *  结果
+​		 *  Hibernate: insert into t_dept (deptName) values (?)
+​			Hibernate: insert into t_employee (empName, salary, dept_id) values (?, ?, ?)
+​			Hibernate: insert into t_employee (empName, salary, dept_id) values (?, ?, ?)
+​			少生成2条update  sql
+​		 */
+​		 	}
+​	
 	}
 
 ## 21.11 Inverse属性
@@ -1088,8 +1091,8 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 ​		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 ​		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 ​	
-	<hibernate-mapping package="cn.itcast.c_one2one">
-	
+​	<hibernate-mapping package="cn.itcast.c_one2one">
+​	
 		<class name="User" table="t_user">
 			<id name="userId">
 				<generator class="native"></generator>
@@ -1438,9 +1441,9 @@ Hibernate中对象的状态： 临时/瞬时状态、持久化状态、游离状
 ​		@Test
 ​		public void all() {
 ​		
-			Session session = sf.openSession();
-			session.beginTransaction();
-		
+​			Session session = sf.openSession();
+​			session.beginTransaction();
+​		
 			 Query q = session.createQuery("from Employee");
 			 
 			 // 从记录数

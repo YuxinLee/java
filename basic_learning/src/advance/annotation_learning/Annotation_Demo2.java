@@ -25,6 +25,12 @@ public class Annotation_Demo2 {
         System.out.println(author.authorName());
         System.out.println(author.age());
         System.out.println(author.remark());
+
+//        getAnnotation：返回指定的注解
+//        isAnnotationPresent：判定当前元素是否被指定注解修饰
+//        getAnnotations：返回所有的注解
+//        getDeclaredAnnotation：返回本元素的指定注解
+//        getDeclaredAnnotations：返回本元素的所有注解，不包含父类继承而来的
     }
 
 
