@@ -1,4 +1,4 @@
-package base.collection_learning;
+package base.list_learning;
 
 import java.util.HashMap;
 import java.util.Iterator;

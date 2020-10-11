@@ -1,7 +1,6 @@
-package base.collection_learning;
+package base.list_learning;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ArrayListDemo2 {
     public static void main(String[] args){

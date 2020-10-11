@@ -1,4 +1,4 @@
-package base.mapdemo;
+package base.map_learning;
 
 import java.util.ArrayList;
 import java.util.Collections;
