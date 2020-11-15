@@ -1,0 +1,47 @@
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.model.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, userName
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM users;
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM users
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.example.demo.model.User">
+        INSERT INTO
+            users
+            (id, userName)
+        VALUES
+            (#{id}, #{userName})
+    </insert>
+
+    <update id="update" parameterType="com.example.demo.model.User">
+        UPDATE
+            users
+        SET
+        <if test="userName != null"> userName = #{userName}</if>
+        WHERE
+            id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE FROM
+            users
+        WHERE
+            id = #{id}
+    </delete>
+</mapper>

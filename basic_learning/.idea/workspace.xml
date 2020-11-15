@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35311cfb-b607-4b2c-93bb-f0259a133888" name="Default" comment="update annotation">
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/main/java/com/example/demo/controller/FileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/main/java/com/example/demo/service/FileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaWeb学习/springboot_mybatis_annotation/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+    <list default="true" id="35311cfb-b607-4b2c-93bb-f0259a133888" name="Default" comment="更新list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -216,20 +203,6 @@
             </path>
             <path>
               <item name="basic_learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="list_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic_learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -268,8 +241,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605410193924" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605410360549" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot_mybatis_annotation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -487,7 +460,7 @@
       <workItem from="1604805006176" duration="10506000" />
       <workItem from="1605014029328" duration="4522000" />
       <workItem from="1605357873573" duration="5401000" />
-      <workItem from="1605404793300" duration="2433000" />
+      <workItem from="1605404793300" duration="2707000" />
     </task>
     <task id="LOCAL-00001" summary="update things">
       <created>1576381352796</created>
@@ -524,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602123204643</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新list">
+      <created>1605410220012</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605410220013</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,12 +540,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291585000" />
+    <option name="totallyTimeSpent" value="291859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.820598" visible="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.820598" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" sideWeight="0.179402" side_tool="true" visible="true" weight="0.15991472" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -582,7 +562,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.21146953" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32833022" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32962137" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.30824372" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="13" weight="0.3297491" />
@@ -604,7 +584,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update things" />
     <MESSAGE value="update annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="update annotation" />
+    <MESSAGE value="更新list" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新list" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
